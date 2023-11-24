@@ -137,14 +137,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T11:35:11.818405+01:00"
+						"dateAndTimeString" : "2023-11-24T14:30:46.40241+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "dq5erUTHDQCa1lYhD/1mZg=="
 				},
-				"code" : "drGeoSrc := FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'src' / 'DrGeo.pck.st'"
+				"code" : "drGeoSrcPatched := FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'src' / 'DrGeo.pck.st'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -426,14 +426,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T11:40:15.28508+01:00"
+									"dateAndTimeString" : "2023-11-24T14:30:46.403372+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "10OkPkXHDQCie/UMD/1mZg=="
 							},
-							"code" : "((ChunkFileFormatParser for: drGeoSrc readStream) parseChunks) collect: #contents"
+							"code" : "(ChunkFileFormatParser for: drGeoSrcPatched readStream) parseChunks"
 						},
 						{
 							"__type" : "textSnippet",
@@ -460,7 +460,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T11:43:50.849505+01:00"
+									"dateAndTimeString" : "2023-11-24T11:44:40.844457+01:00"
 								}
 							},
 							"uid" : {
@@ -470,7 +470,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Note that notr all the chunks are doits, but we also have method chunks, class chunks etc."
+							"string" : "Note that not all the chunks are doits, but we also have method chunks, class chunks etc."
 						}
 					]
 				},
@@ -504,6 +504,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "# How to parse .st files?"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-11-24T14:46:56.872305+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-11-24T14:47:22.273718+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "owA37EfHDQCuoLOfCe133g=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We try "
 			}
 		]
 	},
