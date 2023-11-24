@@ -4571,7 +4571,7 @@ getItem: domain
 !DrGMacroBuilder methodsFor: 'initialize-release' stamp: 'hlsf 4/6/2022 16:35:50'!
 initialize
 	self reset.
-	wizard := DrGWizardMacroBuild open: self ::
+	wizard := (  DrGWizardMacroBuild open: self  )
 		addPages;
 		openInWorld.
 	wizard morphPosition: 0@0.
@@ -4675,7 +4675,7 @@ selectedMacro: aMacro
 
 !DrGMacroPlayer methodsFor: 'initialize-release' stamp: 'hlsf 4/6/2022 16:34:27'!
 initialize
-	wizard := DrGWizardMacroPlay open: self :: 
+	wizard := (  DrGWizardMacroPlay open: self  ) 
 		addPages;
 		openInWorld.
 	wizard morphPosition: 0@0.
@@ -5126,7 +5126,7 @@ basicInitialize
 
 !DrGScriptPlayer methodsFor: 'initialize-release' stamp: 'hlsf 4/6/2022 16:36:57'!
 initialize
-	wizard := DrGWizardScript open: self ::
+	wizard := (  DrGWizardScript open: self  )
 		addPages;
 		openInWorld.
 	input := OrderedCollection new.
@@ -5982,7 +5982,7 @@ clipsSubmorphs
 
 !DrGeoMiniView class methodsFor: 'instance creation' stamp: 'hlsf 8/4/2023 13:05:08'!
 for: aPresenter
-	^ self basicNew ::
+	^ (  self basicNew  )
 		presenter: aPresenter ;
 		initialize;
 		beColumn;
@@ -6052,7 +6052,7 @@ includeInNewMorphMenu
 
 !DrGDebuggerWindow methodsFor: 'GUI building' stamp: 'hlsf 10/13/2022 15:09:14'!
 buildLowerPanes
-	^ LayoutMorph newColumn ::
+	^ (  LayoutMorph newColumn  )
 		addMorph: self customButtonRow fixedHeight: self defaultButtonPaneHeight;
 		addMorph: self buildMorphicCodePane proportionalHeight: 1.0;
 		yourself! !
@@ -6098,7 +6098,7 @@ layerNumber
 
 !DrGDebuggerWindow class methodsFor: 'instance creation' stamp: 'hlsf 10/19/2022 21:20:35'!
 open: model
-	^ self new ::
+	^ (  self new  )
 		model: model;
 		buildMorphicWindow;
 		yourself
@@ -6190,7 +6190,7 @@ fourthPage
 	descriptionLabel := LabelMorph contents: 'Description:' translated.
 	labelsWidth := titleLabel morphWidth max: descriptionLabel morphWidth.
 	row addMorph: titleLabel fixedWidth: labelsWidth.
-	tMorph := TextModelMorph textProvider: model textGetter: #title textSetter: #title: ::
+	tMorph := (  TextModelMorph textProvider: model textGetter: #title textSetter: #title:  )
 		hideScrollBarsIndefinitely; 
 		askBeforeDiscardingEdits: false.
 	tMorph scroller 
@@ -6202,7 +6202,7 @@ fourthPage
 	pane addMorph: row fixedHeight: titleLabel morphHeight.
 	row :=  LayoutMorph newRow separation: 4.
 	row addMorph: descriptionLabel fixedWidth: labelsWidth .
-	descrMorph := TextModelMorph textProvider: model textGetter: #description textSetter: #description: ::
+	descrMorph := (  TextModelMorph textProvider: model textGetter: #description textSetter: #description:  )
 		askBeforeDiscardingEdits: false.
 	descrMorph scroller 
 		setProperty: #keyStroke: 
@@ -6388,11 +6388,11 @@ secondPage
 	| list argumentList page textMorph |
 	list := PluggableListMorph 
 		model: self listGetter: #scriptsName indexGetter: #selectedScript 		indexSetter: #selectedScript:. 
-	argumentList := PluggableListMorph 
-		model: self 		listGetter: #argumentsName indexGetter: nil indexSetter: 	nil ::
+	argumentList := (PluggableListMorph 
+		model: self 		listGetter: #argumentsName indexGetter: nil indexSetter: 	nil )
 		setBalloonText: 'The arguments accepted by this script.' translated;
 		yourself.
-	textMorph := TextModelMorph textProvider: model textGetter: #description textSetter: #description: ::
+	textMorph := (  TextModelMorph textProvider: model textGetter: #description textSetter: #description:  )
 		askBeforeDiscardingEdits: false;
 		yourself.
 	page := LabelGroup with: { 
@@ -6400,7 +6400,7 @@ secondPage
 		'Description' translated -> textMorph.
 		'Arguments' translated -> argumentList}.
 
-	^ WizardPage applyPage: 'Select a script then items in the sketch' translated on: self ::
+	^ (  WizardPage applyPage: 'Select a script then items in the sketch' translated on: self  )
 		 contents: page! !
 
 !DrGWizardScript methodsFor: 'open/close' stamp: 'hlsf 4/7/2022 12:34:54'!
@@ -6458,7 +6458,7 @@ computePreviewFor: aSketchFile
 !DrGFileOpenMorph methodsFor: 'GUI building' stamp: 'hlsf 4/11/2022 21:24:20'!
 newButtonArea
 	| rowLeft rowRight |	
-	buttonArea := LayoutMorph newRow :: 
+	buttonArea := (  LayoutMorph newRow  ) 
 		separation: 8@0; 
 		yourself.
 	rowLeft := LayoutMorph newRow.
@@ -6513,10 +6513,10 @@ previewFor: aSketchEntry
 !DrGFileOpenMorph methodsFor: 'GUI building' stamp: 'hlsf 5/4/2023 15:40:22'!
 previewMorphFor: sketchEntry
 	| preview  |
-	preview := FilePreviewMorph 		
+	preview := (FilePreviewMorph 		
 		file: sketchEntry 
 		image: (self previewFor: sketchEntry ) 
-		buttons: nil ::
+		buttons: nil )
 		when: #selected send: #update: to: self;
 		when: #doubleClick send: #open: to: self.
 	previews add: preview.
@@ -6638,7 +6638,7 @@ scriptName: aString
 
 !DrGScriptDesignerDialog methodsFor: 'GUI building' stamp: 'hlsf 4/4/2022 12:54:13'!
 newAddArgumentButton
-	^ PluggableButtonMorph model: self action:  #addArgument label: 'Add argument' translated ::
+	^ (  PluggableButtonMorph model: self action:  #addArgument label: 'Add argument' translated  )
 			setBalloonText: 'Add an argument to this script.' translated;
 			yourself! !
 
@@ -6652,18 +6652,18 @@ newArgumentMorph
 
 !DrGScriptDesignerDialog methodsFor: 'GUI building' stamp: 'hlsf 5/27/2023 12:01:53'!
 newButtonArea
-	buttonArea := LayoutMorph newRow
+	buttonArea := (LayoutMorph newRow
 		separation: 8@0;
-		addMorph: (PluggableButtonMorph model: self action:  #build label: 'Build' translated ::
+		addMorph: (PluggableButtonMorph model: self action:  #build label: 'Build' translated) 
 				enableSelector: #isValid; 
 				setBalloonText: 'Build a script with these settings.' translated;
 				yourself)
-		layoutSpec: (LayoutSpec new ::
+		layoutSpec: (LayoutSpec new 
 			useMorphWidth ;
 			proportionalHeight:  1;
 			offAxisEdgeWeight: #center);
 		addMorph: (PluggableButtonMorph model: self action:  #cancel label: 'Cancel' translated)
-		layoutSpec: (LayoutSpec new ::
+		layoutSpec: (LayoutSpec new 
 			useMorphWidth ;
 			proportionalHeight:  1;
 			offAxisEdgeWeight: #center);
@@ -6674,7 +6674,7 @@ newButtonArea
 !DrGScriptDesignerDialog methodsFor: 'GUI building' stamp: 'hlsf 4/4/2022 20:10:51'!
 newDescriptionMorph
 | morph |
-	morph := TextModelMorph textProvider: self textGetter: #description textSetter: #description: ::
+	morph := (  TextModelMorph textProvider: self textGetter: #description textSetter: #description:  )
 		askBeforeDiscardingEdits: false;
 		setBalloonText:  'A description of the script. To help the user, describe carefully what the script does and the input arguments to select to use it.' translated;
 		yourself	.
@@ -6694,7 +6694,7 @@ newPane
 !DrGScriptDesignerDialog methodsFor: 'GUI building' stamp: 'hlsf 4/4/2022 20:10:48'!
 newScriptNameMorph
 | morph |
-	morph := TextModelMorph textProvider: self textGetter: #scriptName textSetter:  #scriptName: ::
+	morph := (  TextModelMorph textProvider: self textGetter: #scriptName textSetter:  #scriptName:  )
 		hideScrollBarsIndefinitely;
 		askBeforeDiscardingEdits: false;
 		acceptOnCR: true;
@@ -6715,11 +6715,11 @@ initialize
 !DrGScriptDesignerDialog methodsFor: 'action' stamp: 'hlsf 5/27/2023 12:12:17'!
 addArgument
 	| newArgument |
-	newArgument := LayoutMorph newRow ::
+	newArgument := ((  LayoutMorph newRow  )
 		adoptWidgetsColor: widgetsColor;
 		borderWidth: 1;
 		yourself.
-	newArgument addMorph: (PluggableButtonMorph model: self action: #removeArgument: ::
+	newArgument addMorph: ((PluggableButtonMorph model: self action: #removeArgument:) 
 			icon: Theme current deleteIcon;
 			actionArgument: newArgument;
 			borderWidth: 0;
@@ -6730,7 +6730,7 @@ addArgument
 			model: (ListModel with: self class labels)
 			listGetter: #list
 			indexGetter:  #listIndex
-			indexSetter: #listIndex: ::
+			indexSetter: #listIndex:) 
 			adoptWidgetsColor: widgetsColor ).
 	argumentsMorph addMorph: newArgument.
 	self morphExtent: self minimumExtent ! !
@@ -6929,7 +6929,7 @@ buildMorphicWindow
 !DrGSmalltalkSketchBrowser methodsFor: 'GUI building' stamp: 'hlsf 7/9/2022 12:04:06'!
 newButtonArea
 	| rowLeft rowRight |	
-	buttonArea := LayoutMorph newRow :: 
+	buttonArea := (  LayoutMorph newRow  ) 
 		separation: 8@0; 
 		yourself.
 	rowLeft := LayoutMorph newRow.
@@ -6973,14 +6973,14 @@ newButtonArea
 !DrGSmalltalkSketchBrowser methodsFor: 'GUI building' stamp: 'hlsf 4/12/2022 23:31:48'!
 newDrGeoColumn
 " the DrGeo view and an optional code view"
-	^ pane := LayoutMorph newColumn ::
+	^ pane := (  LayoutMorph newColumn  )
 		addMorph: drgeoView proportionalHeight: 1;
 		addAdjusterMorph ;
 		yourself! !
 
 !DrGSmalltalkSketchBrowser methodsFor: 'GUI building' stamp: 'hlsf 4/12/2022 19:34:44'!
 newPane
-	^ LayoutMorph newRow ::
+	^ (  LayoutMorph newRow  )
 		separation: self defaultSeparation ;
 		addMorph: self newSketchesColumn layoutSpec: (LayoutSpec new useMorphWidth );
 		addMorphUseAll: self newDrGeoColumn;
@@ -6992,7 +6992,7 @@ newSketchesColumn
 	| checkGtoup |
 	checkGtoup := CheckGroup fromList: {'Code' translated}.
 	checkGtoup buttons first when: #checkSelection send: #showCode: to: self.
-	^ LayoutMorph newColumn ::
+	^ (  LayoutMorph newColumn  )
 		addMorph: sketchesListMorph layoutSpec: (LayoutSpec new useMorphWidth);
 		addMorphKeepMorphHeight: checkGtoup ;
 		yourself
@@ -7000,7 +7000,7 @@ newSketchesColumn
 
 !DrGSmalltalkSketchBrowser methodsFor: 'initialization' stamp: 'hlsf 4/12/2022 18:56:10'!
 emptyView
-	^ BoxedMorph new ::
+	^ (  BoxedMorph new  )
 		color: self color;
 		borderWidth: 1;
 		layoutSpec: LayoutSpec useAll! !
@@ -7011,7 +7011,7 @@ initialize
 	sketchesListMorph := PluggableListMorph 
 		model: self 		listGetter: #sketches 		indexGetter: #sketch indexSetter: #sketch:.
 	drgeoView := self emptyView.
-	codeView := TextModelMorph textProvider: self textGetter: #sourceCode ::
+	codeView := (  TextModelMorph textProvider: self textGetter: #sourceCode  )
 		disableEditing;
 		yourself.! !
 
@@ -7090,7 +7090,7 @@ buildMorphicWindow
 
 !DrGSmalltalkSketchEditor methodsFor: 'GUI building' stamp: 'hlsf 4/14/2022 16:36:45'!
 button: iconSymbol action: actionSelector help: helpString
-	^ ButtonMorph model: self action: actionSelector ::
+	^ (  ButtonMorph model: self action: actionSelector  )
 			icon: (DrGIcons for: iconSymbol );
 			setBalloonText: helpString ;
 			color: DrGUIControlsManager buttonColor;
@@ -7102,7 +7102,7 @@ button: iconSymbol action: actionSelector help: helpString
 
 !DrGSmalltalkSketchEditor methodsFor: 'GUI building' stamp: 'hlsf 10/28/2022 11:13:31'!
 button: iconSymbol action: actionSelector state: getStateSel help: helpString
-	^ ButtonMorph model: self stateGetter: getStateSel action: actionSelector ::
+	^ (  ButtonMorph model: self stateGetter: getStateSel action: actionSelector  )
 			icon: (DrGIcons for: iconSymbol );
 			setBalloonText: helpString ;
 			color: DrGUIControlsManager buttonColor;
@@ -7114,7 +7114,7 @@ button: iconSymbol action: actionSelector state: getStateSel help: helpString
 
 !DrGSmalltalkSketchEditor methodsFor: 'GUI building' stamp: 'hlsf 4/14/2022 16:43:31'!
 newButtonArea
-	buttonArea := LayoutMorph newRow :: 
+	buttonArea := (  LayoutMorph newRow  ) 
 		axisEdgeWeight: #rowRight;
 		addMorph: (PluggableButtonMorph
 			model: self
@@ -7124,9 +7124,9 @@ newButtonArea
 
 !DrGSmalltalkSketchEditor methodsFor: 'GUI building' stamp: 'hlsf 11/2/2022 19:39:02'!
 newCodeAndView
-	^ LayoutMorph newRow ::
+	^ (  LayoutMorph newRow  )
 		separation: self defaultSeparation;
-		addMorph: (codeAndViewPanel := LayoutMorph newColumn ::
+		addMorph: (codeAndViewPanel := (  LayoutMorph newColumn  )
 			addMorph: 		codeView proportionalHeight: 0.7;
 			addAdjusterMorph;
 			addMorph: docView proportionalHeight: 0.3) 
@@ -7137,7 +7137,7 @@ newCodeAndView
 
 !DrGSmalltalkSketchEditor methodsFor: 'GUI building' stamp: 'hlsf 10/19/2022 21:31:20'!
 newPane
-	^ LayoutMorph newColumn ::
+	^ (  LayoutMorph newColumn  )
 		separation: self defaultSeparation ;
 		addMorphKeepMorphHeight: self newToolbar;
 		addMorphUseAll: self newCodeAndView;
@@ -7145,7 +7145,7 @@ newPane
 
 !DrGSmalltalkSketchEditor methodsFor: 'GUI building' stamp: 'hlsf 10/28/2022 11:15:20'!
 newToolbar
-	^ LayoutMorph newRow ::
+	^ (  LayoutMorph newRow  )
 		separation: 5@0 ;
 		addMorph: (self button: #open action: #browseSketches help: 'Edit a Smalltalk sketch.' translated);
 		addMorph: (self button: #keep action: #keepSketch help: 'Save this Smalltalk sketch.' translated);
@@ -7207,10 +7207,10 @@ initialize
 		layoutMorph.
 	book when: #askToCopyCode send: #sourceCode: to: self.
 	
-	codeView := TextModelMorph textProvider: self textGetter: #sourceCode textSetter: #sourceCode: ::
+	codeView := (  TextModelMorph textProvider: self textGetter: #sourceCode textSetter: #sourceCode:  )
 		askBeforeDiscardingEdits: false;
 		yourself.
-	drgeoView :=  LayoutMorph new ::
+	drgeoView := (   LayoutMorph new  )
 		color: self color;
 		borderWidth: 1;
 		layoutSpec: LayoutSpec useAll! !
@@ -7371,12 +7371,12 @@ keepSketch
 | modelName |
 	DrGeoSystem showVirtualKeyboard: true.
 	codeView scroller acceptContents.
-	modelName := ValueHolder with: self sketchName :: 
+	modelName := (  ValueHolder with: self sketchName  ) 
 	action: [:aString | 
 		self setLabel: aString.
 		file := DrGeoSystem mySmalltalkSketchesPath // (aString, '.st').
 		file < model].
-	StringEntryPanel openWide: modelName label: 'Name the sketch to keep.' translated ::
+	(StringEntryPanel openWide: modelName label: 'Name the sketch to keep.' translated) 
 		morphCenter: self fullBoundsInOwner center;
 		setProperty: #layerNumber toValue: 20! !
 
@@ -9380,7 +9380,7 @@ initialize
 
 !DrGCurveStraightMorph class methodsFor: 'instance creation' stamp: 'hlsf 2/11/2022 10:37:09'!
 from: start to: end color: color
-	^ self new ::
+	^ (  self new  )
 		from: start to: end;
 		borderColor: color
 		! !
@@ -11695,7 +11695,7 @@ pool
 	^ presenter drawable itemViews 
 		select: [:aMorph | aMorph itemExist and: [aMorph style isNotHidden]] 
 		thenCollect: [:aMorph | 
-			DrGeoTreeNode with: aMorph mathItem ::
+			(DrGeoTreeNode with: aMorph mathItem )
 				hasContents: aMorph mathItem parents isNil not ;
 				yourself]! !
 
@@ -11727,7 +11727,7 @@ update: symbol
 
 !DrGeoTree class methodsFor: 'instance creation' stamp: 'hlsf 8/4/2023 12:49:23'!
 on: aPresenter
-	^ self new ::
+	^ (  self new  )
 		presenter: aPresenter ;
 		yourself! !
 
@@ -26904,13 +26904,13 @@ colorForm: aColor
  | graphic |
 	graphic :=  aColor isTransparent
 		ifFalse: [
-			BoxedMorph new ::
+			BoxedMorph new 
 			morphExtent: self menuExtent;
 			color: aColor;
 			borderWidth: 1;
 			borderColor: Color black;
 			yourself] 
-		ifTrue: [Form extent: self menuExtent depth: 32 ::
+		ifTrue: [(Form extent: self menuExtent depth: 32 )
 			fillShape: self hatchForm fillColor: `Color white`;
 			yourself].
 	^ self iconWithBackground: graphic! !
@@ -26961,7 +26961,7 @@ point: pointSize color: color shape: shape
 !DrGIcons class methodsFor: 'form' stamp: 'hlsf 1/6/2022 21:55:51'!
 pointMorph: sizeSymbol color: color shape: shapeSymbol
 	| morph |
-	morph := DrGIconPointMorph new ::
+	morph := (  DrGIconPointMorph new  )
 		color: color.
 	(morph style) shape: shapeSymbol ;
 		pointSize: sizeSymbol.
@@ -26986,7 +26986,7 @@ segment: thick color: color dash: dash arrow: symbol
 segment: thick color: color mark: mark
 " #none #mark1 #mark2 #mark3 #disc #circle "
 	| morph |
-	morph := self segmentMorph: thick color: color dash: nil :: 
+	morph := (  self segmentMorph: thick color: color dash: nil  ) 
 		forcedMark: mark;
 		yourself.
 	^ self iconWithBackground: morph.
@@ -26994,7 +26994,7 @@ segment: thick color: color mark: mark
 
 !DrGIcons class methodsFor: 'form' stamp: 'hlsf 5/31/2023 18:02:30'!
 segmentMorph: thick color: color dash: dash
-	^ DrGIconSegmentMorph from: 0@0 to: self menuExtent x @0 color: color ::  
+	^ (  DrGIconSegmentMorph from: 0@0 to: self menuExtent x @0 color: color  )  
 		borderWidth: thick;
 		dashedBorder: dash;
 		yourself! !
@@ -27400,10 +27400,10 @@ button: symbolOrArray
 	array fourth = help string	"	
 	| array stateGetter |
 	array := self perform: (symbolOrArray, #ButtonData) asSymbol.
-	^ ButtonMorph 
+	^( ButtonMorph 
 		model: presenter
 		stateGetter: (stateGetter := array at: 5 ifAbsent: [ #isTool: ])
-		action: array third ::
+		action: array third) 
 		stateArgument: (stateGetter isUnary ifTrue: [nil] ifFalse: [array second]);
 		icon: (DrGIcons for: array second);
 		setBalloonText: array fourth;
@@ -27418,7 +27418,7 @@ button: symbolOrArray
 horizontalWheel 
 	| array |
 	array := self wheelXButtonData.
-	^ WheelMorph target: presenter actionSelector: array third :: 
+	^ (  WheelMorph target: presenter actionSelector: array third  ) 
 		beHorizontal; 
 		factor: 0.05; 
 		setBalloonText: array first;
@@ -27448,7 +27448,7 @@ propertyFor: aMathItem
 !DrGUIControlsManager methodsFor: 'widget access' stamp: 'hlsf 4/10/2022 14:48:13'!
 quickToolbar
 	quickToolbar ifNotNil: [^ quickToolbar].
-	quickToolbar := LayoutMorph newRow ::
+	quickToolbar := (  LayoutMorph newRow  )
 		separation: 5;
 		yourself.
 	self miscTools do: [:dataTool | 		quickToolbar addMorph: (self button: dataTool )		].
@@ -27527,7 +27527,7 @@ treeView
 verticalWheel 
 	| array |
 	array := self wheelYButtonData.
-	^  WheelMorph target: presenter actionSelector: array third :: 
+	^ (   WheelMorph target: presenter actionSelector: array third  ) 
 		beVertical; 
 		factor: 0.05; 
 		setBalloonText: array first; 
@@ -27541,7 +27541,7 @@ verticalWheel
 zoomWheel 
 	| array |
 	array := self wheelZButtonData.
-	^  WheelMorph target: presenter actionSelector: array third :: 
+	^ (   WheelMorph target: presenter actionSelector: array third  ) 
 		beVertical; 
 		factor: 1; 
 		setBalloonText: array first; 
@@ -27611,7 +27611,7 @@ exportIconSet
 
 !DrGUIControlsManager class methodsFor: 'instance creation' stamp: 'hlsf 8/4/2023 18:23:17'!
 for: aPresenter
-	^ self basicNew :: 
+	^ (  self basicNew  ) 
 		presenter: aPresenter;
 		initialize! !
 
@@ -27987,11 +27987,11 @@ Check the local resource or the server.' translated].
 exportToImageAs
 	| model |
 	DrGeoSystem showVirtualKeyboard: true.
-	model := ValueHolder with: (exportImageName ifNotNil: [:name | name] ifNil: ['']) :: 
+	model := (  ValueHolder with: (exportImageName ifNotNil: [:name | name] ifNil: [''])  ) 
 	action: [:aString | 
 		exportImageName := aString.
 		self exportToImage: exportImageName ].
-	StringEntryPanel openWide: model label: 'Name the image to keep.' translated ::
+	(StringEntryPanel openWide: model label: 'Name the image to keep.' translated) 
 		morphCenter: self view fullBoundsInOwner center;
 		setProperty: #layerNumber toValue: 20! !
 
@@ -28035,11 +28035,11 @@ saveSketch
 saveSketchAs
 | model |
 	DrGeoSystem showVirtualKeyboard: true.
-	model := ValueHolder with:'' :: 
+	model := (  ValueHolder with:''  ) 
 	action: [:aString | 
 		sketchName := aString.
 		self saveSketch].
-	StringEntryPanel openWide: model label: 'Name the sketch to keep.' translated ::
+	(StringEntryPanel openWide: model label: 'Name the sketch to keep.' translated) 
 		morphCenter: self view fullBoundsInOwner center;
 		setProperty: #layerNumber toValue: 20! !
 
@@ -28339,12 +28339,12 @@ editScript
 	"We force to select mode, then open a browser on the script classes"
 	self move.
 	menu := MenuMorph entitled: 'Edit or create scripts' translated.
-	DrGWizardScript sortedScripts do: [:aScriptClass |
+	(DrGWizardScript sortedScripts do: [:aScriptClass |
 		menu 
 			add: aScriptClass scriptName 
 			target: self 
 			action: #editScript: 
-			argument: aScriptClass ::
+			argument: aScriptClass)
 			setBalloonText: aScriptClass description].
 	menu popUpInWorld.
 	self changed! !
@@ -28354,7 +28354,7 @@ editScript: aScriptClass
 	|  browser |
 	browser := Browser new setClass: aScriptClass selector: #compute.
 	browser when: #annotationChanged send: #updateAllMathItems to: self domain.
-	^ MessageSetWindow new model: browser ::
+	^ (  MessageSetWindow new model: browser  )
 		buildNoSysCatMorphicWindow;
 		setLabel:  'Edit or create scripts' translated;
 		openInWorld;
@@ -28581,7 +28581,7 @@ serviceXml: fileEntry
 !DrGeo class methodsFor: 'instance creation' stamp: 'hlsf 8/4/2023 18:03:35'!
 service
 "instanciate a DrGeo service, to embbed in third party Morph. It is just the canvas without surounding menu and icon"
-	^ self basicNew ::
+	^ (  self basicNew  )
 		initializeService;
 		yourself! !
 
@@ -28676,37 +28676,37 @@ Are you sure to quit Dr. Geo environment?' translated) ifFalse: [ ^ self]].
 !DrGeo class methodsFor: 'user interface' stamp: 'hlsf 8/3/2023 21:48:27'!
 toolsMenu: builder
 	<drgeoWorldMenu>
-	builder newEntry: 'System Browser' translated in: 'Tools' translated ::
+	(builder newEntry: 'System Browser' translated in: 'Tools' translated) 
 		icon: #developmentIcon;
 		action: [HierarchyBrowserWindow onClass: DrGeoSketch selector: nil];
 		help:'A source code browser to view, edit and save Dr. Geo code. I open the browser on the DrGeoSketch class you can study to design your own Smalltalk sketch.'	translated;
 		order: 40.
 
-	builder newEntry: 'Smalltalk Sketch Editor' translated in: 'Tools' translated ::
+	(builder newEntry: 'Smalltalk Sketch Editor' translated in: 'Tools' translated )
 		icon: #textEditorIcon;
 		help: 'An editor to write and to test new Smalltalk sketch.' 	translated;
 		action: [DrGSmalltalkSketchEditor open: '' label: 'Edit Smalltalk Sketch' translated.];
 		order: 20.
 
-	builder newEntry: 'Browse Smalltalk Sketches' translated in: 'Tools' translated ::
+	(builder newEntry: 'Browse Smalltalk Sketches' translated in: 'Tools' translated) 
 		icon: #scriptIcon;
 		help: 'A tool to browse and to test both system and personal Smalltalk Sketches.' 	translated;
 		action: [DrGSmalltalkSketchBrowser open: DrGeoSystem smalltalkSketchesPath label: 'Browse' translated.];
 		order: 10.
 
-	builder newEntry: 'Workspace' translated in: 'Tools' translated ::
+	(builder newEntry: 'Workspace' translated in: 'Tools' translated) 
 		icon: #terminalIcon;
 		action: [Workspace openWorkspace ];
 		help: 'A window used as a scratchpad area where fragments of Cuis-Smalltalk code can be entered, stored, edited, and evaluated.'	translated;
 		order: 30.
 		
-	builder newEntry: 'Open a file' translated in: 'Tools' translated ::
+	(builder newEntry: 'Open a file' translated in: 'Tools' translated) 
 		icon: #systemFileManagerIcon;
 		action: [FileListWindow openFileList];
 		help: 'Open the filer on your personal sketches collection.' translated;
 		order: 50.
 		
-	builder newEntry: 'Save session' translated in: 'Tools' translated ::
+	(builder newEntry: 'Save session' translated in: 'Tools' translated) 
 		order: 999;
 		action: [Smalltalk saveImage];
 		icon:	 #saveIcon;
@@ -28715,29 +28715,29 @@ toolsMenu: builder
 !DrGeo class methodsFor: 'user interface' stamp: 'hlsf 8/8/2023 19:13:55'!
 worldMenu: builder
 	<drgeoWorldMenu>
-	builder newEntry: 'New sketch' translated ::
+	(builder newEntry: 'New sketch' translated)
 		icon: #newIcon;
 		action: [DrGeo new];
 		order: 0.
-	builder newEntry: 'Open a sketch' translated ::
+	(builder newEntry: 'Open a sketch' translated)
 		icon: #openIcon;
 		action: [DrGFileOpenMorph open];
 		order: 1.
-	builder newEntry: 'Toggle full screen mode' translated ::
+	(builder newEntry: 'Toggle full screen mode' translated)
 		icon: #viewFullscreenIcon;
 		action: [DrGeoSystem toggleFullscreen];
 		help: 'Turn full screen mode on when it is off, off when it is on.'	translated;
 		order: 2.
-	builder newEntry: 'Settings' translated ::
+	(builder newEntry: 'Settings' translated)
 		icon: #preferencesIcon;
 		action: [PreferenceBrowser open: DrGeoSystem preferences label: 'Dr. Geo Preferences' translated.];
 		order: 3.
-	builder newEntry: 'Tools' translated ::
+	(builder newEntry: 'Tools' translated)
 		icon:	 #systemIcon.
-	builder newEntry: 'About' translated ::
+	(builder newEntry: 'About' translated)
 		action: [ DrGeo aboutDrgeo ];
 		order: 7.
-	builder newEntry:  'Quit' translated ::
+	(builder newEntry:  'Quit' translated)
 		action: [ DrGeo quit ];
 		icon: #quitIcon;
 		order: 999! !
@@ -28944,7 +28944,7 @@ new
 
 !DrGTool class methodsFor: 'instance creation' stamp: 'hlsf 2/13/2022 11:06:20'!
 presenter: aPresenter
-	^ self basicNew ::
+	^ (  self basicNew  )
 		presenter: aPresenter;
 		initialize;
 		yourself! !
@@ -29057,7 +29057,7 @@ presenter: aPresenter
 
 !DrGBuildTool class methodsFor: 'instance creation' stamp: 'hlsf 2/13/2022 11:09:38'!
 builder: aBuilderClassName presenter: aPresenter
-	^self basicNew ::
+	^ ( self basicNew  )
 		builder: aBuilderClassName new;
 		presenter: aPresenter;
 		initialize;
@@ -29247,7 +29247,7 @@ mathItemTool: aBuilderClassName
 
 !DrGFlyBuildTool class methodsFor: 'as yet unclassified' stamp: 'hlsf 2/13/2022 11:18:03'!
 builder: aBuilderClass presenter: aPresenter
-	^self basicNew ::
+	^ ( self basicNew  )
 		presenter: aPresenter ;
 		mathItemTool: aBuilderClass ;
 		initialize ;
@@ -32051,11 +32051,11 @@ colorMorphCollection
 !DrGStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:13:24'!
 colorWidget
 	^ self 	widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self 
 			listGetter: #colorMorphCollection 
 			indexGetter: #colorIndex
-			indexSetter: #colorIndex: ::
+			indexSetter: #colorIndex:) 
 			autoDeselect: false;
 			yourself)
 		named:  'Colour' translated
@@ -32063,34 +32063,31 @@ colorWidget
 
 !DrGStyle methodsFor: 'widget' stamp: 'hlsf 2/12/2022 14:42:43'!
 feedbackWidget
-	^ PluggableCheckboxMorph 
+	^ (PluggableCheckboxMorph 
 		model: self 
 		getSelected: #feedback 
 		setSelected:  #feedback:
-		label: 'Feedback' translated 
-		::
+		label: 'Feedback' translated )
 		setBalloonText:  'Toggle to provide feedback and interaction when the mouse cursor is over the object.' translated;
 		yourself! !
 
 !DrGStyle methodsFor: 'widget' stamp: 'hlsf 2/12/2022 14:43:09'!
 hiddenWidget
-	^ PluggableCheckboxMorph 
+	^ (PluggableCheckboxMorph 
 		model: self 
 		getSelected: #hidden 
 		setSelected: #hidden:
-		label: 'Hide' translated 
-		::
+		label: 'Hide' translated )
 		setBalloonText:  'Toggle to hide the object.' translated;
 		yourself! !
 
 !DrGStyle methodsFor: 'widget' stamp: 'hlsf 2/12/2022 14:43:28'!
 lockedWidget
-	^ PluggableCheckboxMorph 
+	^ (PluggableCheckboxMorph 
 		model: morph
 		getSelected: #locked
 		setSelected: #locked: 
-		label:  'Lock' translated 
-		::
+		label:  'Lock' translated )
 		setBalloonText: 'Toggle to lock the object to its position.' translated;
 		yourself! !
 
@@ -32102,7 +32099,7 @@ myWidgets
 !DrGStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:56:27'!
 nameWidget
  | inputWidget |
-	inputWidget := TextModelMorph 			textProvider: morph 			textGetter: #name 			textSetter: #name: ::
+	inputWidget := (  TextModelMorph 			textProvider: morph 			textGetter: #name 			textSetter: #name:  )
 			hideScrollBarsIndefinitely;
 			askBeforeDiscardingEdits: false;
 			acceptOnCR: true;
@@ -32129,7 +32126,7 @@ styleWidget
 !DrGStyle methodsFor: 'widget' stamp: 'hlsf 2/14/2022 09:01:21'!
 widget: aWidget named: aLabel help: aString
 | label |
-	^ LayoutMorph newRow ::
+	^ (  LayoutMorph newRow  )
 		separation: 5;
 		color: Color transparent;
 		axisEdgeWeight: #rowLeft;
@@ -32165,11 +32162,11 @@ lineStyleIndex: integer
 !DrGCurveStyle methodsFor: 'widget' stamp: 'hlsf 6/5/2022 12:38:11'!
 lineWidget
 	^ self widget:  (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self 
 			listGetter: #styleMorphCollection
 			indexGetter: #lineStyleIndex
-			indexSetter: #lineStyleIndex:	 ::
+			indexSetter: #lineStyleIndex:	)
 			autoDeselect: false;
 			yourself)
 		named: 'Style' translated 
@@ -32202,11 +32199,11 @@ thicknessMorphCollection
 !DrGCurveStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:13:49'!
 thicknessWidget
 	^ self widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self 
 			listGetter: #thicknessMorphCollection 
 			indexGetter: #thicknessIndex 
-			indexSetter: #thicknessIndex: ::
+			indexSetter: #thicknessIndex:)
 			autoDeselect: false;
 			yourself)			
 		named: 'Thickness' translated
@@ -32305,11 +32302,11 @@ arrowMorphCollection
 !DrGFinitCurveStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:13:55'!
 arrowWidget
 	^ self widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self
 			listGetter: #arrowMorphCollection  
 			indexGetter: #arrowIndex 
-			indexSetter: #arrowIndex: ::
+			indexSetter: #arrowIndex:) 
 			autoDeselect: false;
 			yourself)
 		named: 'Arrow' translated 
@@ -32338,12 +32335,11 @@ writeAttributesTo: aNode
 
 !DrGFilledStyle methodsFor: 'widget' stamp: 'hlsf 2/12/2022 15:59:50'!
 fillWidget
-	^ PluggableCheckboxMorph 
+	^ (PluggableCheckboxMorph 
 		model: self
 		getSelected: #fill
 		setSelected:  #fill:
-		label: 'Fill' translated
-		::
+		label: 'Fill' translated)
 		setBalloonText:  'Toggle to fill the object.' translated;
 		yourself! !
 
@@ -32353,12 +32349,11 @@ myWidgets
 
 !DrGFilledStyle methodsFor: 'widget' stamp: 'hlsf 2/12/2022 15:58:11'!
 translucentWidget
-	^ PluggableCheckboxMorph 
+	^ (PluggableCheckboxMorph 
 		model: self
 		getSelected: #translucent 
 		setSelected: #translucent:
-		label: 'Translucent' translated
-		::
+		label: 'Translucent' translated)
 		setBalloonText: 'Toggle the translucency of the object.' translated;
 		yourself! !
 
@@ -32460,11 +32455,11 @@ markMorphCollection
 !DrGSegmentStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:14:22'!
 markWidget
 	^ self widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self
 			listGetter: #markMorphCollection
 			indexGetter: #markIndex
-			indexSetter: #markIndex: ::
+			indexSetter: #markIndex:) 
 			autoDeselect: false;
 			yourself)
 		named: 'Mark' translated 
@@ -32531,11 +32526,11 @@ shapeMorphCollection
 !DrGPointStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:14:43'!
 shapeWidget
 	^  self widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self 
 			listGetter: #shapeMorphCollection 
 			indexGetter: #shapeIndex 
-			indexSetter: #shapeIndex: ::
+			indexSetter: #shapeIndex:) 
 			autoDeselect: false;
 			yourself)
 		named:  'Shape' translated
@@ -32548,11 +32543,11 @@ sizeMorphCollection
 !DrGPointStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:14:49'!
 sizeWidget
 	^ self widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self 
 			listGetter: #sizeMorphCollection 
 			indexGetter: #pointSizeIndex
-			indexSetter: #pointSizeIndex: ::
+			indexSetter: #pointSizeIndex:)
 			autoDeselect: false;
 			yourself)
 		named: 'Size' translated 
@@ -32758,11 +32753,11 @@ backgroundMorphCollection
 !DrGTextStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:14:58'!
 backgroundWidget
 	^  self widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self 
 			listGetter: #backgroundMorphCollection 
 			indexGetter: #backgroundColorIndex  
-			indexSetter: #backgroundColorIndex: ::
+			indexSetter: #backgroundColorIndex:)
 			autoDeselect: false;
 			yourself)
 		named: 'Background' translated 
@@ -32771,11 +32766,11 @@ backgroundWidget
 !DrGTextStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:15:31'!
 borderWidget
 	^  self widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self 
 			listGetter: #backgroundMorphCollection 
 			indexGetter: #borderColorIndex  
-			indexSetter: #borderColorIndex: ::
+			indexSetter: #borderColorIndex:)
 			autoDeselect: false;
 			yourself)
 		named: 'Border' translated 
@@ -32784,11 +32779,11 @@ borderWidget
 !DrGTextStyle methodsFor: 'widget' stamp: 'hlsf 3/24/2022 11:37:47'!
 fontSizeWidget
 	^ self widget: (
-		DropDownButtonMorph 
+		(DropDownButtonMorph 
 			model: self 
 			listGetter:  #fontSizesMorphCollection
 			indexGetter:  #fontSizeIndex 
-			indexSetter: #fontSizeIndex: ::
+			indexSetter: #fontSizeIndex:) 
 			autoDeselect: false;
 			yourself)
 		named: 'Font size' translated
@@ -33953,11 +33948,11 @@ someDrGeoAction: aDocCode
 !PreferenceBrowserVisitor methodsFor: '*DrGeo-visitors type' stamp: 'hlsf 7/6/2022 10:53:34'!
 visitDrGTypeArrowPreference: aPref
 	| listMorph |
-	listMorph  := DropDownButtonMorph 
+	listMorph  := (DropDownButtonMorph 
 		model: aPref type 
 		listGetter: #arrowMorphCollection 
 		indexGetter: #arrowIndex 
-		indexSetter: #arrowIndex: ::
+		indexSetter: #arrowIndex:) 
 		autoDeselect: false;
 		setBalloonText: aPref description.
 	views at: aPref nameDetailed put: listMorph! !
@@ -33965,11 +33960,11 @@ visitDrGTypeArrowPreference: aPref
 !PreferenceBrowserVisitor methodsFor: '*DrGeo-visitors type' stamp: 'hlsf 7/6/2022 10:53:40'!
 visitDrGTypeColorPreference: aPref
 	| listMorph |
-	listMorph  := DropDownButtonMorph 
+	listMorph  := (DropDownButtonMorph 
 		model: aPref type 
 		listGetter: #colorMorphCollection 
 		indexGetter: #colorIndex 
-		indexSetter: #colorIndex: ::
+		indexSetter: #colorIndex:) 
 		autoDeselect: false;
 		setBalloonText: aPref description.
 	views at: aPref nameDetailed put: listMorph! !
@@ -33977,11 +33972,11 @@ visitDrGTypeColorPreference: aPref
 !PreferenceBrowserVisitor methodsFor: '*DrGeo-visitors type' stamp: 'hlsf 7/6/2022 10:53:46'!
 visitDrGTypeMarkPreference: aPref
 	| listMorph |
-	listMorph  := DropDownButtonMorph 
+	listMorph  := (DropDownButtonMorph 
 		model: aPref type 
 		listGetter: #markMorphCollection 
 		indexGetter: #markIndex 
-		indexSetter: #markIndex: ::
+		indexSetter: #markIndex:) 
 		autoDeselect: false;
 		setBalloonText: aPref description.
 	views at: aPref nameDetailed put: listMorph! !
@@ -33989,11 +33984,11 @@ visitDrGTypeMarkPreference: aPref
 !PreferenceBrowserVisitor methodsFor: '*DrGeo-visitors type' stamp: 'hlsf 7/6/2022 10:53:51'!
 visitDrGTypePointShapePreference: aPref
 	| listMorph |
-	listMorph  := DropDownButtonMorph 
+	listMorph  := (DropDownButtonMorph 
 		model: aPref type 
 		listGetter: #shapeMorphCollection 
 		indexGetter: #pointShapeIndex 
-		indexSetter: #pointShapeIndex: ::
+		indexSetter: #pointShapeIndex:) 
 		autoDeselect: false;
 		setBalloonText: aPref description.
 	views at: aPref nameDetailed put: listMorph! !
@@ -34001,11 +33996,11 @@ visitDrGTypePointShapePreference: aPref
 !PreferenceBrowserVisitor methodsFor: '*DrGeo-visitors type' stamp: 'hlsf 7/6/2022 10:53:58'!
 visitDrGTypePointSizePreference: aPref
 	| listMorph |
-	listMorph  := DropDownButtonMorph 
+	listMorph  := (DropDownButtonMorph 
 		model: aPref type 
 		listGetter: #sizeMorphCollection 
 		indexGetter: #pointSizeIndex 
-		indexSetter: #pointSizeIndex: ::
+		indexSetter: #pointSizeIndex:) 
 		autoDeselect: false;
 		setBalloonText: aPref description.
 	views at: aPref nameDetailed put: listMorph! !
@@ -34013,11 +34008,11 @@ visitDrGTypePointSizePreference: aPref
 !PreferenceBrowserVisitor methodsFor: '*DrGeo-visitors type' stamp: 'hlsf 7/6/2022 10:54:04'!
 visitDrGTypeStylePreference: aPref
 	| listMorph |
-	listMorph  := DropDownButtonMorph 
+	listMorph  := (DropDownButtonMorph 
 		model: aPref type 
 		listGetter: #styleMorphCollection 
 		indexGetter: #styleIndex 
-		indexSetter: #styleIndex: ::
+		indexSetter: #styleIndex:) 
 		autoDeselect: false;
 		setBalloonText: aPref description.
 	views at: aPref nameDetailed put: listMorph! !
@@ -34025,11 +34020,11 @@ visitDrGTypeStylePreference: aPref
 !PreferenceBrowserVisitor methodsFor: '*DrGeo-visitors type' stamp: 'hlsf 7/6/2022 10:54:09'!
 visitDrGTypeThicknessPreference: aPref
 	| listMorph |
-	listMorph  := DropDownButtonMorph 
+	listMorph  := (DropDownButtonMorph 
 		model: aPref type 
 		listGetter: #thicknessMorphCollection 
 		indexGetter: #thicknessIndex 
-		indexSetter: #thicknessIndex: ::
+		indexSetter: #thicknessIndex:) 
 		autoDeselect: false;
 		setBalloonText: aPref description.
 	views at: aPref nameDetailed put: listMorph! !
