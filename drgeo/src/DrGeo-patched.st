@@ -6719,18 +6719,18 @@ addArgument
 		adoptWidgetsColor: widgetsColor;
 		borderWidth: 1;
 		yourself.
-	newArgument addMorph: ((PluggableButtonMorph model: self action: #removeArgument:) 
+	newArgument addMorph: ((PluggableButtonMorph model: self action: #removeArgument:)
 			icon: Theme current deleteIcon;
 			actionArgument: newArgument;
 			borderWidth: 0;
 			color: Color transparent;
 			setBalloonText:  'Remove this script argument.' translated;
 			yourself);		
-		addMorph: (DropDownListMorph 
+		addMorph: ((DropDownListMorph 
 			model: (ListModel with: self class labels)
 			listGetter: #list
 			indexGetter:  #listIndex
-			indexSetter: #listIndex:) 
+			indexSetter: #listIndex:)
 			adoptWidgetsColor: widgetsColor ).
 	argumentsMorph addMorph: newArgument.
 	self morphExtent: self minimumExtent ! !
