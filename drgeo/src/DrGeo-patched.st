@@ -33327,7 +33327,7 @@ beWorkstation
 !DrGeoSystem class methodsFor: 'class initialization' stamp: 'Install-DrGeoFrench 12/7/2022 16:16:08'!
 initialize
 	"Erudite extention for Dr. Geo"
-	EruditeMarkupGrammar addCodeAction: 'withDrGeoActions'! !
+	"EruditeMarkupGrammar addCodeAction: 'withDrGeoActions'" ! !
 
 !DrGeoSystem class methodsFor: 'class initialization' stamp: 'hlsf 7/3/2022 12:50:46'!
 reset
