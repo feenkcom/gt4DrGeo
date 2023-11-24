@@ -28333,21 +28333,21 @@ deleteMacro
 	selectedTool := #deleteMacro.
 	self changed! !
 
-!DrGeo methodsFor: 'callback create' stamp: 'hlsf 4/7/2022 15:40:15'!
-editScript
-	| menu |
-	"We force to select mode, then open a browser on the script classes"
-	self move.
-	menu := MenuMorph entitled: 'Edit or create scripts' translated.
-	(DrGWizardScript sortedScripts do: [:aScriptClass |
-		menu 
-			add: aScriptClass scriptName 
-			target: self 
-			action: #editScript: 
-			argument: aScriptClass)
-			setBalloonText: aScriptClass description].
-	menu popUpInWorld.
-	self changed! !
+	!DrGeo methodsFor: 'callback create' stamp: 'hlsf 4/7/2022 15:40:15'!
+	editScript
+		| menu |
+		"We force to select mode, then open a browser on the script classes"
+		self move.
+		menu := MenuMorph entitled: 'Edit or create scripts' translated.
+		DrGWizardScript sortedScripts do: [:aScriptClass |
+			(menu 
+				add: aScriptClass scriptName 
+				target: self 
+				action: #editScript: 
+				argument: aScriptClass)
+				setBalloonText: aScriptClass description].
+		menu popUpInWorld.
+		self changed! !
 
 !DrGeo methodsFor: 'callback create' stamp: 'hlsf 4/7/2022 18:05:34'!
 editScript: aScriptClass
