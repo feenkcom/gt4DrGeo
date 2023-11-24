@@ -33747,8 +33747,9 @@ hexHtml
 	^ '#', self hexStringRGB ! !
 
 !Class methodsFor: '*DrGeo-subclass creation' stamp: 'hlsf 4/18/2020 21:29:40'!
-subclass: t instanceVariableNames: f classVariableNames: d package: cat
-"This is a hack to import DrGeo Pharo code"
+xsubclass: t instanceVariableNames: f classVariableNames: d package: cat
+"This is a hack to import DrGeo Pharo code.
+Code is broken so we suppress this."
 	
 	| answer |
 	answer := ClassBuilder new
