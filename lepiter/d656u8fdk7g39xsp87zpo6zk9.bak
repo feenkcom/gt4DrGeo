@@ -426,7 +426,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:21:12.054246+01:00"
+									"dateAndTimeString" : "2023-11-24T16:21:31.473904+01:00"
 								}
 							},
 							"uid" : {
@@ -436,10 +436,10 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Now we discover the Cuis Smalltalk backquote (compound literal) operator. It seems we can "
+							"string" : "Now we discover the Cuis Smalltalk backquote (compound literal) operator. It seems we can simply remove these as they are just a compile-time optimization."
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -452,7 +452,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:13:36.938487+01:00"
+									"dateAndTimeString" : "2023-11-24T16:25:39.908498+01:00"
 								}
 							},
 							"editEmail" : {
@@ -463,14 +463,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:20:12.098234+01:00"
+									"dateAndTimeString" : "2023-11-24T16:25:42.440594+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "KrYpIknHDQCiDfnEC492Sg=="
+								"uidString" : "kVxBTUnHDQCaw95TCSWaBQ=="
 							},
-							"code" : "{ 3@4 . 56 . 'click me'}"
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We find some s"
 						}
 					]
 				},
