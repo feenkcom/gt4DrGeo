@@ -6715,7 +6715,7 @@ initialize
 !DrGScriptDesignerDialog methodsFor: 'action' stamp: 'hlsf 5/27/2023 12:12:17'!
 addArgument
 	| newArgument |
-	newArgument := ((  LayoutMorph newRow  )
+	newArgument := LayoutMorph newRow
 		adoptWidgetsColor: widgetsColor;
 		borderWidth: 1;
 		yourself.
