@@ -537,7 +537,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:49:37.248652+01:00"
+									"dateAndTimeString" : "2023-11-24T16:49:46.335152+01:00"
 								}
 							},
 							"uid" : {
@@ -547,7 +547,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "`DrGeoSystem>>#initialize` fi"
+							"string" : "`DrGeoSystem>>#initialize` files — we comment out the code."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-11-24T16:57:27.970583+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-11-24T16:58:11.564685+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qBT8vknHDQCLzeLaAGANaA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Dr Geo overrides {{gtMethod:name=Class>>#subclass:instanceVariableNames:classVariableNames:package:}}, but this code is broken, so we rename it in the code to `xsubclass"
 						},
 						{
 							"__type" : "textSnippet",
