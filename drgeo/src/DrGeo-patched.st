@@ -6082,10 +6082,10 @@ customButtonSpecs
 	"Answer an array of elements of the form wording, selector, help-message, that characterize the custom button row of a debugger."
 
 	^{
-		{'Restart' translated . #		restart	 . 		'Restart the step by step execution from its start.' translated } .
-		{'Step'	 translated . 	#	doStep .			 'Execute the current message and go to the next message.' translated } .
+		{'Restart' translated . #restart	 . 		'Restart the step by step execution from its start.' translated } .
+		{'Step'	 translated . 	#doStep .			 'Execute the current message and go to the next message.' translated } .
 		{'Step into'		 translated . #stepIntoBlock		 . 'Step into a block.' translated } .
-		{'Run to Cursor' translated . #		runToCursor	 . 	'Execute the code up to the cursor position.' translated }
+		{'Run to Cursor' translated . #runToCursor	 . 	'Execute the code up to the cursor position.' translated }
 	}! !
 
 !DrGDebuggerWindow methodsFor: 'GUI building' stamp: 'hlsf 10/13/2022 15:20:08'!
