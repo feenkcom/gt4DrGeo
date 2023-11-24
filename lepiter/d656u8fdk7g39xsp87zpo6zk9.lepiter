@@ -611,12 +611,49 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:26:08.258027+01:00"
+									"dateAndTimeString" : "2023-11-24T17:04:40.28301+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "JfHxTknHDQCbrrCvCSWaBQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We succeed to load overything, but of course most of the code is broken ..."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-11-24T17:04:40.640664+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-11-24T17:04:40.640664+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "HhrG2EnHDQCPvdx+AGANaA=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"

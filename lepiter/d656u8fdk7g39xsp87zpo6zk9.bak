@@ -574,7 +574,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:58:11.564685+01:00"
+									"dateAndTimeString" : "2023-11-24T16:58:14.793624+01:00"
 								}
 							},
 							"uid" : {
@@ -584,7 +584,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Dr Geo overrides {{gtMethod:name=Class>>#subclass:instanceVariableNames:classVariableNames:package:}}, but this code is broken, so we rename it in the code to `xsubclass"
+							"string" : "Dr Geo overrides {{gtMethod:name=Class>>#subclass:instanceVariableNames:classVariableNames:package:}}, but this code is broken, so we rename it in the code to `xsubclass:...`."
 						},
 						{
 							"__type" : "textSnippet",
@@ -611,7 +611,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:26:08.258027+01:00"
+									"dateAndTimeString" : "2023-11-24T17:04:34.241266+01:00"
 								}
 							},
 							"uid" : {
@@ -621,7 +621,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "We succeed to load overything, but of course most of t"
 						},
 						{
 							"__type" : "textSnippet",
