@@ -402,6 +402,43 @@
 							"string" : "We now get errors due to the `::` syntax extension of Cui Smalltalk. We patch those manually."
 						},
 						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-11-24T16:18:19.392902+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-11-24T16:21:12.054246+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "iKD/MknHDQCii96WC492Sg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Now we discover the Cuis Smalltalk backquote (compound literal) operator. It seems we can "
+						},
+						{
 							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -426,14 +463,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:13:37.45724+01:00"
+									"dateAndTimeString" : "2023-11-24T16:20:12.098234+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "KrYpIknHDQCiDfnEC492Sg=="
 							},
-							"code" : "drGeoSrcPatched := FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'src'\r\t\t/ 'DrGeo-patched.st'.\rmissingClasses := #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph MorphDummy PreferenceType).\rmissingClasses\r\tdo: [ :eachClass | \r\t\tObject\r\t\t\tsubclass: eachClass\r\t\t\tinstanceVariableNames: ''\r\t\t\tclassVariableNames: ''\r\t\t\tpackage: 'DrGeo-Missing' ].\rdrGeoSrcPatched fileIn."
+							"code" : "{ 3@4 . 56 . 'click me'}"
 						}
 					]
 				},

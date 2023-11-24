@@ -402,7 +402,7 @@
 							"string" : "We now get errors due to the `::` syntax extension of Cui Smalltalk. We patch those manually."
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -415,7 +415,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:13:36.938487+01:00"
+									"dateAndTimeString" : "2023-11-24T16:18:19.392902+01:00"
 								}
 							},
 							"editEmail" : {
@@ -426,14 +426,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T16:13:48.899879+01:00"
+									"dateAndTimeString" : "2023-11-24T16:21:31.473904+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "KrYpIknHDQCiDfnEC492Sg=="
+								"uidString" : "iKD/MknHDQCii96WC492Sg=="
 							},
-							"code" : "drGeoSrcPatched2 := FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'src'\r\t\t/ 'DrGeo-patched2.st'.\rmissingClasses := #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph MorphDummy PreferenceType).\rmissingClasses\r\tdo: [ :eachClass | \r\t\tObject\r\t\t\tsubclass: eachClass\r\t\t\tinstanceVariableNames: ''\r\t\t\tclassVariableNames: ''\r\t\t\tpackage: 'DrGeo-Missing' ].\rdrGeoSrcPatched2 fileIn."
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Now we discover the Cuis Smalltalk backquote (compound literal) operator. It seems we can simply remove these as they are just a compile-time optimization."
 						}
 					]
 				},
