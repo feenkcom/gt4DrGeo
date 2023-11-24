@@ -5954,7 +5954,7 @@ self flag: #drgeoTodo! !
 
 !DrGeoMiniView methodsFor: 'initialize-release' stamp: 'hlsf 4/10/2022 17:18:04'!
 defaultColor
-	^ `(Color r: 0.986 g: 0.986 b: 0.986)`! !
+	^ (Color r: 0.986 g: 0.986 b: 0.986)! !
 
 !DrGeoMiniView methodsFor: 'initialize-release'!
 deleteWithoutConfirmation
@@ -7797,8 +7797,8 @@ drawAxesOn: aCanvas
 			self drawGradX: x origin: origin on: aCanvas font: font].
 		"orientation"
 		p := extent x - 2 @ origin y.
-		aCanvas line: p  to: p - `4 @ 4` width: 1 color: Color lightGray;
-			line: p to: p - `4 @ -4` width: 1 color: Color lightGray].
+		aCanvas line: p  to: p - 4 @ 4 width: 1 color: Color lightGray;
+			line: p to: p - 4 @ -4 width: 1 color: Color lightGray].
 	
 	"y-axis"
 	(origin x > 0 and: [origin x < extent x]) ifTrue: [
@@ -7814,12 +7814,12 @@ drawAxesOn: aCanvas
 			self drawGradY: y origin: origin on: aCanvas font: font].
 		"orientations"
 		p :=  origin x @ 0.
-		aCanvas line: p  to: p + `4 @ 4` width: 1 color: Color lightGray;
-			line: p to: p + `-4 @ 4` width: 1 color: Color lightGray].
+		aCanvas line: p  to: p + 4 @ 4 width: 1 color: Color lightGray;
+			line: p to: p + -4 @ 4 width: 1 color: Color lightGray].
 
 	"The origin"
 	(self morphLocalBounds containsPoint: origin) ifTrue: [
-		aCanvas drawString: '0'  at: (origin + `2@2`) font: font color: Color lightGray].
+		aCanvas drawString: '0'  at: (origin + 2@2) font: font color: Color lightGray].
 ! !
 
 !DrGDrawable methodsFor: 'drawing axes & grid' stamp: 'hlsf 3/9/2022 22:11:11'!
@@ -7830,7 +7830,7 @@ drawGradX: x origin: origin on: canvas font: font
 	str := self labelForAxes: x.
 	shift := self gridVisible ifTrue: [2@6] ifFalse: [(font widthOfString: str) / -2.0 @6].
 	canvas drawString: str  at: pos + shift font: font color: Color lightGray.
-	canvas line: pos - `0@2` to: pos + `0@2` width: 1.5 color: Color lightGray.! !
+	canvas line: pos - 0@2 to: pos + 0@2 width: 1.5 color: Color lightGray.! !
 
 !DrGDrawable methodsFor: 'drawing axes & grid' stamp: 'hlsf 3/9/2022 22:11:23'!
 drawGradY: y origin: origin on: canvas font: font
@@ -7843,7 +7843,7 @@ drawGradY: y origin: origin on: canvas font: font
 		at: pos + shift 
 		font: font 
 		color: Color lightGray.
-	canvas line: pos - `2@0` to: pos + `2@0`  width: 1.5 color: Color lightGray.! !
+	canvas line: pos - 2@0 to: pos + 2@0  width: 1.5 color: Color lightGray.! !
 
 !DrGDrawable methodsFor: 'drawing axes & grid' stamp: 'hlsf 11/1/2022 20:30:25'!
 drawGridOn: aCanvas
@@ -8443,7 +8443,7 @@ removeLabelMorph
 !DrGMorph methodsFor: 'label' stamp: 'hlsf 3/14/2023 21:01:38'!
 computeLabelPositionDelta: aVector
 	| distance  |
-	labelMorph ifNil: [ ^ `0 @ 0` ].
+	labelMorph ifNil: [ ^ 0 @ 0 ].
 	"Authorized distance to the item"
 	distance := aVector r min: 40.
 	labelPositionDelta := aVector normalized * distance - labelMorph morphCenter! !
@@ -8781,7 +8781,7 @@ drawArcOn: canvas
 			arcTo: vector2 
 			radius: 15 
 			angleOfXAxis: 0 
-			largeFlag: (length abs > `Float pi`)  
+			largeFlag: (length abs > Float pi)  
 			sweepFlag: length negative	]! !
 
 !DrGAngleGeometricMorph methodsFor: 'drawing' stamp: 'hlsf 6/5/2021 14:41:00'!
@@ -9390,7 +9390,7 @@ from: origin direction: u
 	| points |
 	points := self class extend: origin inDirection: u toBorder: self drawable morphExtent.
 	points size < 2 
-		ifTrue: [self from: `-1 @0` to: `-1 @0` "off-limit, empy draw"]
+		ifTrue: [self from: -1 @0 to: -1 @0 "off-limit, empy draw"]
 		ifFalse: [	self from: points first to: points second]! !
 
 !DrGLineMorph methodsFor: 'accessing' stamp: 'hlsf 5/30/2021 09:54:00'!
@@ -9854,7 +9854,7 @@ drawOn: aCanvas
 		at: bound origin
 		extent: bound extent
 		color: color
-		selectionColor: `Color red`.! !
+		selectionColor: Color red.! !
 
 !DrGTextMorph methodsFor: 'accessing' stamp: 'hlsf 5/24/2023 18:41:11'!
 compose: aStringOrText
@@ -9949,7 +9949,7 @@ drawOn: aCanvas
 		at: bound origin
 		extent: bound extent
 		color: color
-		selectionColor: `Color red`.! !
+		selectionColor: Color red.! !
 
 !DrGValueMorph methodsFor: 'label' stamp: 'hlsf 4/6/2021 19:34:44'!
 constrainedLabelPosition: aVector
@@ -9963,7 +9963,7 @@ isValue
 contents
 	^ item parents 
 		ifNotNil: [:array | array collect: [:each | DrGeoTreeNode with: each] ]
-		ifNil: [`#()`]! !
+		ifNil: [#()]! !
 
 !DrGeoTreeNode methodsFor: 'as yet unclassified' stamp: 'hlsf 2/10/2022 17:12:39'!
 hasContents
@@ -11556,7 +11556,7 @@ pointShapeIndexOf: pointShape
 
 !DrGTypePointShape class methodsFor: 'accessing' stamp: 'hlsf 6/5/2022 12:01:43'!
 pointShapeSymbols
-	^ `#(#cross #round #square)`! !
+	^ #(#cross #round #square)! !
 
 !DrGTypePointShape class methodsFor: 'accessing' stamp: 'hlsf 6/5/2022 11:03:01'!
 shapeMorphCollection
@@ -11595,7 +11595,7 @@ pointSizeIndexOf: aSize
 
 !DrGTypePointSize class methodsFor: 'accessing' stamp: 'hlsf 6/5/2022 12:01:51'!
 pointSizeSymbols
-	^ `#(#small #medium #large)`! !
+	^ #(#small #medium #large)! !
 
 !DrGTypePointSize class methodsFor: 'accessing' stamp: 'hlsf 6/4/2022 14:49:50'!
 sizeMorphCollection: aShape
@@ -11674,7 +11674,7 @@ thicknessMorphCollection
 
 !DrGTypeThickness class methodsFor: 'accessing' stamp: 'hlsf 6/5/2022 12:01:35'!
 thicknessSymbols
-	^ `#(#small #medium #large)`! !
+	^ #(#small #medium #large)! !
 
 !DrGTypeThickness class methodsFor: 'accessing' stamp: 'hlsf 6/5/2022 12:02:59'!
 widthFor: aThickness
@@ -26911,7 +26911,7 @@ colorForm: aColor
 			borderColor: Color black;
 			yourself] 
 		ifTrue: [(Form extent: self menuExtent depth: 32 )
-			fillShape: self hatchForm fillColor: `Color white`;
+			fillShape: self hatchForm fillColor: Color white;
 			yourself].
 	^ self iconWithBackground: graphic! !
 
@@ -30855,7 +30855,7 @@ finalizePath: ensureClosePath
 initializePath
 "Perform any initialization needed before starting a Path"
 	firstPoint := nil.
-	currentPoint := `0.0@0.0`.
+	currentPoint := 0.0@0.0.
 ! !
 
 !DrGSvgCanvas methodsFor: 'private' stamp: 'hlsf 5/31/2023 19:46:06'!
@@ -33386,7 +33386,7 @@ canvasFontSize
 
 !DrGeoSystem class methodsFor: 'font' stamp: 'hlsf 12/10/2022 18:52:30'!
 europeanLang
-	^ `#(#ast #ca #cs #da #de #en #es #fi #fr #it #nl #pt #ru #sv #tr #uk)`! !
+	^ #(#ast #ca #cs #da #de #en #es #fi #fr #it #nl #pt #ru #sv #tr #uk)! !
 
 !DrGeoSystem class methodsFor: 'font' stamp: 'hlsf 12/10/2022 18:23:26'!
 fontFile
@@ -33887,7 +33887,7 @@ morphCenter
 !BoxedMorph methodsFor: '*DrGeo' stamp: 'hlsf 1/3/2022 08:55:19'!
 morphCenter: aPoint
 "Positionning centered in its owner, according to its extent"
-	self morphPosition: aPoint - (extent // 2) + (`1@1`)! !
+	self morphPosition: aPoint - (extent // 2) + (1@1)! !
 
 !MenuItemMorph methodsFor: '*DrGeo' stamp: 'hlsf 1/3/2022 09:01:34'!
 arguments
