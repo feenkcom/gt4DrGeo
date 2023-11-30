@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:32:48.839375+01:00"
+						"dateAndTimeString" : "2023-11-30T09:13:04.189476+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:32:48.841384+01:00"
+						"dateAndTimeString" : "2023-11-30T09:13:48.767467+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "rQTAXkTHDQCKSzGID/1mZg=="
+					"uidString" : "hHDf87vHDQCRvrgaA34GQA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Porting Dr Geo]]"
+				"string" : "We can only run DrGeo inside a Linux image, since the Mac version does not work on a modern Intel or M1 Mac. But we should be able to run Cuis on a Mac and then load in DrGeo. How to do this?"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:48:33.013963+01:00"
+						"dateAndTimeString" : "2023-11-30T09:13:49.036157+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:48:33.018848+01:00"
+						"dateAndTimeString" : "2023-11-30T09:14:20.545026+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "z9GHl0THDQCYBIiKD/1mZg=="
+					"uidString" : "MhTl97vHDQCWDfCpA34GQA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Exploring the Dr Geo code]]"
+				"string" : "We can find the downloads at [](https://cuis.st)."
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T14:47:36.41488+01:00"
+						"dateAndTimeString" : "2023-11-30T09:23:16.89201+01:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T14:47:37.068254+01:00"
+						"dateAndTimeString" : "2023-11-30T09:23:48.120625+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "PHF47kfHDQCv45cnCe133g=="
+					"uidString" : "+8TkErzHDQCWzW6JA34GQA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Loading Dr Geo code]] "
+				"string" : "NB: To run Cuis, right click on `Squeak-jit.app` to force the Mac to open it, and then select the image file to open."
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-30T09:12:28.424717+01:00"
+						"dateAndTimeString" : "2023-11-30T09:27:47.808764+01:00"
 					}
 				},
 				"editEmail" : {
@@ -140,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-30T09:12:40.080078+01:00"
+						"dateAndTimeString" : "2023-11-30T09:29:59.324369+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "qwgX87vHDQCRLD+tA34GQA=="
+					"uidString" : "UPmeG7zHDQCaAUW3A34GQA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Loading DrGeo into Cuis]] "
+				"string" : "If we try to file in `DrGeo.pck.st` then it fails due to the missing SVC support."
 			},
 			{
 				"__type" : "textSnippet",
@@ -166,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:32:50.0981+01:00"
+						"dateAndTimeString" : "2023-11-30T09:29:59.975856+01:00"
 					}
 				},
 				"editEmail" : {
@@ -177,12 +177,86 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:32:50.0981+01:00"
+						"dateAndTimeString" : "2023-11-30T09:30:00.560989+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "8rBvX0THDQCKbYuBD/1mZg=="
+					"uidString" : "Z3LEMbzHDQCbm7DdA34GQA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "H"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-11-30T09:14:20.84904+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-11-30T09:14:20.84904+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3YHK+bvHDQCWyBuNA34GQA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-11-30T09:13:49.294211+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-11-30T09:13:49.294211+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "zwPp97vHDQCWEt5fA34GQA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -199,7 +273,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-11-24T10:32:45.550271+01:00"
+			"dateAndTimeString" : "2023-11-30T09:12:41.528063+01:00"
 		}
 	},
 	"editEmail" : {
@@ -210,15 +284,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-11-24T10:32:45.550271+01:00"
+			"dateAndTimeString" : "2023-11-30T09:12:41.528063+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Dr Geo ToC"
+		"title" : "Loading DrGeo into Cuis"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "70aebf5e-44c7-0d00-8a4a-84840ffd6666"
+		"uuid" : "83fedef3-bbc7-0d00-91bd-3db6037e0640"
 	}
 }
