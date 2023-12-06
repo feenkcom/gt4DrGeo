@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:32:48.839375+01:00"
+						"dateAndTimeString" : "2023-12-06T13:47:40.821989+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:32:48.841384+01:00"
+						"dateAndTimeString" : "2023-12-06T13:47:57.506619+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "rQTAXkTHDQCKSzGID/1mZg=="
+					"uidString" : "AH5afjjIDQCEnSGgAQhI5w=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Porting Dr Geo]]"
+				"string" : "Start with the sketch tests. Look at {{gtMethod:name=DrGeoScriptTest>>#testAbscissaOfPoint}}. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:48:33.013963+01:00"
+						"dateAndTimeString" : "2023-12-06T14:04:53.286573+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,85 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:48:33.018848+01:00"
+						"dateAndTimeString" : "2023-12-06T14:05:39.263443+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "z9GHl0THDQCYBIiKD/1mZg=="
+					"uidString" : "/ZzkuzjIDQCHA2lbAQhI5w=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Exploring the Dr Geo code]]"
+				"string" : "The problem with these tests is that they use sketches, which create both the model and view instances. We want to test the model separately. "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-12-06T13:48:35.235471+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-12-06T13:48:35.235471+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rq+YgTjIDQCFpxKqAQhI5w=="
+				},
+				"code" : "sketch := DrGeoScriptTestResource current sketch.\rpoint := sketch point: 10@15."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-12-06T13:50:46.52603+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-12-06T13:52:29.282835+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "vBFsiTjIDQCGfES1AQhI5w=="
+				},
+				"code" : "(DrGPointFreeItem newWith: {10@15})."
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +160,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T14:47:36.41488+01:00"
+						"dateAndTimeString" : "2023-12-06T13:49:45.063417+01:00"
 					}
 				},
 				"editEmail" : {
@@ -103,95 +171,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-12-06T11:05:20.065137+01:00"
+						"dateAndTimeString" : "2023-12-06T13:49:55.928477+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "PHF47kfHDQCv45cnCe133g=="
+					"uidString" : "QT7ChTjIDQCFtC0QAQhI5w=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Loading Dr Geo code into GT]] "
+				"string" : "We fail already here, talking to Morph."
 			},
 			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T11:05:30.661105+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T11:05:42.217131+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "1P5jOjbIDQC04lOZBsghuQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Exploring Dr Geo in Cuis]] "
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-30T09:12:28.424717+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-30T09:12:40.080078+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "qwgX87vHDQCRLD+tA34GQA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[Loading DrGeo into Cuis]] "
-			},
-			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -204,7 +197,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:32:50.0981+01:00"
+						"dateAndTimeString" : "2023-12-06T13:48:05.797446+01:00"
 					}
 				},
 				"editEmail" : {
@@ -215,17 +208,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T10:32:50.0981+01:00"
+						"dateAndTimeString" : "2023-12-06T13:49:41.912123+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "8rBvX0THDQCKbYuBD/1mZg=="
+					"uidString" : "v4jXfzjIDQCFi24yAQhI5w=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "coordinate := sketch abscissaOf: point.\rself should: (coordinate mathItem valueItem closeTo: 10)."
 			}
 		]
 	},
@@ -237,7 +227,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-11-24T10:32:45.550271+01:00"
+			"dateAndTimeString" : "2023-12-06T13:47:40.754058+01:00"
 		}
 	},
 	"editEmail" : {
@@ -248,15 +238,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-11-24T10:32:45.550271+01:00"
+			"dateAndTimeString" : "2023-12-06T13:47:40.754058+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Dr Geo ToC"
+		"title" : "Testing the model"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "70aebf5e-44c7-0d00-8a4a-84840ffd6666"
+		"uuid" : "0d73597e-38c8-0d00-849c-211d010848e7"
 	}
 }

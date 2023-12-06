@@ -8,5 +8,5 @@ GtHome >> drGeoSection [
 		description: 'Porting Dr Geo to GT';
 		databaseName: 'feenkcom/gt4DrGeo/lepiter';
 		startPageName: 'Porting Dr Geo';
-		priority: 5
+		priority: 10
 ]
