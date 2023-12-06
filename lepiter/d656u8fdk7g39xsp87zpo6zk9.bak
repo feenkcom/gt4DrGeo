@@ -105,7 +105,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-30T09:41:46.829367+01:00"
+									"dateAndTimeString" : "2023-11-30T09:42:15.358002+01:00"
 								}
 							},
 							"uid" : {
@@ -115,7 +115,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Then we can browse {{gtPackage:name=DrGeo}}. "
+							"string" : "Then we can browse {{gtPackage:name=DrGeo-Model}}. "
 						},
 						{
 							"__type" : "textSnippet",

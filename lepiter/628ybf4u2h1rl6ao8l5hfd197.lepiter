@@ -530,7 +530,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-24T14:47:29.036373+01:00"
+						"dateAndTimeString" : "2023-12-06T11:05:20.05921+01:00"
 					}
 				},
 				"uid" : {
@@ -540,7 +540,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We try simply [[Loading Dr Geo code]] ..."
+				"string" : "We try simply [[Loading Dr Geo code into GT]] ..."
 			}
 		]
 	},
