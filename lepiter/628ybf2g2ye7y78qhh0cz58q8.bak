@@ -215,7 +215,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-08T09:33:04.2776+01:00"
+						"dateAndTimeString" : "2024-01-08T09:56:33.226033+01:00"
 					}
 				},
 				"uid" : {
@@ -225,7 +225,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Hilaire]] Fernandes says the model and view code are cleanly separated, so it should be feasible to port the graphics implementation to Bloc without impacting the model code."
+				"string" : "[Hilaire]] Fernandes says the model and view code are cleanly separated, so it should be feasible to port the graphics implementation to Bloc without impacting the model code."
 			},
 			{
 				"__type" : "textSnippet",
@@ -331,7 +331,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:31:09.812594+01:00"
+									"dateAndTimeString" : "2024-01-08T09:51:32.433895+01:00"
 								}
 							},
 							"uid" : {
@@ -341,7 +341,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Loading Dr Geo from the GH repo]]"
+							"string" : "[[To do: Loading Dr Geo from the GH repo]]"
 						},
 						{
 							"__type" : "textSnippet",
