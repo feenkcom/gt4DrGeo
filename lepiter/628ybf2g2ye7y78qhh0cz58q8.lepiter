@@ -331,7 +331,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:31:09.812594+01:00"
+									"dateAndTimeString" : "2024-01-08T09:51:32.433895+01:00"
 								}
 							},
 							"uid" : {
@@ -341,7 +341,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Loading Dr Geo from the GH repo]]"
+							"string" : "[[To do: Loading Dr Geo from the GH repo]]"
 						},
 						{
 							"__type" : "textSnippet",
