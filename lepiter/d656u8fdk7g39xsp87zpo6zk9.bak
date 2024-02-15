@@ -34,7 +34,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:30:26.598997+01:00"
+									"dateAndTimeString" : "2024-01-08T09:30:47.56908+01:00"
 								}
 							},
 							"uid" : {
@@ -44,7 +44,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We start froma source file provided by Hilaire."
+							"string" : "We start from a source file provided by Hilaire."
 						},
 						{
 							"__type" : "textSnippet",
@@ -1079,12 +1079,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-12-06T11:05:20.044932+01:00"
+			"dateAndTimeString" : "2024-01-08T09:30:55.27157+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Loading Dr Geo code into GT"
+		"title" : "Loading Dr Geo source code into GT"
 	},
 	"uid" : {
 		"__type" : "uuid",
