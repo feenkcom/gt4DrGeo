@@ -368,7 +368,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:51:32.433895+01:00"
+									"dateAndTimeString" : "2024-02-15T10:14:19.55933+01:00"
 								}
 							},
 							"uid" : {
@@ -378,51 +378,13 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[To do: Loading Dr Geo from the GH repo]]"
+							"string" : "[[Loading Dr Geo from the GH repo]]"
 						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-12-06T11:05:30.661105+01:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-12-06T11:05:42.217131+01:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "1P5jOjbIDQC04lOZBsghuQ=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "[[Exploring Dr Geo in Cuis]] "
-									}
-								]
+								"items" : [ ]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -469,7 +431,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-24T10:32:50.0981+01:00"
+									"dateAndTimeString" : "2023-12-06T11:05:30.661105+01:00"
 								}
 							},
 							"editEmail" : {
@@ -480,17 +442,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T13:47:39.682073+01:00"
+									"dateAndTimeString" : "2023-12-06T11:05:42.217131+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "8rBvX0THDQCKbYuBD/1mZg=="
+								"uidString" : "1P5jOjbIDQC04lOZBsghuQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Testing the model]] "
+							"string" : "[[Exploring Dr Geo in Cuis]] "
 						},
 						{
 							"__type" : "textSnippet",
@@ -506,7 +468,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-15T09:16:43.069052+01:00"
+									"dateAndTimeString" : "2023-11-24T10:32:50.0981+01:00"
 								}
 							},
 							"editEmail" : {
@@ -517,7 +479,44 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-15T09:16:47.278853+01:00"
+									"dateAndTimeString" : "2024-02-15T10:17:16.559163+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "8rBvX0THDQCKbYuBD/1mZg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Exploring tests]] "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-15T10:23:43.541983+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-15T10:23:43.541983+01:00"
 								}
 							},
 							"uid" : {
@@ -527,7 +526,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[New repo]] "
+							"string" : ""
 						}
 					]
 				},
