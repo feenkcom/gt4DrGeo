@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:28:33.069471+01:00"
+						"dateAndTimeString" : "2024-02-23T16:43:31.852515+01:00"
 					}
 				},
 				"uid" : {
@@ -77,6 +77,115 @@
 					"__type" : "textStyle"
 				},
 				"string" : "See also [[First attempt to load Dr Geo source code into GT]] "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T16:44:12.441343+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T16:44:26.883364+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "I9EJKXDODQC1gumJDVCATg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Here you can load a new version of the patched fileIn. See below for the details."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T16:43:44.566018+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T16:43:58.481527+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "gQp3KXDODQC1iQryDVCATg=="
+							},
+							"code" : "missingClasses := #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor).\rmissingClasses\r\tdo: [ :eachClass | \r\t\tObject\r\t\t\tsubclass: eachClass\r\t\t\tinstanceVariableNames: ''\r\t\t\tclassVariableNames: ''\r\t\t\tpackage: 'DrGeo-Missing' ].\rdrGeoSrcPatched := FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo'\r\t\t/ 'src' / 'DrGeo.pck-patched-2024-02-23.st'.\rdrGeoSrcPatched fileIn."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T16:43:32.906659+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T16:43:36.830542+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "PCTFKHDODQC1W55HDVCATg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# TL;DR"
 			},
 			{
 				"__type" : "textSnippet",
@@ -190,111 +299,6 @@
 								"uidString" : "ESlDI2zODQC6P4BQA2s0fg=="
 							},
 							"code" : "drgeoRepo := 'DrGeo' asFileReference.\rdrgeoRepo ensureDeleteAll.\rrepo := 'git@github.com:hilaire/drgeo.git'.\rrepository := IceRepositoryCreator fromUrl: repo to: drgeoRepo.\rdrgeoRepo."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.632343+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.632343+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "GSlDI2zODQC6QDCCA2s0fg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Let's try to understand what exactly is loaded."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.632346+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.632346+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "HClDI2zODQC6Qd0zA2s0fg=="
-							},
-							"code" : "drgeoRepo / 'startIDE.sh'."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.63235+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.63235+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "IClDI2zODQC6QmUBA2s0fg=="
-							},
-							"code" : "drgeoRepo / 'src/setupDrGeoDevelopment.st'."
 						},
 						{
 							"__type" : "textSnippet",
@@ -539,14 +543,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T16:26:29.281274+01:00"
+												"dateAndTimeString" : "2024-02-23T16:46:03.383655+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "PClDI2zODQC6SrXyA2s0fg=="
 										},
-										"code" : "(RPackageOrganizer default packages \r\tselect: [ :p | p name beginsWith: 'DrGeo' ])\r"
+										"code" : "(RPackageOrganizer default packages\r\tselect: [ :p | p name beginsWith: 'DrGeo-' ])\r\t\tdo: #removeFromSystem."
 									},
 									{
 										"__type" : "textSnippet",
@@ -562,7 +566,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T11:55:40.632383+01:00"
+												"dateAndTimeString" : "2024-02-23T16:47:18.159386+01:00"
 											}
 										},
 										"editEmail" : {
@@ -573,17 +577,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T11:55:40.632383+01:00"
+												"dateAndTimeString" : "2024-02-23T16:47:38.400037+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "QSlDI2zODQC6SyShA2s0fg=="
+											"uidString" : "GjoyNnDODQCmmiMUCGIv1A=="
 										},
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Warning: if we leave off the hyphen the image freezes!"
+										"string" : "Warning: deleting the main DrGeo package itself with its extensions will freeze the image!"
 									}
 								]
 							},
@@ -606,7 +610,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T16:26:35.004962+01:00"
+									"dateAndTimeString" : "2024-02-23T16:45:53.15591+01:00"
 								}
 							},
 							"uid" : {
@@ -616,7 +620,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "All the packages:"
+							"string" : "Remove all the packages:"
 						}
 					]
 				},
@@ -971,7 +975,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T11:55:40.635449+01:00"
+						"dateAndTimeString" : "2024-02-23T16:44:37.705764+01:00"
 					}
 				},
 				"uid" : {
@@ -981,7 +985,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Things to fix"
+				"string" : "# Patches"
 			},
 			{
 				"__type" : "textSnippet",
