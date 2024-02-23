@@ -429,14 +429,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:31:38.186583+01:00"
+									"dateAndTimeString" : "2024-02-23T10:58:30.134164+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "2na19mrODQCV0JtKAj31PQ=="
 							},
-							"code" : "missingClasses := #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph MorphDummy PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor).\rmissingClasses\r\tdo: [ :eachClass | \r\t\tObject\r\t\t\tsubclass: eachClass\r\t\t\tinstanceVariableNames: ''\r\t\t\tclassVariableNames: ''\r\t\t\tpackage: 'DrGeo-Missing' ]."
+							"code" : "missingClasses := #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor).\rmissingClasses\r\tdo: [ :eachClass | \r\t\tObject\r\t\t\tsubclass: eachClass\r\t\t\tinstanceVariableNames: ''\r\t\t\tclassVariableNames: ''\r\t\t\tpackage: 'DrGeo-Missing' ]."
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -502,14 +502,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T10:31:41.625259+01:00"
+												"dateAndTimeString" : "2024-02-23T10:58:50.945395+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "wTio9GrODQCU9EUUAj31PQ=="
 										},
-										"code" : "(RPackageOrganizer default packages select: [ :p | p name beginsWith: 'DrGeo-' ])\r\tdo: #removeFromSystem."
+										"code" : "(RPackageOrganizer default packages select: [ :p | p name beginsWith: 'DrGeo' ])\r\tdo: #removeFromSystem."
 									}
 								]
 							},
