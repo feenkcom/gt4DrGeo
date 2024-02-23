@@ -23,7 +23,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:29:44.942235+01:00"
+									"dateAndTimeString" : "2024-02-23T10:26:51.270401+01:00"
 								}
 							},
 							"editEmail" : {
@@ -34,17 +34,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:30:47.56908+01:00"
+									"dateAndTimeString" : "2024-02-23T10:27:37.76657+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "k6iuvMzKDQC4iU1RB9Njvg=="
+								"uidString" : "oImb5WrODQCQBuyJAj31PQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We start from a source file provided by Hilaire."
+							"string" : "This describes our first experiment to load the source file provided by Hilaire. Now the code has been moved to GitHub, and the non-standard syntax issues resolved."
 						},
 						{
 							"__type" : "textSnippet",
@@ -142,7 +142,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-15T08:56:53.702525+01:00"
+									"dateAndTimeString" : "2024-02-23T10:35:53.213279+01:00"
 								}
 							},
 							"uid" : {
@@ -152,7 +152,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Then we can browse {{gtPackage:name=DrGeo-Model}}.  "
+							"string" : "Then we can browse {{gtPackage:name=DrGeo}}.   "
 						},
 						{
 							"__type" : "textSnippet",
@@ -1079,12 +1079,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-01-08T09:30:55.27157+01:00"
+			"dateAndTimeString" : "2024-02-23T10:28:33.056792+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Loading Dr Geo source code into GT"
+		"title" : "First attempt to load Dr Geo source code into GT"
 	},
 	"uid" : {
 		"__type" : "uuid",
