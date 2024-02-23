@@ -332,7 +332,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-12-06T11:04:44.279844+01:00"
+												"dateAndTimeString" : "2023-12-06T11:04:53.818549+01:00"
 											}
 										},
 										"uid" : {
@@ -342,7 +342,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Compiler evaluate: (Smalltalk imageName asFileEntry parent / 'drgeo' / 'src' // 'setupDrGeoDevelopment.st') textContents"
+										"string" : "Compiler evaluate: (Smalltalk imageName asFileEntry parent / 'drgeo' / 'src' // 'setupDrGeoDevelopment.st') textContents."
 									}
 								]
 							},

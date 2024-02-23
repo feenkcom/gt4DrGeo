@@ -103,14 +103,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-12-06T10:54:32.657724+01:00"
+						"dateAndTimeString" : "2024-02-23T10:20:17.240173+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "vUuPCjbIDQCnhbFIBsghuQ=="
 				},
-				"code" : "FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'install-DrGeo.command'"
+				"code" : "FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'DrGeo-build-IDE.command'."
 			},
 			{
 				"__type" : "textSnippet",
