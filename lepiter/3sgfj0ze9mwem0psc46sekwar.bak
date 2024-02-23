@@ -18,6 +18,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T10:26:08.150559+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T10:26:08.150559+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GJUJ42rODQCOof/nAj31PQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2023-12-06T10:50:37.733765+01:00"
 					}
 				},
@@ -103,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-12-06T10:54:32.657724+01:00"
+						"dateAndTimeString" : "2024-02-23T10:20:17.240173+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "vUuPCjbIDQCnhbFIBsghuQ=="
 				},
-				"code" : "FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'install-DrGeo.command'"
+				"code" : "FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'DrGeo-build-IDE.command'."
 			},
 			{
 				"__type" : "textSnippet",
@@ -137,7 +174,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-12-06T11:03:59.796011+01:00"
+						"dateAndTimeString" : "2024-02-23T10:22:18.409943+01:00"
 					}
 				},
 				"uid" : {
@@ -147,7 +184,44 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Copy this script to the folder where you want to install Squeak, Cuis and DrGeo."
+				"string" : "Copy this script to the folder where you want to install Squeak, Cuis and DrGeo and run it."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T10:22:18.938478+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T10:23:07.187649+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "5RZg1WrODQCG0fGXAj31PQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "It will create a Cuis folder, clone and install the Cuis and DrGeo code, copy the Cuis image, start it and run the DrGeo build script."
 			},
 			{
 				"__type" : "textSnippet",
@@ -168,7 +242,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T10:54:58.733758+01:00"
+									"dateAndTimeString" : "2024-02-23T10:23:21.824895+01:00"
 								}
 							},
 							"editEmail" : {
@@ -179,278 +253,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T10:56:07.382331+01:00"
+									"dateAndTimeString" : "2024-02-23T10:23:33.526917+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "wo65FDbIDQCpsEX7BsghuQ=="
+								"uidString" : "cqUf2WrODQCK9Z/nAj31PQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "• Install mac port and bzr (see [instructions](https://ports.macports.org/port/bzr/))"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T10:55:09.143122+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T10:59:03.54821+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "dWNYFTbIDQCqOw/CBsghuQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "• Download Squeak and install it in the folder containing the install script (get the latest stable download from the [github repo](https://github.com/OpenSmalltalk/opensmalltalk-vm))"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T10:58:09.48058+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T10:58:36.228629+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "hR8YIDbIDQCsdUXVBsghuQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "• Run the install script. Interrupt it when it hangs at the very end"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T10:58:36.625029+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T11:02:13.079248+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "xU+2ITbIDQCt2K7ABsghuQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "• Manually run Squeak.app and open the `drgeoIDE.image` in the `Cuis/Cuis-Smalltalk-Dev` folder"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-12-06T11:02:50.995317+01:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-12-06T11:04:53.818549+01:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "7arfMDbIDQCxPikNBsghuQ=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "Compiler evaluate: (Smalltalk imageName asFileEntry parent / 'drgeo' / 'src' // 'setupDrGeoDevelopment.st') textContents."
-									}
-								]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T11:02:13.961858+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T11:02:50.618934+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "NpyqLjbIDQCwU0pYBsghuQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "• Evaluate this snippet in the Dr Geo image:"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-12-06T11:03:15.747818+01:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-12-06T11:03:20.272607+01:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "nWNZMjbIDQCyRV8CBsghuQ=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "DrGeoSystem beDevelopment.\nDrGeo new."
-									}
-								]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T11:02:54.585638+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-12-06T11:03:15.320484+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "YHEWMTbIDQCxTLw7BsghuQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "• Start up Dr Geo with this snippet:"
+							"string" : "Transcript\n#('Compiler evaluate contents of file named: ' 'drgeo/src/setupDrGeoDevelopment.st' ' arguments: ' #())\nInstalled ChangeSet: [r6.2]-6157-UseOfSizeForCopy-GeraldKlix-2024Feb01-21h27m-KLG.001.cs.st\nInstalled ChangeSet: [r6.2]-6158-LogStartupNotice-JuanVuletich-2024Feb11-15h48m-jmv.001.cs.st\nCuis6.2\nlatest update: #6158\nRunning at :/Users/oscar/Desktop/GT/DrGeo/Cuis/Cuis6-2/CuisImage/Cuis6.2.image\nCould not find code package file for [Gettext].\nInstallation of [DrGeo] failed.\nAttempt to create DrGeoTutorial as a subclass of nil.  Possibly a class is being loaded before its superclass.\nAttempt to create DrGeoFigure as a subclass of nil.  Possibly a class is being loaded before its superclass.\nMessageNotUnderstood: UndefinedObject>>methodsFor:\nwhile evaluating: DrGWrappedItem methodsFor: '*DrGeoFrench'\n"
 						}
 					]
 				},
@@ -462,7 +275,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-12-06T10:54:52.18496+01:00"
+						"dateAndTimeString" : "2024-02-23T10:23:08.525475+01:00"
 					}
 				},
 				"editEmail" : {
@@ -473,17 +286,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-12-06T10:54:57.869048+01:00"
+						"dateAndTimeString" : "2024-02-23T10:23:21.364303+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "zwPp97vHDQCWEt5fA34GQA=="
+					"uidString" : "NbpU2GrODQCKCuYTAj31PQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We have to do the following:"
+				"string" : "Currently this fails due to a missing package."
 			}
 		]
 	},
@@ -506,12 +319,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-11-30T09:12:41.528063+01:00"
+			"dateAndTimeString" : "2024-02-23T10:26:05.373149+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Loading DrGeo into Cuis"
+		"title" : "Creating a DrGeo IDE image in Cuis"
 	},
 	"uid" : {
 		"__type" : "uuid",
