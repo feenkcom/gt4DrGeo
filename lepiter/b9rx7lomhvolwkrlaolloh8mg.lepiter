@@ -97,7 +97,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:47:55.558173+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.63229+01:00"
 								}
 							},
 							"editEmail" : {
@@ -108,12 +108,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:48:16.529942+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.63229+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "Uyaw/czKDQCWn85tDFfOeg=="
+								"uidString" : "9yhDI2zODQC6PcnGA2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -134,7 +134,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:43:08.464837+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632323+01:00"
 								}
 							},
 							"editEmail" : {
@@ -145,12 +145,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:48:26.744671+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632323+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "nnST7MzKDQCUy1EPDFfOeg=="
+								"uidString" : "BylDI2zODQC6PgcPA2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -171,7 +171,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:43:56.11913+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632334+01:00"
 								}
 							},
 							"editEmail" : {
@@ -182,12 +182,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:52:16.360101+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632334+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "tphq78zKDQCU1v/0DFfOeg=="
+								"uidString" : "ESlDI2zODQC6P4BQA2s0fg=="
 							},
 							"code" : "drgeoRepo := 'DrGeo' asFileReference.\rdrgeoRepo ensureDeleteAll.\rrepo := 'git@github.com:hilaire/drgeo.git'.\rrepository := IceRepositoryCreator fromUrl: repo to: drgeoRepo.\rdrgeoRepo."
 						},
@@ -205,7 +205,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:52:57.208068+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632343+01:00"
 								}
 							},
 							"editEmail" : {
@@ -216,12 +216,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:53:09.965852+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632343+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "a/aqD83KDQCYiPiJDFfOeg=="
+								"uidString" : "GSlDI2zODQC6QDCCA2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -242,7 +242,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:51:45.412614+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632346+01:00"
 								}
 							},
 							"editEmail" : {
@@ -253,12 +253,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:53:45.289857+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632346+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "SnJjC83KDQCYaLYfDFfOeg=="
+								"uidString" : "HClDI2zODQC6Qd0zA2s0fg=="
 							},
 							"code" : "drgeoRepo / 'startIDE.sh'."
 						},
@@ -276,7 +276,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:53:45.906897+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.63235+01:00"
 								}
 							},
 							"editEmail" : {
@@ -287,12 +287,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-01-08T09:54:26.184555+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.63235+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "dQqSEs3KDQCZ0jq9DFfOeg=="
+								"uidString" : "IClDI2zODQC6QmUBA2s0fg=="
 							},
 							"code" : "drgeoRepo / 'src/setupDrGeoDevelopment.st'."
 						},
@@ -310,7 +310,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-15T10:12:18.511435+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632354+01:00"
 								}
 							},
 							"editEmail" : {
@@ -321,12 +321,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-15T10:12:49.379191+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632354+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "iUvbwsnNDQCUHQrxAXM8zQ=="
+								"uidString" : "IylDI2zODQC6Q0oUA2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -347,7 +347,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-15T10:12:50.911208+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632357+01:00"
 								}
 							},
 							"editEmail" : {
@@ -358,12 +358,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-15T10:13:31.319911+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632357+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "D6zJxMnNDQCWUpE+AXM8zQ=="
+								"uidString" : "JylDI2zODQC6RH10A2s0fg=="
 							},
 							"code" : "'DrGeo/src/DrGeo.pck.st' asFileReference."
 						},
@@ -381,7 +381,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:29:44.25963+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.63236+01:00"
 								}
 							},
 							"editEmail" : {
@@ -392,12 +392,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:30:01.975994+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.63236+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "5CXr72rODQCTv4CCAj31PQ=="
+								"uidString" : "KilDI2zODQC6RUtEA2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -418,7 +418,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:31:38.186583+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632365+01:00"
 								}
 							},
 							"editEmail" : {
@@ -429,12 +429,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:58:30.134164+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632365+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "2na19mrODQCV0JtKAj31PQ=="
+								"uidString" : "LilDI2zODQC6RmIcA2s0fg=="
 							},
 							"code" : "missingClasses := #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor).\rmissingClasses\r\tdo: [ :eachClass | \r\t\tObject\r\t\t\tsubclass: eachClass\r\t\t\tinstanceVariableNames: ''\r\t\t\tclassVariableNames: ''\r\t\t\tpackage: 'DrGeo-Missing' ]."
 						},
@@ -452,7 +452,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:30:03.258947+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632368+01:00"
 								}
 							},
 							"editEmail" : {
@@ -463,14 +463,51 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:31:38.187593+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632368+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "AgwN8WrODQCU3DNrAj31PQ=="
+								"uidString" : "MSlDI2zODQC6R07eA2s0fg=="
 							},
 							"code" : "drGeoSrc := 'DrGeo/src/DrGeo.pck.st' asFileReference.\rdrGeoSrc fileIn."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.632372+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.632372+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "NSlDI2zODQC6SAE+A2s0fg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "This one generates lots of errors."
 						},
 						{
 							"__type" : "textSnippet",
@@ -491,7 +528,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T10:31:03.759465+01:00"
+												"dateAndTimeString" : "2024-02-23T11:55:40.632378+01:00"
 											}
 										},
 										"editEmail" : {
@@ -502,14 +539,51 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T10:58:50.945395+01:00"
+												"dateAndTimeString" : "2024-02-23T11:55:40.632378+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "wTio9GrODQCU9EUUAj31PQ=="
+											"uidString" : "PClDI2zODQC6SrXyA2s0fg=="
 										},
-										"code" : "(RPackageOrganizer default packages select: [ :p | p name beginsWith: 'DrGeo' ])\r\tdo: #removeFromSystem."
+										"code" : "(RPackageOrganizer default packages \r\tselect: [ :p | p name beginsWith: 'DrGeo-' ])\r\t\tdo: #removeFromSystem."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.632383+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.632383+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "QSlDI2zODQC6SyShA2s0fg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Warning: if we leave off the hyphen the image freezes!"
 									}
 								]
 							},
@@ -521,7 +595,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:31:12.42102+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632375+01:00"
 								}
 							},
 							"editEmail" : {
@@ -532,12 +606,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:56:54.45383+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.632375+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "92Es9WrODQCU/TVzAj31PQ=="
+								"uidString" : "OSlDI2zODQC6SZa2A2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -554,7 +628,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-08T09:32:18.904771+01:00"
+						"dateAndTimeString" : "2024-02-23T11:55:40.632251+01:00"
 					}
 				},
 				"editEmail" : {
@@ -565,12 +639,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:28:59.912166+01:00"
+						"dateAndTimeString" : "2024-02-23T11:55:40.632251+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "lfHbxczKDQC9EiddB9Njvg=="
+					"uidString" : "yyhDI2zODQC6PHKRA2s0fg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -596,7 +670,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:38:17.822471+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635507+01:00"
 								}
 							},
 							"editEmail" : {
@@ -607,12 +681,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:48:45.828351+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635507+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "tqc7DmvODQCZIt5SAj31PQ=="
+								"uidString" : "izVDI2zODQC6TYjxA2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -633,7 +707,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:48:53.476274+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635553+01:00"
 								}
 							},
 							"editEmail" : {
@@ -644,12 +718,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:49:19.700798+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635553+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "+MxqNGvODQCfbwAbAj31PQ=="
+								"uidString" : "pDVDI2zODQC6TqxwA2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -670,7 +744,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:48:54.938747+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635562+01:00"
 								}
 							},
 							"editEmail" : {
@@ -681,12 +755,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:51:31.301453+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635562+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "3h2BNGvODQCfc20ZAj31PQ=="
+								"uidString" : "rDVDI2zODQC6TxE9A2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -712,7 +786,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T10:53:51.889426+01:00"
+												"dateAndTimeString" : "2024-02-23T11:55:40.63557+01:00"
 											}
 										},
 										"editEmail" : {
@@ -723,12 +797,12 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T10:53:54.826097+01:00"
+												"dateAndTimeString" : "2024-02-23T11:55:40.63557+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "hDo0RmvODQCjG0CnAj31PQ=="
+											"uidString" : "szVDI2zODQC6USLqA2s0fg=="
 										},
 										"paragraphStyle" : {
 											"__type" : "textStyle"
@@ -745,7 +819,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:51:32.874845+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635566+01:00"
 								}
 							},
 							"editEmail" : {
@@ -756,12 +830,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:54:19.013949+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635566+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "FgjrPWvODQChBLz1Aj31PQ=="
+								"uidString" : "sDVDI2zODQC6UNf5A2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -782,7 +856,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:51:33.110974+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635575+01:00"
 								}
 							},
 							"editEmail" : {
@@ -793,12 +867,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:55:16.252705+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635575+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "SaLuPWvODQChCOxiAj31PQ=="
+								"uidString" : "uTVDI2zODQC6Ujx6A2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -819,7 +893,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:53:57.154518+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635578+01:00"
 								}
 							},
 							"editEmail" : {
@@ -830,20 +904,20 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:56:32.661954+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635578+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "1I+ERmvODQCjMRX+Aj31PQ=="
+								"uidString" : "vDVDI2zODQC6U6HsA2s0fg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We still get several `nil does not exist` notifications, but now it all loads."
+							"string" : "This is the patched file:"
 						},
 						{
-							"__type" : "textSnippet",
+							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -856,7 +930,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:53:57.446876+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635582+01:00"
 								}
 							},
 							"editEmail" : {
@@ -867,17 +941,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:53:57.446876+01:00"
+									"dateAndTimeString" : "2024-02-23T11:55:40.635582+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "RgaJRmvODQCjNfmzAj31PQ=="
+								"uidString" : "wDVDI2zODQC6VMQvA2s0fg=="
 							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
+							"code" : "drGeoSrcPatched := FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'src'\r\t\t/ 'DrGeo.pck-patched-2024-02-23.st'.\rdrGeoSrcPatched fileIn."
 						}
 					]
 				},
@@ -889,7 +960,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:48:30.030606+01:00"
+						"dateAndTimeString" : "2024-02-23T11:55:40.635449+01:00"
 					}
 				},
 				"editEmail" : {
@@ -900,17 +971,425 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:57:00.525805+01:00"
+						"dateAndTimeString" : "2024-02-23T11:55:40.635449+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "IwwFM2vODQCfDkVPAj31PQ=="
+					"uidString" : "TDVDI2zODQC6TNPpA2s0fg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
 				"string" : "# Things to fix"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637606+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637606+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "qD1DI2zODQC6V4auA2s0fg=="
+										},
+										"code" : "'does not exist' gtSubstringMatch."
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.637601+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.637601+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "pD1DI2zODQC6VhEBA2s0fg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We still get several `nil does not exist` notifications, but now it all loads. It is unclear where this warning comes from!"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637614+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637614+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "sD1DI2zODQC6WagWA2s0fg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "it comes from {{gtMethod:name=OldStandardFileStream class>>#fileDoesNotExistUserHandling:}}\nor {{gtMethod:name=OldStandardFileStream class>>#readOnlyFileDoesNotExistUserHandling:}}\nMorphic's"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637618+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637618+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "sz1DI2zODQC6Wm+/A2s0fg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "UIManager default\n\t\tchooseFrom:\n\t\t\t{('create a new file' translated).\n\t\t\t('choose another name' translated).\n\t\t\t('cancel' translated)}\n\t\ttitle: aTitle"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637624+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637624+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "uj1DI2zODQC6W6WSA2s0fg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "are converted in GT to notifications"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.63761+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.63761+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "rD1DI2zODQC6WA98A2s0fg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Alex says:"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637634+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637634+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "xD1DI2zODQC6XakrA2s0fg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Adding a {{gtClass:name=GtJustContextStackSignal}} signal to {{gtMethod:name=GtNotificationMessage class>>#message:}}  should capture when the notification is created (edited) "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637641+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637641+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "yz1DI2zODQC6XoKsA2s0fg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "If that does not show it, adding the signal to {{gtMethod:name=Object>>inform:}}  might"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637645+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-02-23T11:55:40.637645+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "zz1DI2zODQC6XyfAA2s0fg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "*Neither of these worked*"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.637629+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.637629+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "vz1DI2zODQC6XEy/A2s0fg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Andrei says:"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T11:55:40.637571+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T11:55:40.637571+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mz1DI2zODQC6VRaiA2s0fg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# nil errors"
 			}
 		]
 	},
