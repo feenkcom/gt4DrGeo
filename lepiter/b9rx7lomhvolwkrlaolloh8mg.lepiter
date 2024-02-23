@@ -539,14 +539,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T11:55:40.632378+01:00"
+												"dateAndTimeString" : "2024-02-23T16:26:29.281274+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "PClDI2zODQC6SrXyA2s0fg=="
 										},
-										"code" : "(RPackageOrganizer default packages \r\tselect: [ :p | p name beginsWith: 'DrGeo-' ])\r\t\tdo: #removeFromSystem."
+										"code" : "(RPackageOrganizer default packages \r\tselect: [ :p | p name beginsWith: 'DrGeo' ])\r"
 									},
 									{
 										"__type" : "textSnippet",
@@ -595,7 +595,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.632375+01:00"
+									"dateAndTimeString" : "2024-02-23T16:26:31.371487+01:00"
 								}
 							},
 							"editEmail" : {
@@ -606,7 +606,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.632375+01:00"
+									"dateAndTimeString" : "2024-02-23T16:26:35.004962+01:00"
 								}
 							},
 							"uid" : {
@@ -616,7 +616,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "NB: To remove loaded classes and start again ..."
+							"string" : "All the packages:"
 						}
 					]
 				},
