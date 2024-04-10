@@ -136,7 +136,7 @@ DGCodeExamples >> dummyClasses [
 { #category : #example }
 DGCodeExamples >> missingClasses [
 	<gtExample>
-	^ #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph MorphDummy PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor)
+	^ #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph MorphDummy PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor Theme)
 ]
 
 { #category : #utility }
