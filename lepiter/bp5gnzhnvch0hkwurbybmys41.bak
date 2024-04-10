@@ -228,6 +228,74 @@
 				"string" : "(1) `DrGMorph` adds a `color` slot, but {{gtClass:name=Morph}} already has one. Instead of defining `MorphDummy` as we did the last time, we remove the color slot from `DrGMorph`."
 			},
 			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:50:11.54536+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:56:09.410149+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XFt1BhvSDQC2W2h3ACBoqw=="
+				},
+				"code" : "drGeoSrc := 'DrGeo/src/DrGeo.pck.st' asFileReference.\r\rinput := drGeoSrc readStream.\r[input atEnd ] whileFalse: [ | line |\r\tline := input nextLine.\r\t(line includesSubstring: 'drawable mathItem color style labelMorph')\r\t\tifTrue: [\r\t\tline := line copyWit\r\t\t]\r]\r"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:47:03.269187+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:50:11.549168+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rnU8+xrSDQC1xiebACBoqw=="
+				},
+				"code" : "patched := 'DrGeo/src/DrGeo.pck-patched.st' asFileReference.\rpatched\r\twriteStreamDo: [ :aStream | \r\r\r\t\r'instanceVariableNames: ''drawable mathItem color style labelMorph labelPositionDelta blink'''.\r\r\r"
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -545,14 +613,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T09:37:58.273975+02:00"
+									"dateAndTimeString" : "2024-04-10T09:40:00.920566+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "HOB4aBrSDQC/gtYXBlGbBg=="
 							},
-							"code" : "drGeoSrc := 'DrGeo/src/DrGeo.pck.st' asFileReference.\rpatched := 'DrGeo/src/DrGeo.pck-patched.st' asFileReference.\rpatched\r\twriteStreamDo: [ :aStream | \r\t\tdrGeoSrc contents lines\r\t\t\tdo: [ :l | \r\t\t\t\t| line |\r\t\t\t\tline := l.\r\t\t\t\t(l includes: $`)\r\t\t\t\t\tifTrue: [ | parts |\r\t\t\t\t\t\tparts := $` split: l.\r\t\t\t\t\t\tself assert: parts size odd.\r\t\t\t\t\t\tline := ''\r\t\t\t\t\t\t\t\tjoin: (parts\r\t\t\t\t\t\t\t\t\t\twithIndexCollect: [ :p :i | i > 1 ifTrue: [ i even ifTrue: [ '(' , p ] ifFalse: [ ')' , p ] ] ifFalse: [ p ] ]) ].\r\t\t\t\taStream\r\t\t\t\t\tnextPutAll: l;\r\t\t\t\t\tcr ] ].\rpatched"
+							"code" : "drGeoSrc := 'DrGeo/src/DrGeo.pck.st' asFileReference.\rpatched := 'DrGeo/src/DrGeo.pck-patched.st' asFileReference.\rpatched\r\twriteStreamDo: [ :aStream | \r\t\tdrGeoSrc contents lines\r\t\t\tdo: [ :l | \r\t\t\t\t| line |\r\t\t\t\tline := l.\r\t\t\t\t(l includes: $`)\r\t\t\t\t\tifTrue: [ | parts |\r\t\t\t\t\t\tparts := $` split: l.\r\t\t\t\t\t\tself assert: parts size odd.\r\t\t\t\t\t\tline := ''\r\t\t\t\t\t\t\t\tjoin: (parts\r\t\t\t\t\t\t\t\t\t\twithIndexCollect: [ :p :i | i > 1 ifTrue: [ i even ifTrue: [ '(' , p ] ifFalse: [ ')' , p ] ] ifFalse: [ p ] ]) ].\r\t\t\t\taStream\r\t\t\t\t\tnextPutAll: line;\r\t\t\t\t\tcr ] ].\rpatched"
 						},
 						{
 							"__type" : "pharoSnippet",
