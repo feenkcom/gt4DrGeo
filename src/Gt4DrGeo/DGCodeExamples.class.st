@@ -21,6 +21,42 @@ DGCodeExamples >> backquotedLinesPatched [
 	^ patched
 ]
 
+{ #category : #example }
+DGCodeExamples >> brokenClassBuilderMethod [
+	"This redefinition in DrGeo breaks GT, so we must fix it by changing the method name."
+
+	<gtExample>
+	^ '!Class methodsFor: ''*DrGeo-subclass creation'' stamp: ''hlsf 4/18/2020 21:29:40''!
+subclass: t instanceVariableNames: f classVariableNames: d package: cat
+"This is a hack to import DrGeo Pharo code"
+	
+	| answer |
+	answer := ClassBuilder new
+		superclass: self
+		subclass: t
+		instanceVariableNames: f
+		classVariableNames: d
+		poolDictionaries: nil
+		category: cat.
+		
+	Smalltalk
+		logChange: answer definition 
+		preamble: answer definitionPreamble.
+	^answer
+! !'
+]
+
+{ #category : #example }
+DGCodeExamples >> brokenInitializationMethod [
+	"This system initialization method refers to a non-existent class, so we should comment out the body line."
+
+	<gtExample>
+	^ '!DrGeoSystem class methodsFor: ''class initialization'' stamp: ''Install-DrGeoFrench 12/7/2022 16:16:08''!
+initialize
+	"Erudite extention for Dr. Geo"
+	EruditeMarkupGrammar addCodeAction: ''withDrGeoActions''! !'
+]
+
 { #category : #utility }
 DGCodeExamples >> cloneDrGeo [
 	| drGeoRepo repo |
@@ -136,7 +172,7 @@ DGCodeExamples >> dummyClasses [
 { #category : #example }
 DGCodeExamples >> missingClasses [
 	<gtExample>
-	^ #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph MorphDummy PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor Theme)
+	^ #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph MorphDummy PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor Theme DarkTheme)
 ]
 
 { #category : #utility }
@@ -155,12 +191,13 @@ DGCodeExamples >> patchBackquotesFile [
 	"Patch the backquotes."
 
 	<gtExample>
-	| patchBackquotes input |
+	| patchBackquotes input inputFile |
+	inputFile := self patchTabbedSymbolsFile.
 	patchBackquotes := DGCodeExamples new drGeoRepo
 			/ 'src/DrGeo-patchBackquotes.st'.
 	patchBackquotes
 		writeStreamDo: [ :aStream | 
-			input := DGCodeExamples new patchTabbedSymbolsFile readStream.
+			input := inputFile readStream.
 			[ input atEnd ]
 				whileFalse: [ | line |
 					line := input nextLine.
@@ -181,16 +218,56 @@ DGCodeExamples >> patchBackquotesIn: aString [
 				withIndexCollect: [ :p :i | i > 1 ifTrue: [ i even ifTrue: [ '(' , p ] ifFalse: [ ')' , p ] ] ifFalse: [ p ] ])
 ]
 
+{ #category : #utility }
+DGCodeExamples >> patchBrokenClassMethodIn: aString [
+	^ aString
+		copyReplaceAll: 'subclass: t instanceVariableNames: f classVariableNames: d package: cat'
+		with: 'xsubclass: t instanceVariableNames: f classVariableNames: d package: cat'
+]
+
+{ #category : #utility }
+DGCodeExamples >> patchBrokenInitializationMethodIn: aString [
+	^ aString
+		copyReplaceAll: 'EruditeMarkupGrammar addCodeAction: ''withDrGeoActions'''
+		with: '"EruditeMarkupGrammar addCodeAction: ''withDrGeoActions''"'
+]
+
+{ #category : #example }
+DGCodeExamples >> patchBrokenMethodsFile [
+	"Patch a broken extension and initailization method."
+
+	<gtExample>
+	| patchBrokenMethods input inputFile |
+	inputFile := self patchBackquotesFile.
+	patchBrokenMethods := DGCodeExamples new drGeoRepo
+			/ 'src/DrGeo-patchBrokenMethods.st'.
+	patchBrokenMethods
+		writeStreamDo: [ :aStream | 
+			input := inputFile readStream.
+			[ input atEnd ]
+				whileFalse: [ | line |
+					line := input nextLine.
+					(line beginsWith: 'subclass:')
+						ifTrue: [ line := self patchBrokenClassMethodIn: line ].
+					(line includesSubstring: 'EruditeMarkupGrammar')
+						ifTrue: [ line := self patchBrokenInitializationMethodIn: line ].
+					aStream
+						nextPutAll: line;
+						lf ] ].
+	^ patchBrokenMethods
+]
+
 { #category : #example }
 DGCodeExamples >> patchColorFile [
 	"Remove the color slot from DrGeoMorph."
 
 	<gtExample>
-	| patchColor input |
+	| patchColor input inputFile |
+	inputFile := self drGeoSrc.
 	patchColor := DGCodeExamples new drGeoRepo / 'src/DrGeo-patchColor.st'.
 	patchColor
 		writeStreamDo: [ :aStream | 
-			input := DGCodeExamples new drGeoSrc readStream.
+			input := inputFile readStream.
 			[ input atEnd ]
 				whileFalse: [ | line |
 					line := self patchColorIn: input nextLine.
@@ -206,8 +283,8 @@ DGCodeExamples >> patchColorIn: aString [
 
 	(aString includesSubstring: self drGMorphSlots) ifFalse: [ ^ aString ].
 	^ aString
-		copyWithRegex: self drGMorphSlots
-		matchesReplacedWith: 'drawable mathItem style labelMorph'
+		copyReplaceAll: self drGMorphSlots
+		with: 'drawable mathItem style labelMorph'
 ]
 
 { #category : #example }
@@ -215,12 +292,13 @@ DGCodeExamples >> patchTabbedSymbolsFile [
 	"Patch the tabbed symbols."
 
 	<gtExample>
-	| patchTabbedSymbols input |
+	| patchTabbedSymbols input inputFile |
+	inputFile := self patchColorFile.
 	patchTabbedSymbols := DGCodeExamples new drGeoRepo
 			/ 'src/DrGeo-patchTabbedSymbols.st'.
 	patchTabbedSymbols
 		writeStreamDo: [ :aStream | 
-			input := DGCodeExamples new patchColorFile readStream.
+			input := inputFile readStream.
 			[ input atEnd ]
 				whileFalse: [ | line |
 					line := self patchTabbedSymbolsIn: input nextLine.
