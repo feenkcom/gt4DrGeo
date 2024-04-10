@@ -152,7 +152,7 @@ DGCodeExamples >> drGeoSrcPatched [
 	"Applies the sequence of patches."
 
 	<gtExample>
-	^ self patchColorFile
+	^ self patchBrokenCodeFile
 ]
 
 { #category : #example }
@@ -225,23 +225,17 @@ DGCodeExamples >> patchBrokenClassMethodIn: aString [
 		with: 'xsubclass: t instanceVariableNames: f classVariableNames: d package: cat'
 ]
 
-{ #category : #utility }
-DGCodeExamples >> patchBrokenInitializationMethodIn: aString [
-	^ aString
-		copyReplaceAll: 'EruditeMarkupGrammar addCodeAction: ''withDrGeoActions'''
-		with: '"EruditeMarkupGrammar addCodeAction: ''withDrGeoActions''"'
-]
-
 { #category : #example }
-DGCodeExamples >> patchBrokenMethodsFile [
-	"Patch a broken extension and initailization method."
+DGCodeExamples >> patchBrokenCodeFile [
+	"Patch a broken extension and initailization method.
+	Also some broken class creation."
 
 	<gtExample>
-	| patchBrokenMethods input inputFile |
+	| patchBrokenCode input inputFile |
 	inputFile := self patchBackquotesFile.
-	patchBrokenMethods := DGCodeExamples new drGeoRepo
-			/ 'src/DrGeo-patchBrokenMethods.st'.
-	patchBrokenMethods
+	patchBrokenCode := DGCodeExamples new drGeoRepo
+			/ 'src/DrGeo-patchBrokenCode.st'.
+	patchBrokenCode
 		writeStreamDo: [ :aStream | 
 			input := inputFile readStream.
 			[ input atEnd ]
@@ -251,10 +245,28 @@ DGCodeExamples >> patchBrokenMethodsFile [
 						ifTrue: [ line := self patchBrokenClassMethodIn: line ].
 					(line includesSubstring: 'EruditeMarkupGrammar')
 						ifTrue: [ line := self patchBrokenInitializationMethodIn: line ].
+					(line includesSubstring: 'poolDictionaries')
+						ifTrue: [ line := self patchBrokenPoolDictionariesIn: line ].
 					aStream
 						nextPutAll: line;
 						lf ] ].
-	^ patchBrokenMethods
+	^ patchBrokenCode
+]
+
+{ #category : #utility }
+DGCodeExamples >> patchBrokenInitializationMethodIn: aString [
+	^ aString
+		copyReplaceAll: 'EruditeMarkupGrammar addCodeAction: ''withDrGeoActions'''
+		with: '"EruditeMarkupGrammar addCodeAction: ''withDrGeoActions''"'
+]
+
+{ #category : #utility }
+DGCodeExamples >> patchBrokenPoolDictionariesIn: aString [
+	"nil should be an empty string"
+
+	^ aString
+		copyReplaceAll: 'poolDictionaries: ''nil'''
+		with: 'poolDictionaries: '''''
 ]
 
 { #category : #example }

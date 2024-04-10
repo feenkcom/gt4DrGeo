@@ -92,43 +92,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T14:44:15.982837+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T14:44:15.982837+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "mx0mIh/SDQCMwW5JBYGBRA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-04-10T14:44:16.199531+02:00"
 					}
 				},
@@ -140,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T14:45:03.812011+02:00"
+						"dateAndTimeString" : "2024-04-10T16:34:14.22425+02:00"
 					}
 				},
 				"uid" : {
@@ -150,44 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "This was broken. Automating the process with {{"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T14:44:16.392001+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T14:44:48.093539+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "UWAsIh/SDQCMybNLBYGBRA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "See [[* Issues to patch in the Dr Geo fileIn]] "
+				"string" : "This was broken. Now automating the process with {{gtClass:name=DGCodeExamples}}. See [[Issues to patch in the Dr Geo fileIn]] "
 			},
 			{
 				"__type" : "textSnippet",
@@ -256,14 +182,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T09:41:04.459818+02:00"
+									"dateAndTimeString" : "2024-04-10T16:34:56.343884+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "gQp3KXDODQC1iQryDVCATg=="
 							},
-							"code" : "missingClasses := #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor Theme).\rmissingClasses\r\tdo: [ :eachClass | \r\t\tObject\r\t\t\tsubclass: eachClass\r\t\t\tinstanceVariableNames: ''\r\t\t\tclassVariableNames: ''\r\t\t\tpackage: 'DrGeo-Missing' ].\rdrGeoSrcPatched := (FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo'\r\t\t/ 'src' / 'DrGeo.pck-patched-2024-02-23.st').\rdrGeoSrcPatched fileIn."
+							"code" : "DGCodeExamples new dummyClasses.\rDGCodeExamples new drGeoSrcPatched."
 						}
 					]
 				},
@@ -754,7 +680,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T11:55:40.632251+01:00"
+						"dateAndTimeString" : "2024-04-10T16:35:12.065733+02:00"
 					}
 				},
 				"uid" : {
@@ -764,7 +690,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Cloning and loading the repo"
+				"string" : "# Cloning and loading the repo (old notes)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -796,7 +722,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T14:44:08.487562+02:00"
+									"dateAndTimeString" : "2024-04-10T16:34:14.226888+02:00"
 								}
 							},
 							"uid" : {
@@ -806,7 +732,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "See [[* Issues to patch in the Dr Geo fileIn]]"
+							"string" : "See [[Issues to patch in the Dr Geo fileIn]]"
 						},
 						{
 							"__type" : "textSnippet",
