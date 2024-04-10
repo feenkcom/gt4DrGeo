@@ -123,6 +123,17 @@ DGCodeExamples >> patchDrGMorphColorSlot [
 ]
 
 { #category : #accessing }
+DGCodeExamples >> patchTabbedSymbols [
+	<gtExample>
+	| patchTabbedSymbols |
+	patchTabbedSymbols := self tabbedSymbols
+			copyWithRegex: '#\t+'
+			matchesReplacedWith: '#'.
+	self assert: (patchTabbedSymbols includesSubstring: '#	') not.
+	^ patchTabbedSymbols
+]
+
+{ #category : #accessing }
 DGCodeExamples >> removeDrGeoPackages [
 	"remove all the filed-in stuff"
 
@@ -135,11 +146,17 @@ DGCodeExamples >> tabbedSymbols [
 	"This code in the source file has tabs after the # in symbols."
 
 	<gtExample>
-	^ '	^{
+	| tabbedSymbols |
+	tabbedSymbols := '!DrGDebuggerWindow methodsFor: ''GUI building'' stamp: ''hlsf 10/13/2022 12:08:52''!
+customButtonSpecs
+	"Answer an array of elements of the form wording, selector, help-message, that characterize the custom button row of a debugger."
+
+	^{
 		{''Restart'' translated . #		restart	 . 		''Restart the step by step execution from its start.'' translated } .
 		{''Step''	 translated . 	#	doStep .			 ''Execute the current message and go to the next message.'' translated } .
 		{''Step into''		 translated . #stepIntoBlock		 . ''Step into a block.'' translated } .
 		{''Run to Cursor'' translated . #		runToCursor	 . 	''Execute the code up to the cursor position.'' translated }
-	}! !
-'
+	}! !'.
+	self assert: (tabbedSymbols includesSubstring: '#	').
+	^ tabbedSymbols
 ]

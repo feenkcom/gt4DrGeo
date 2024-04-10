@@ -575,7 +575,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-24T08:44:25.206835+01:00"
+									"dateAndTimeString" : "2024-04-10T13:11:47.842219+02:00"
 								}
 							},
 							"uid" : {
@@ -585,44 +585,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "There are spaces between the `#` and the symbol name in several cases."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T12:56:34.223368+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T12:57:01.954189+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "mXz/oB3SDQCbvrugDF4s9w=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "!DrGDebuggerWindow methodsFor: 'GUI building' stamp: 'hlsf 10/13/2022 12:08:52'!\ncustomButtonSpecs\n\t\"Answer an array of elements of the form wording, selector, help-message, that characterize the custom button row of a debugger.\"\n"
+							"string" : "There are tabs between the `#` and the symbol name in several cases."
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -649,14 +612,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T12:57:22.203897+02:00"
+									"dateAndTimeString" : "2024-04-10T13:12:04.174291+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "m2PHoh3SDQCbzB8qDF4s9w=="
 							},
-							"code" : "'\n\t^{\n translated . #\t\trestart\t\n\t}! !'"
+							"code" : "DGCodeExamples new tabbedSymbols\r\r\tcopyReg"
 						}
 					]
 				},
