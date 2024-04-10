@@ -182,14 +182,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:34:56.343884+02:00"
+									"dateAndTimeString" : "2024-04-10T16:40:37.643068+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "gQp3KXDODQC1iQryDVCATg=="
 							},
-							"code" : "DGCodeExamples new dummyClasses.\rDGCodeExamples new drGeoSrcPatched."
+							"code" : "DGCodeExamples new dummyClasses.\rDGCodeExamples new drGeoSrcPatched fu."
 						}
 					]
 				},
@@ -825,12 +825,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-04-10T14:44:14.843848+02:00"
+			"dateAndTimeString" : "2024-04-10T16:35:22.793724+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "* Loading Dr Geo from the GH repo"
+		"title" : "Loading Dr Geo from the GH repo"
 	},
 	"uid" : {
 		"__type" : "uuid",
