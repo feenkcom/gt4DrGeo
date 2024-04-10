@@ -366,7 +366,82 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-24T08:42:46.109165+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T12:54:00.381899+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "C1E1j33ODQC9oh/yBLuaxQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Parse errors due to `_` being used instead of `:=`. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-24T08:42:46.195925+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T12:54:10.783038+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "KaQ2j33ODQC9pt0nBLuaxQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Errors due to the `::` syntax extension of Cui Smalltalk. We patch those manually."
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -376,7 +451,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T11:03:49.98982+02:00"
+						"dateAndTimeString" : "2024-02-24T08:43:03.523006+01:00"
 					}
 				},
 				"editEmail" : {
@@ -387,17 +462,234 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T11:19:11.732627+02:00"
+						"dateAndTimeString" : "2024-04-10T12:54:07.095247+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "rHzRDRzSDQC3fdOYBBKDAw=="
+					"uidString" : "CAg/kH3ODQC9w0sxBLuaxQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We get the duplicated slot error for `color` in `DrGMorph`."
+				"string" : "Already fixed by Hilaire:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T11:55:40.635507+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T08:56:57.009793+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "izVDI2zODQC6TYjxA2s0fg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "(1) `DrGMorph` adds a `color` slot, but {{gtClass:name=Morph}} already has one. Instead of defining `MorphDummy` as we did the last time, we remove the color slot from `DrGMorph`."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T12:46:49.344282+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T12:47:01.672685+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "tuYifh3SDQCK/vbiDF4s9w=="
+				},
+				"code" : "DGCodeExamples new patchColor."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-24T08:44:05.349216+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-24T08:44:25.206835+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "vGzuk33ODQC+XbdHBLuaxQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "There are spaces between the `#` and the symbol name in several cases."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T12:56:34.223368+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T12:57:01.954189+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "mXz/oB3SDQCbvrugDF4s9w=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "!DrGDebuggerWindow methodsFor: 'GUI building' stamp: 'hlsf 10/13/2022 12:08:52'!\ncustomButtonSpecs\n\t\"Answer an array of elements of the form wording, selector, help-message, that characterize the custom button row of a debugger.\"\n"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T12:57:04.104248+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T12:57:43.483442+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "m2PHoh3SDQCbzB8qDF4s9w=="
+							},
+							"code" : "DGCodeExamples new patchColor."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-23T11:55:40.635562+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:00:43.504203+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rDVDI2zODQC6TxE9A2s0fg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "(2) We fix some spaces in literals in `DrGDebuggerWindow>>#customButtonSpecs`. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -437,7 +729,7 @@
 				"string" : ""
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -450,7 +742,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T11:37:07.339916+02:00"
+						"dateAndTimeString" : "2024-04-10T12:55:49.935858+02:00"
 					}
 				},
 				"editEmail" : {
@@ -461,17 +753,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T11:41:11.00875+02:00"
+						"dateAndTimeString" : "2024-04-10T12:55:49.935858+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "p5DehBzSDQCmqktDCAPUnQ=="
+					"uidString" : "obhbnh3SDQCbttqHDF4s9w=="
 				},
-				"code" : "patch1 := DGCodeExamples new drGeoRepo / 'src/DrGeo-patch1.st'.\r\rpatch1\r\twriteStreamDo: [ :aStream | \r\t\tinput := DGCodeExamples new drGeoSrc readStream.\r\t\t[ input atEnd ]\r\t\t\twhileFalse: [ | line |\r\t\t\t\tline := input nextLine.\r\t\t\t\t(line includesSubstring: 'drawable mathItem color style labelMorph')\r\t\t\t\t\tifTrue: [ line := line\r\t\t\t\t\t\t\t\tcopyWithRegex: 'drawable mathItem color style labelMorph'\r\t\t\t\t\t\t\t\tmatchesReplacedWith: 'drawable mathItem style labelMorph' ].\r\t\t\t\taStream\r\t\t\t\t\tnextPutAll: line;\r\t\t\t\t\tlf ] ].\rpatch1."
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -484,7 +779,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T11:24:00.463982+02:00"
+						"dateAndTimeString" : "2024-04-10T12:55:50.211221+02:00"
 					}
 				},
 				"editEmail" : {
@@ -495,14 +790,91 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T11:37:07.34383+02:00"
+						"dateAndTimeString" : "2024-04-10T12:55:50.211221+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "dtz3VRzSDQClcqy1CAPUnQ=="
+					"uidString" : "U+tfnh3SDQCbunMSDF4s9w=="
 				},
-				"code" : "patch1 := DGCodeExamples new drGeoRepo / 'src/DrGeo-patch1.st'."
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T12:54:36.685063+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T12:54:36.685063+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Af/9mR3SDQCbeQFJDF4s9w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T12:54:36.949361+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T12:54:36.949361+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "BAwCmh3SDQCbfTkmDF4s9w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -579,155 +951,6 @@
 				"string" : ""
 			},
 			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-24T08:42:46.109165+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-24T08:43:21.08395+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "C1E1j33ODQC9oh/yBLuaxQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "We find some parse errors due to `_` being used instead of `:=`. "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-24T08:42:46.195925+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-24T08:42:57.799252+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "KaQ2j33ODQC9pt0nBLuaxQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "We now get errors due to the `::` syntax extension of Cui Smalltalk. We patch those manually."
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-24T08:43:03.523006+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-24T08:43:26.124492+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CAg/kH3ODQC9w0sxBLuaxQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Fixed now by Hilaire:"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T11:55:40.635507+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T08:56:57.009793+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "izVDI2zODQC6TYjxA2s0fg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "(1) `DrGMorph` adds a `color` slot, but {{gtClass:name=Morph}} already has one. Instead of defining `MorphDummy` as we did the last time, we remove the color slot from `DrGMorph`."
-			},
-			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -794,81 +1017,6 @@
 					"uidString" : "rnU8+xrSDQC1xiebACBoqw=="
 				},
 				"code" : "patched := 'DrGeo/src/DrGeo.pck-patched.st' asFileReference.\rpatched\r\twriteStreamDo: [ :aStream | \r\r\r\t\r'instanceVariableNames: ''drawable mathItem color style labelMorph labelPositionDelta blink'''.\r\r\r"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-24T08:44:05.349216+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-24T08:44:25.206835+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "vGzuk33ODQC+XbdHBLuaxQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "There are spaces between the `#` and the symbol name in several cases."
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T11:55:40.635562+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T09:00:43.504203+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "rDVDI2zODQC6TxE9A2s0fg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "(2) We fix some spaces in literals in `DrGDebuggerWindow>>#customButtonSpecs`. "
 			},
 			{
 				"__type" : "textSnippet",
