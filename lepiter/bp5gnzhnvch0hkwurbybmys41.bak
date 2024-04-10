@@ -215,7 +215,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-24T08:42:43.27495+01:00"
+						"dateAndTimeString" : "2024-04-10T08:56:57.009793+02:00"
 					}
 				},
 				"uid" : {
@@ -225,44 +225,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "`DrGMorph` adds a `color` slot, but {{gtClass:name=Morph}} already has one. Instead of defining `MorphDummy` as we did the last time, we remove the color slot from `DrGMorph`."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-24T08:43:42.896657+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-24T08:43:42.899877+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "pDVDI2zODQC6TqxwA2s0fg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Now we discover the Cuis Smalltalk backquote (compound literal) operator. It seems we can simply remove these as they are just a compile-time optimization."
+				"string" : "(1) `DrGMorph` adds a `color` slot, but {{gtClass:name=Morph}} already has one. Instead of defining `MorphDummy` as we did the last time, we remove the color slot from `DrGMorph`."
 			},
 			{
 				"__type" : "textSnippet",
@@ -327,7 +290,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T11:55:40.635562+01:00"
+						"dateAndTimeString" : "2024-04-10T09:00:43.504203+02:00"
 					}
 				},
 				"uid" : {
@@ -337,7 +300,400 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We fix some spaces in literals in `DrGDebuggerWindow>>#customButtonSpecs`. "
+				"string" : "(2) We fix some spaces in literals in `DrGDebuggerWindow>>#customButtonSpecs`. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:15:48.030672+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:16:07.425172+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "V6B2ixrSDQCCZNfZBlGbBg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "These are the problematic lines:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:13:09.900722+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:15:58.545614+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "XMUJghrSDQCA3uwJBlGbBg=="
+							},
+							"code" : "drGeoSrc := 'DrGeo/src/DrGeo.pck.st' asFileReference.\rtemp := 'temp.txt' asFileReference.\rtemp\r\twriteStreamDo: [ :aStream | \r\t\t(drGeoSrc contents lines select: [ :l | l includes: $` ])\r\t\t\tdo: [ :match | aStream nextPutAll: match; cr ] ].\rtemp."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:16:10.690326+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:16:57.913615+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "G2TQjBrSDQCDHOaeBlGbBg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We need a way to replace alternating backquotes by matching parens."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:16:59.957123+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:17:10.199431+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7CLAjxrSDQCEm6WcBlGbBg=="
+							},
+							"code" : "drGeoSrc := 'DrGeo/src/DrGeo.pck.st' asFileReference.\rtemp := 'temp.txt' asFileReference.\rtemp\r\twriteStreamDo: [ :aStream | \r\t\t(drGeoSrc contents lines select: [ :l | l includes: $` ])\r\t\t\tdo: [ :match | \r\t\t\t\r\t\t\taStream nextPutAll: match; cr ] ].\rtemp."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:17:16.565084+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:30:38.05799+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "coy9kBrSDQCErkbcBlGbBg=="
+							},
+							"code" : "test := 'canvas line: pos - `2@0` to: pos + `2@0`  width: 1.5 color: Color lightGray.! !'.\rparts := $` split: test.\rself assert: parts size odd.\r''\r\tjoin: (parts\r\t\t\twithIndexCollect: [ :p :i | \r\t\t\t\ti > 1 ifTrue: [ i even ifTrue: [ '(' , p ] ifFalse: [ ')' , p ] ] ifFalse: [ p ] ])."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:16:11.274217+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:30:59.395916+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2krZjBrSDQCDIOVdBlGbBg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Looks good."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:06:00.97713+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:37:58.273975+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "HOB4aBrSDQC/gtYXBlGbBg=="
+							},
+							"code" : "drGeoSrc := 'DrGeo/src/DrGeo.pck.st' asFileReference.\rpatched := 'DrGeo/src/DrGeo.pck-patched.st' asFileReference.\rpatched\r\twriteStreamDo: [ :aStream | \r\t\tdrGeoSrc contents lines\r\t\t\tdo: [ :l | \r\t\t\t\t| line |\r\t\t\t\tline := l.\r\t\t\t\t(l includes: $`)\r\t\t\t\t\tifTrue: [ | parts |\r\t\t\t\t\t\tparts := $` split: l.\r\t\t\t\t\t\tself assert: parts size odd.\r\t\t\t\t\t\tline := ''\r\t\t\t\t\t\t\t\tjoin: (parts\r\t\t\t\t\t\t\t\t\t\twithIndexCollect: [ :p :i | i > 1 ifTrue: [ i even ifTrue: [ '(' , p ] ifFalse: [ ')' , p ] ] ifFalse: [ p ] ]) ].\r\t\t\t\taStream\r\t\t\t\t\tnextPutAll: l;\r\t\t\t\t\tcr ] ].\rpatched"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:38:01.084838+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-10T09:38:09.298182+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Em/r2hrSDQCNRWKRBlGbBg=="
+							},
+							"code" : "patched fileIn."
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-24T08:43:42.896657+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:05:56.214603+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pDVDI2zODQC6TqxwA2s0fg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "(3) We discover the Cuis Smalltalk backquote (compound literal) operator. We should replace them by matching parentheses, but how?"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:05:12.678081+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:05:12.678081+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kOSXZRrSDQC+A5OcBlGbBg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:05:12.940334+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-10T09:05:12.940334+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UO+bZRrSDQC+B4aUBlGbBg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -570,7 +926,7 @@
 								"__type" : "snippets",
 								"items" : [
 									{
-										"__type" : "pharoSnippet",
+										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [ ]
@@ -583,7 +939,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T11:55:40.637606+01:00"
+												"dateAndTimeString" : "2024-02-24T08:46:58.029799+01:00"
 											}
 										},
 										"editEmail" : {
@@ -594,14 +950,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-02-23T11:55:40.637606+01:00"
+												"dateAndTimeString" : "2024-02-24T08:46:59.393869+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "qD1DI2zODQC6V4auA2s0fg=="
+											"uidString" : "ZVM5nn3ODQCCsNanBLuaxQ=="
 										},
-										"code" : "'does not exist' gtSubstringMatch."
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "2024-02-24T08:33:19.976 process:40 953927 Attempt to create DrGeoTutorial as a subclass of nil.  Possibly a class is being loaded before its superclass.\n2024-02-24T08:33:19.978 process:40 953927 Attempt to create DrGeoFigure as a subclass of nil.  Possibly a class is being loaded before its superclass."
 									}
 								]
 							},
@@ -624,7 +983,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T11:55:40.637601+01:00"
+									"dateAndTimeString" : "2024-02-24T08:46:57.524427+01:00"
 								}
 							},
 							"uid" : {
@@ -634,7 +993,41 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We still get several `nil does not exist` notifications, but now it all loads. It is unclear where this warning comes from!"
+							"string" : "We still get several `nil does not exist` notifications, but now it all loads. It is unclear where this warning comes from, but we also get these errors when trying to build the Dr Geo IDE:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.637606+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-02-23T11:55:40.637606+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "qD1DI2zODQC6V4auA2s0fg=="
+							},
+							"code" : "'does not exist' gtSubstringMatch."
 						},
 						{
 							"__type" : "textSnippet",
