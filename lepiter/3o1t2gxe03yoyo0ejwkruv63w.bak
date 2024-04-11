@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:27:49.234002+01:00"
+						"dateAndTimeString" : "2024-02-23T10:28:33.068051+01:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[Loading Dr Geo source code into GT]]"
+				"string" : "[[First attempt to load Dr Geo source code into GT]]"
 			}
 		]
 	},

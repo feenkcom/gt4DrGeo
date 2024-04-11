@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:24:58.519988+01:00"
+						"dateAndTimeString" : "2024-04-11T09:24:15.186015+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "These pages are obsolete, but we keep them forhistorical reasons."
+				"string" : "These pages are obsolete, but we keep them for historical reasons."
 			},
 			{
 				"__type" : "textSnippet",

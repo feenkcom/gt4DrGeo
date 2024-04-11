@@ -310,6 +310,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Issues to patch in the Dr Geo fileIn]]"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-11-30T09:12:28.424717+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-11T09:16:21.335261+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "qwgX87vHDQCRLD+tA34GQA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Creating a DrGeo IDE image in Cuis on a Mac]] "
 									}
 								]
 							},
@@ -358,7 +395,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-11-30T09:12:28.424717+01:00"
+									"dateAndTimeString" : "2024-04-11T09:24:38.752749+02:00"
 								}
 							},
 							"editEmail" : {
@@ -369,17 +406,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-11T09:16:21.335261+02:00"
+									"dateAndTimeString" : "2024-04-11T09:25:00.13702+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "qwgX87vHDQCRLD+tA34GQA=="
+								"uidString" : "0y/wyC7SDQC5ux//ASAHyQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Creating a DrGeo IDE image in Cuis on a Mac]] "
+							"string" : "[[Creating a repo for the DrGeo classes]]"
 						},
 						{
 							"__type" : "textSnippet",
