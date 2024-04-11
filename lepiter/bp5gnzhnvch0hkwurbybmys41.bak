@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-10T11:03:58.855806+02:00"
+						"dateAndTimeString" : "2024-04-11T09:07:50.521875+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We want to *automate* the patching of the DrGeo fileIn."
+				"string" : "We *automate* the patching of the DrGeo fileIn in the class {{gtClass:DGCodeExamples}}. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -287,7 +287,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T11:18:23.305212+02:00"
+									"dateAndTimeString" : "2024-04-11T09:09:09.589277+02:00"
 								}
 							},
 							"uid" : {
@@ -297,7 +297,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We create the missing classes as dummies."
+							"string" : "We create the missing classes as dummies and add this"
 						},
 						{
 							"__type" : "textSnippet",
@@ -580,7 +580,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T12:54:07.095247+02:00"
+									"dateAndTimeString" : "2024-04-11T09:02:51.867158+02:00"
 								}
 							},
 							"uid" : {
@@ -590,7 +590,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Already fixed by Hilaire:"
+							"string" : "(0) These are already fixed by Hilaire:"
 						},
 						{
 							"__type" : "textSnippet",
@@ -669,6 +669,43 @@
 							"children" : {
 								"__type" : "snippets",
 								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-11T09:04:05.148888+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-11T09:04:20.108628+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "+uFofy7SDQCx+CAFBm2VXQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "NB: These are now fixed, so we don't need this step"
+									},
 									{
 										"__type" : "textSnippet",
 										"children" : {
@@ -765,14 +802,14 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-10T15:11:48.492631+02:00"
+												"dateAndTimeString" : "2024-04-11T09:05:44.640716+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
 											"uidString" : "r/DWXR/SDQCRQQ21BYGBRA=="
 										},
-										"code" : "DGCodeExamples new patchTabbedSymbolsFile."
+										"code" : "\"NOT NEEDED\"\rDGCodeExamples new patchTabbedSymbolsFile."
 									}
 								]
 							},
@@ -2250,12 +2287,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-04-10T14:44:08.454011+02:00"
+			"dateAndTimeString" : "2024-04-10T16:34:14.20317+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "* Issues to patch in the Dr Geo fileIn"
+		"title" : "Issues to patch in the Dr Geo fileIn"
 	},
 	"uid" : {
 		"__type" : "uuid",

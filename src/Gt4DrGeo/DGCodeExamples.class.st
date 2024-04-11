@@ -138,6 +138,7 @@ DGCodeExamples >> drGeoRepo [
 	| drGeoRepo |
 	drGeoRepo := 'DrGeo' asFileReference.
 	drGeoRepo exists ifFalse: [ self cloneDrGeo ].
+	self assert: (self dummyClasses reject: #isClass) isEmpty.
 	^ drGeoRepo
 ]
 
@@ -158,15 +159,18 @@ DGCodeExamples >> drGeoSrcPatched [
 { #category : #example }
 DGCodeExamples >> dummyClasses [
 	<gtExample>
-	^ self missingClasses
-		collect: [ :eachClass | 
-			eachClass
-				asClassInEnvironment: Smalltalk globals
-				ifAbsent: [ Object
-						subclass: eachClass
-						instanceVariableNames: ''
-						classVariableNames: ''
-						package: 'DrGeo-Missing' ] ]
+	| dummies |
+	dummies := self missingClasses
+			collect: [ :eachClass | 
+				eachClass
+					asClassInEnvironment: Smalltalk globals
+					ifAbsent: [ Object
+							subclass: eachClass
+							instanceVariableNames: ''
+							classVariableNames: ''
+							package: 'DrGeo-Missing' ] ].
+	self assert: (dummies reject: #isClass) isEmpty.
+	^ dummies
 ]
 
 { #category : #example }
@@ -192,7 +196,8 @@ DGCodeExamples >> patchBackquotesFile [
 
 	<gtExample>
 	| patchBackquotes input inputFile |
-	inputFile := self patchTabbedSymbolsFile.
+	"inputFile := self patchTabbedSymbolsFile."
+	inputFile := self patchColorFile.
 	patchBackquotes := DGCodeExamples new drGeoRepo
 			/ 'src/DrGeo-patchBackquotes.st'.
 	patchBackquotes
@@ -301,9 +306,10 @@ DGCodeExamples >> patchColorIn: aString [
 
 { #category : #example }
 DGCodeExamples >> patchTabbedSymbolsFile [
-	"Patch the tabbed symbols."
+	"Patch the tabbed symbols.
+	NB: No longer needed -- the tabs have been removed in the source file."
 
-	<gtExample>
+	"<gtExample>"
 	| patchTabbedSymbols input inputFile |
 	inputFile := self patchColorFile.
 	patchTabbedSymbols := DGCodeExamples new drGeoRepo
