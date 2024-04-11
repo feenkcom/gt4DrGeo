@@ -810,7 +810,45 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-11T11:05:31.21429+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-11T11:05:37.109506+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "RHCxMTDSDQCl4UBTBJModA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Package *DrGeo depends on the following classes:\r  Debugger\r  DarkTheme\r  BoxedMorph\r  Theme\r  MorphicEruditeDocRenderer\r  PreferenceBrowserVisitor\rYou must resolve these dependencies before you will be able to load these definitions: \r  BoxedMorph>>#morphCenter\r  BoxedMorph>>#morphCenter:\r  DarkTheme>>#canvasBackground\r  DarkTheme>>#drgeoButtonColor\r  DarkTheme>>#drgeoButtonSelectedColor\r  Debugger>>#openMinimalDebugging:to:\r  Debugger>>#openMinimalDebuggingProcess:context:\r  Debugger>>#openMinimalMorphic\r  MorphicEruditeDocRenderer>>#createButton:action:balloonText:\r  MorphicEruditeDocRenderer>>#renderCodeCopyToDrGeo:\r  MorphicEruditeDocRenderer>>#renderCodeWithDrGeoActions:\r  MorphicEruditeDocRenderer>>#someDrGeoAction:\r  PreferenceBrowserVisitor>>#visitDrGTypeArrowPreference:\r  PreferenceBrowserVisitor>>#visitDrGTypeColorPreference:\r  PreferenceBrowserVisitor>>#visitDrGTypeMarkPreference:\r  PreferenceBrowserVisitor>>#visitDrGTypePointShapePreference:\r  PreferenceBrowserVisitor>>#visitDrGTypePointSizePreference:\r  PreferenceBrowserVisitor>>#visitDrGTypeStylePreference:\r  PreferenceBrowserVisitor>>#visitDrGTypeThicknessPreference:\r  Theme>>#adjustColor:\r  Theme>>#canvasBackground\r  Theme>>#circularToolbarDropDownGap\r  Theme>>#circularToolbarDropDownHeight\r  Theme>>#circularToolbarExtent\r  Theme>>#drgeoButtonColor\r  Theme>>#drgeoButtonSelectedColor\r  Theme>>#isDarkTheme\r  Theme>>#lineStyleDataFor:\r  Theme>>#lineWidthFor:\r  Theme>>#pointExtentFor:\r  Theme>>#previewSize\r  Theme>>#scale:\r  Theme>>#scaled:\r  Theme>>#smWheelWidth\r  Theme>>#toolbarIconSize\r  Theme>>#wheelHeight\r  Theme>>#wheelWidth"
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -831,7 +869,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-11T10:44:34.314263+02:00"
+									"dateAndTimeString" : "2024-04-11T11:05:28.998376+02:00"
 								}
 							},
 							"uid" : {
@@ -841,7 +879,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "This won't work in any case because there are many missing methods in the dummy classes:"
 						},
 						{
 							"__type" : "textSnippet",
