@@ -369,7 +369,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:26:05.385649+01:00"
+									"dateAndTimeString" : "2024-04-11T09:16:21.335261+02:00"
 								}
 							},
 							"uid" : {
@@ -379,7 +379,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Creating a DrGeo IDE image in Cuis]] "
+							"string" : "[[Creating a DrGeo IDE image in Cuis on a Mac]] "
 						},
 						{
 							"__type" : "textSnippet",

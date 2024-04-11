@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:26:08.150559+01:00"
+						"dateAndTimeString" : "2024-02-23T10:26:28.761033+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "There is no DrGeo download for a  Mac, but you can install it in Cuis."
 			},
 			{
 				"__type" : "textSnippet",
@@ -140,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:20:17.240173+01:00"
+						"dateAndTimeString" : "2024-04-11T09:15:54.118131+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "vUuPCjbIDQCnhbFIBsghuQ=="
 				},
-				"code" : "FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'DrGeo-build-IDE.command'."
+				"code" : "FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'scripts'\r\t/ 'BuildDrGeo.command'"
 			},
 			{
 				"__type" : "textSnippet",
@@ -222,81 +222,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "It will create a Cuis folder, clone and install the Cuis and DrGeo code, copy the Cuis image, start it and run the DrGeo build script."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:23:21.824895+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-02-23T10:23:33.526917+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "cqUf2WrODQCK9Z/nAj31PQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Transcript\n#('Compiler evaluate contents of file named: ' 'drgeo/src/setupDrGeoDevelopment.st' ' arguments: ' #())\nInstalled ChangeSet: [r6.2]-6157-UseOfSizeForCopy-GeraldKlix-2024Feb01-21h27m-KLG.001.cs.st\nInstalled ChangeSet: [r6.2]-6158-LogStartupNotice-JuanVuletich-2024Feb11-15h48m-jmv.001.cs.st\nCuis6.2\nlatest update: #6158\nRunning at :/Users/oscar/Desktop/GT/DrGeo/Cuis/Cuis6-2/CuisImage/Cuis6.2.image\nCould not find code package file for [Gettext].\nInstallation of [DrGeo] failed.\nAttempt to create DrGeoTutorial as a subclass of nil.  Possibly a class is being loaded before its superclass.\nAttempt to create DrGeoFigure as a subclass of nil.  Possibly a class is being loaded before its superclass.\nMessageNotUnderstood: UndefinedObject>>methodsFor:\nwhile evaluating: DrGWrappedItem methodsFor: '*DrGeoFrench'\n"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:23:08.525475+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T10:23:21.364303+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "NbpU2GrODQCKCuYTAj31PQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Currently this fails due to a missing package."
 			}
 		]
 	},
