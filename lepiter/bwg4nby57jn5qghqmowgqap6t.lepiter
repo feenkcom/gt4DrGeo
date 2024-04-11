@@ -79,6 +79,40 @@
 				"string" : "Later we will only want  to keep just the classes we need for the migrations, but let's just see what happens."
 			},
 			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-11T11:21:35.658941+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-11T11:22:02.772308+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "K7AtazDSDQCt3mr9B8qZlQ=="
+				},
+				"code" : "Metacello new\r\trepository: 'github://feenkcom/DrGeoSrc:master/src';\r\tbaseline: 'DrGeoSrc';\r\tload.\n#BaselineOfDrGeoSrc asClass loadPackages.\r#BaselineOfDrGeoSrc asClass loadLepiter."
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -297,6 +331,77 @@
 								"uidString" : "VR8Y7C7SDQCDeI8/ASAHyQ=="
 							},
 							"code" : "repo := IceRepository registry detect: [ :r | r name = 'DrGeoSrc' ].\rdrGeoPackages := Smalltalk packages select: [ :p | p name beginsWith: 'DrGeo' ].\rdrGeoPackages do: [ :p | repo workingCopy addPackageNamed: p name ].\rrepo workingCopy."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T11:20:44.232424+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T11:20:45.858847+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "cfwcaDDSDQCtyqrHB8qZlQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Or:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T11:19:38.112209+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T11:19:53.782884+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "xA8sZDDSDQCtqM/FB8qZlQ=="
+							},
+							"code" : "#BaselineOfDrGeoSrc asClass loadPackages."
 						},
 						{
 							"__type" : "textSnippet",
