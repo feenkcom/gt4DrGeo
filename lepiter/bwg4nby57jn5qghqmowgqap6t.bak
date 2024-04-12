@@ -603,40 +603,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-11T09:56:19.02477+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:44:40.839928+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "/ws0Oi/SDQCdiKm/Dq8yJA=="
-							},
-							"code" : "(Smalltalk packages select: [ :p | p name beginsWith: 'DrGeo-' ])\r\tdo: [ :p | p removeFromSystem ].\r#DrGeo asPackage removeFromSystem."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2024-04-12T08:44:43.370347+02:00"
 								}
 							},
