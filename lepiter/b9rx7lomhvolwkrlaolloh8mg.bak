@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-08T09:35:10.837803+01:00"
+						"dateAndTimeString" : "2024-04-12T08:37:14.129675+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,78 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "As of December 2023 there is a [GitHub repo](https://github.com/hilaire/drgeo) for Dr Geo. The repo is still designed to be loaded into [[Cuis]]. Here we try to load the source code into GT."
+				"string" : "As of December 2023 there is a [GitHub repo](https://github.com/hilaire/drgeo) for Dr Geo. The repo is still designed to be loaded into [[Cuis]]. We have to patch the source code to be able to load it."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T08:37:21.585585+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T08:37:28.561713+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "99OrPULSDQC9Tak7BzJJFg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "This is the completely patched file:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T08:37:15.861296+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T08:37:19.743774+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "b31UPULSDQC9NAzWBzJJFg=="
+				},
+				"code" : "DGCodeExamples new drGeoSrcPatched."
 			},
 			{
 				"__type" : "textSnippet",
@@ -66,7 +137,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-23T16:44:26.883364+01:00"
+						"dateAndTimeString" : "2024-04-11T09:06:37.253379+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +147,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Here you can load a new version of the patched fileIn. See below for the details."
+				"string" : "Here you can load a new version of the patched fileIn."
 			},
 			{
 				"__type" : "pharoSnippet",
