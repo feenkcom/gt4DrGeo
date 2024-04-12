@@ -82,6 +82,43 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T07:58:55.286572+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T07:59:04.314726+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "tYI0tEHSDQC9EUrUBFe1RQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Summary of issues for Hilaire]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "textSnippet",
@@ -1241,6 +1278,40 @@
 											"uidString" : "nmtTQiDSDQC8ZuuYBwWbsA=="
 										},
 										"code" : "DGCodeExamples new brokenInitializationMethod."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-10T16:11:48.875161+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-10T16:31:37.465505+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "L+c+WyDSDQC8fyNaBwWbsA=="
+										},
+										"code" : "DGCodeExamples new patchBrokenCodeFile."
 									}
 								]
 							},
@@ -1274,40 +1345,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "(6) `DrGeoSystem>>#initialize` contains this code which should be commented out:"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:11:48.875161+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:31:37.465505+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "L+c+WyDSDQC8fyNaBwWbsA=="
-							},
-							"code" : "DGCodeExamples new patchBrokenCodeFile."
 						},
 						{
 							"__type" : "pharoSnippet",

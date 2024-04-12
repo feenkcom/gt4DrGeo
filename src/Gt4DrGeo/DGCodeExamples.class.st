@@ -11,6 +11,12 @@ To file in the final, patched code, run:
 DGCodeExamples new drGeoSrcPatched fileIn.
 ```
 
+To remove the filed-in code:
+```
+DGCodeExamples new removeFiledInCode.
+```
+
+
 "
 Class {
 	#name : #DGCodeExamples,
@@ -351,4 +357,11 @@ DGCodeExamples >> removeDrGeoPackages [
 
 	(RPackageOrganizer default packages
 		select: [ :p | p name beginsWith: 'DrGeo-' ]) do: #removeFromSystem
+]
+
+{ #category : #accessing }
+DGCodeExamples >> removeFiledInCode [
+	(Smalltalk packages select: [ :p | p name beginsWith: 'DrGeo-' ])
+		do: [ :p | p removeFromSystem ].
+	#DrGeo asPackage removeFromSystem
 ]
