@@ -208,6 +208,14 @@ DGCodeExamples >> dummyClasses [
 ]
 
 { #category : #example }
+DGCodeExamples >> latestPatch [
+	"A folder where we keep some past versions of the patched source code."
+
+	<gtExample>
+	^ self archive / 'DrGeo-patched-2024-04-12.st'
+]
+
+{ #category : #example }
 DGCodeExamples >> missingClasses [
 	<gtExample>
 	^ #(ActiveModel LayoutMorph DebuggerWindow WizardPanel DialogPanel Panel BoxedMorph MorphDummy PreferenceType Debugger MorphicEruditeDocRenderer PreferenceBrowserVisitor Theme DarkTheme)

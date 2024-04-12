@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-12T08:34:08.743837+02:00"
+						"dateAndTimeString" : "2024-04-12T08:35:15.422895+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-12T08:34:49.537932+02:00"
+						"dateAndTimeString" : "2024-04-12T08:35:18.641912+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "tVEtMkLSDQC57i0tBzJJFg=="
+					"uidString" : "u78mNkLSDQC7xdENBzJJFg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "These notes were taken during a zoom meeting with [[HF]] "
+				"string" : "These notes were taken during a zoom meeting with [[Hilaire]] on 2024-02-25."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-12T08:34:26.498985+02:00"
+						"dateAndTimeString" : "2024-04-12T09:20:46.292975+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,85 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-12T08:34:26.502096+02:00"
+						"dateAndTimeString" : "2024-04-12T09:20:55.191182+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "jN72MkLSDQC6FJisBzJJFg=="
+					"uidString" : "noHs2ELSDQC/gMKfBIsjcg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "(LePage named: '2024-02-25 Hilaire zoom')"
+				"string" : "Load the latest patch:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T09:06:31.604994+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T09:21:08.06098+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kwP7pULSDQC7Ag4WBIsjcg=="
+				},
+				"code" : "DGCodeExamples new archive"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T09:20:58.330225+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T09:21:02.717436+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mi+k2ULSDQC/8vZpBIsjcg=="
+				},
+				"code" : "DGCodeExamples new drGeoSrcPatched fileIn."
 			},
 			{
 				"__type" : "textSnippet",
@@ -182,7 +250,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.955834+02:00"
+									"dateAndTimeString" : "2024-04-12T09:08:10.751289+02:00"
 								}
 							},
 							"uid" : {
@@ -192,7 +260,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "DrGeoSketch has a programatic interface with Smalltalk to create sketches"
+							"string" : "{{gtClass:name=DrGeoSketch}} has a programatic interface with Smalltalk to create sketches."
 						},
 						{
 							"__type" : "textSnippet",
@@ -219,7 +287,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.955838+02:00"
+									"dateAndTimeString" : "2024-04-12T09:09:16.136043+02:00"
 								}
 							},
 							"uid" : {
@@ -229,7 +297,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Instead of DrGeo class>>#service we could have gtService"
+							"string" : "Instead of {{gtMethod:name=DrGeo class>>#service}} we could have gtService"
 						},
 						{
 							"__type" : "textSnippet",
@@ -298,7 +366,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.95585+02:00"
+												"dateAndTimeString" : "2024-04-12T09:09:52.709529+02:00"
 											}
 										},
 										"uid" : {
@@ -308,7 +376,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Need to subclass DrGUIMinimalControlsManager for Bloc"
+										"string" : "Need to subclass {{gtClass:name=DrGUIMinimalControlsManager}} for Bloc"
 									},
 									{
 										"__type" : "textSnippet",
@@ -335,7 +403,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.955853+02:00"
+												"dateAndTimeString" : "2024-04-12T09:10:02.635497+02:00"
 											}
 										},
 										"uid" : {
@@ -345,7 +413,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "The full API for DrGeo is in DrGUIControlsManager"
+										"string" : "The full API for DrGeo is in {{gtClass:name=DrGUIControlsManager}}"
 									},
 									{
 										"__type" : "textSnippet",
@@ -410,7 +478,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.955856+02:00"
+												"dateAndTimeString" : "2024-04-12T09:20:41.543376+02:00"
 											}
 										},
 										"uid" : {
@@ -420,7 +488,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "DrGUIMinimalControlsManager is used for tests; we shoudl subclass that too"
+										"string" : "{{gtClass:name=DrGUIMinimalControlsManager}} is used for tests; we shoudl subclass that too"
 									},
 									{
 										"__type" : "textSnippet",
@@ -480,7 +548,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.955843+02:00"
+									"dateAndTimeString" : "2024-04-12T09:09:35.250491+02:00"
 								}
 							},
 							"uid" : {
@@ -490,7 +558,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Replace DrGeo>>#initializeService"
+							"string" : "Replace {{gtMethod:name=DrGeo>>#initializeService}}"
 						}
 					]
 				},
