@@ -1,3 +1,17 @@
+"
+I contain examples of loading the DrGeo source code and patching versions of the fileIn.
+
+`drGeoRepo` -- clone the repo if necessary
+`drGeoSrc`` -- the original fileIn, with issues to be patched for GT
+`dummyClasses` -- dummy classes from Cuis that are missing in GT
+`drGeoSrcPatched` -- the final, patched fileIn, with various issues fixed
+
+To file in the final, patched code, run:
+```
+DGCodeExamples new drGeoSrcPatched fileIn.
+```
+
+"
 Class {
 	#name : #DGCodeExamples,
 	#superclass : #Object,
