@@ -103,14 +103,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-12T09:21:08.06098+02:00"
+						"dateAndTimeString" : "2024-04-12T09:21:59.845697+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "kwP7pULSDQC7Ag4WBIsjcg=="
 				},
-				"code" : "DGCodeExamples new archive"
+				"code" : "DGCodeExamples new latestPatch fileIn."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T09:23:29.348249+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T09:23:32.806237+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IIyk4kLSDQCCDLCUBIsjcg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "or a fresh one:"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -623,7 +660,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.962574+02:00"
+									"dateAndTimeString" : "2024-04-12T09:23:48.304009+02:00"
 								}
 							},
 							"uid" : {
@@ -633,7 +670,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Hierarchy starts with DrGMorph — we need to replace this"
+							"string" : "Hierarchy starts with {{gtClass:name=DrGMorph}} — we need to replace this"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1102,7 +1139,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.963309+02:00"
+												"dateAndTimeString" : "2024-04-12T09:24:31.053193+02:00"
 											}
 										},
 										"editEmail" : {
@@ -1113,7 +1150,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.963309+02:00"
+												"dateAndTimeString" : "2024-04-12T09:24:34.396696+02:00"
 											}
 										},
 										"uid" : {
@@ -1123,7 +1160,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "DrGeoScriptTest>>#testPointByCoordinates"
+										"string" : "{{gtMethod:name=DrGeoScriptTest>>#testPointByCoordinates}}"
 									}
 								]
 							},
@@ -1135,7 +1172,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.963303+02:00"
+									"dateAndTimeString" : "2024-04-12T09:24:04.405846+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1146,17 +1183,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.963303+02:00"
+									"dateAndTimeString" : "2024-04-12T09:24:24.395736+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "Kgj3MkLSDQC6MrtsBzJJFg=="
+								"uidString" : "9nq75ELSDQCJXqFcBIsjcg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "DrGPointMorph and DrGPointMorph>>#drawOn:"
+							"string" : "{{gtClass:name=DrGPointMorph}} and {{gtMethod:name=DrGPointMorph>>#drawOn:}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1172,7 +1209,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.963313+02:00"
+									"dateAndTimeString" : "2024-04-12T09:24:43.224151+02:00"
 								}
 							},
 							"editEmail" : {
@@ -1183,17 +1220,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.963313+02:00"
+									"dateAndTimeString" : "2024-04-12T09:25:02.623481+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "Mwj3MkLSDQC6NC+aBzJJFg=="
+								"uidString" : "k84L50LSDQCSZhnaBIsjcg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Then DrGSegmentMorph and DrGSegmentMorph>>#drawOn:"
+							"string" : "Then {{gtClass:name=DrGSegmentMorph}} and {{gtMethod:name=DrGSegmentMorph>>#drawOn:}}"
 						}
 					]
 				},
@@ -1300,7 +1337,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.964547+02:00"
+												"dateAndTimeString" : "2024-04-12T09:25:14.670698+02:00"
 											}
 										},
 										"uid" : {
@@ -1310,7 +1347,41 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "The link to the GUI is the `morphClass` method. (We can add a gtElementClass` method or something like that.)"
+										"string" : "The link to the GUI is the `morphClass` method. (We can add a `gtElementClass` method or something like that.)"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-12T09:25:54.325206+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-12T09:26:00.884725+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "8rNI60LSDQCTNWk8BIsjcg=="
+										},
+										"code" : "#morphClass gtImplementors."
 									},
 									{
 										"__type" : "textSnippet",
@@ -1337,7 +1408,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.96455+02:00"
+												"dateAndTimeString" : "2024-04-12T09:26:25.603468+02:00"
 											}
 										},
 										"uid" : {
@@ -1347,7 +1418,41 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Only used in DrGMorph class>>#for:in:"
+										"string" : "Only used in {{gtMethod:name=DrGMorph class>>#for:in:}}"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-12T09:26:13.213748+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-12T09:26:13.685567+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Se5o7ELSDQCTZrd7BIsjcg=="
+										},
+										"code" : "#morphClass gtSenders."
 									}
 								]
 							},
@@ -1422,7 +1527,7 @@
 																	"__type" : "time",
 																	"time" : {
 																		"__type" : "dateAndTime",
-																		"dateAndTimeString" : "2024-04-12T08:34:21.964567+02:00"
+																		"dateAndTimeString" : "2024-04-12T09:27:00.231948+02:00"
 																	}
 																},
 																"uid" : {
@@ -1432,7 +1537,7 @@
 																"paragraphStyle" : {
 																	"__type" : "textStyle"
 																},
-																"string" : "See DrGMathItem class>>#newWith:in: and DrGMathItem class>>#newWith:"
+																"string" : "See {{gtMethod:name=DrGMathItem class>>#newWith:in:}} and {{gtMethod:name=DrGMathItem class>>#newWith:}}"
 															},
 															{
 																"__type" : "textSnippet",
@@ -1595,7 +1700,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.964554+02:00"
+									"dateAndTimeString" : "2024-04-12T09:26:32.778178+02:00"
 								}
 							},
 							"uid" : {
@@ -1605,7 +1710,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "DrGMathItem"
+							"string" : "{{gtClass:name=DrGMathItem}}"
 						}
 					]
 				},
@@ -1670,7 +1775,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.965243+02:00"
+									"dateAndTimeString" : "2024-04-12T09:29:09.3633+02:00"
 								}
 							},
 							"uid" : {
@@ -1680,7 +1785,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "ActiveModel — parent of two builder classes; probably don't need it"
+							"string" : "`ActiveModel` — parent of two builder classes; probably don't need it"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1712,7 +1817,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.965253+02:00"
+												"dateAndTimeString" : "2024-04-12T09:28:46.49862+02:00"
 											}
 										},
 										"uid" : {
@@ -1722,7 +1827,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "DrGDrawable is needed and will be some work. "
+										"string" : "{{gtClass:name=DrGDrawable}} is needed and will be some work. "
 									}
 								]
 							},
@@ -1745,7 +1850,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.965249+02:00"
+									"dateAndTimeString" : "2024-04-12T09:29:12.26645+02:00"
 								}
 							},
 							"uid" : {
@@ -1755,7 +1860,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "BoxedMorph — parent of DrGDrawable. BoxedMorph is probably not "
+							"string" : "`BoxedMorph` — parent of {{gtClass:name=DrGDrawable}}. BoxedMorph is probably not "
 						},
 						{
 							"__type" : "textSnippet",
@@ -1782,7 +1887,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T08:34:21.965259+02:00"
+									"dateAndTimeString" : "2024-04-12T09:29:20.860425+02:00"
 								}
 							},
 							"uid" : {
@@ -1792,7 +1897,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Debugger and DebuggerWindow not needed"
+							"string" : "`Debugger` and `DebuggerWindow` not needed"
 						},
 						{
 							"__type" : "textSnippet",
