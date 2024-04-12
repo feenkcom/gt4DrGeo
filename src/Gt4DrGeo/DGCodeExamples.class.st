@@ -212,6 +212,7 @@ DGCodeExamples >> latestPatch [
 	"A folder where we keep some past versions of the patched source code."
 
 	<gtExample>
+	self dummyClasses.
 	^ self archive / 'DrGeo-patched-2024-04-12.st'
 ]
 
