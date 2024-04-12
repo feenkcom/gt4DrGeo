@@ -25,6 +25,14 @@ Class {
 }
 
 { #category : #example }
+DGCodeExamples >> archive [
+	"A folder where we keep some past versions of the patched source code."
+
+	<gtExample>
+	^ FileLocator gtResource / 'feenkcom' / 'gt4DrGeo' / 'drgeo' / 'patches'
+]
+
+{ #category : #example }
 DGCodeExamples >> backquotedLines [
 	<gtExample>
 	^ Character lf
@@ -173,7 +181,13 @@ DGCodeExamples >> drGeoSrcPatched [
 	"Applies the sequence of patches."
 
 	<gtExample>
-	^ self patchBrokenCodeFile
+	| input patched |
+	input := self patchBrokenCodeFile.
+	patched := DGCodeExamples new drGeoRepo
+			/ 'src/DrGeo-patched.st'.
+	patched ensureDelete.
+	input copyTo: patched.
+	^ patched
 ]
 
 { #category : #example }
