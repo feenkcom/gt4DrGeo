@@ -1136,7 +1136,42 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-10T16:04:15.03642+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-10T16:04:45.935423+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "INAxQCDSDQC8LSUbBwWbsA=="
+										},
+										"code" : "DGCodeExamples new brokenClassBuilderMethod."
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -1168,40 +1203,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "(5) The fileIn overrides {{gtMethod:name=Class>>#subclass:instanceVariableNames:classVariableNames:package:}}! We need to prevent that. We can rename this redefinition:"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:04:15.03642+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:04:45.935423+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "INAxQCDSDQC8LSUbBwWbsA=="
-							},
-							"code" : "DGCodeExamples new brokenClassBuilderMethod."
 						},
 						{
 							"__type" : "textSnippet",
@@ -1312,6 +1313,40 @@
 											"uidString" : "L+c+WyDSDQC8fyNaBwWbsA=="
 										},
 										"code" : "DGCodeExamples new patchBrokenCodeFile."
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-10T16:19:00.91882+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-10T16:31:40.282014+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "6V3/dCDSDQCMPvOpBTQ8Ig=="
+										},
+										"code" : "DGCodeExamples new patchBrokenCodeFile fileIn."
 									}
 								]
 							},
@@ -1345,40 +1380,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "(6) `DrGeoSystem>>#initialize` contains this code which should be commented out:"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:19:00.91882+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:31:40.282014+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "6V3/dCDSDQCMPvOpBTQ8Ig=="
-							},
-							"code" : "DGCodeExamples new patchBrokenCodeFile fileIn."
 						},
 						{
 							"__type" : "textSnippet",
@@ -1426,45 +1427,7 @@
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [
-												{
-													"__type" : "textSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [ ]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2024-04-10T16:29:37.8741+02:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2024-04-10T16:29:42.193137+02:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "+In2miDSDQCiWyV6DAjUJg=="
-													},
-													"paragraphStyle" : {
-														"__type" : "textStyle"
-													},
-													"string" : "poolDictionaries: 'nil'"
-												}
-											]
+											"items" : [ ]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -1485,7 +1448,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-10T16:29:37.605059+02:00"
+												"dateAndTimeString" : "2024-04-12T08:49:13.62876+02:00"
 											}
 										},
 										"uid" : {
@@ -1495,51 +1458,13 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "It turns out that there are several classes in the fileIn with:"
+										"string" : "It turns out that there are several classes in the fileIn with: `poolDictionaries: 'nil'`"
 									},
 									{
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [
-												{
-													"__type" : "textSnippet",
-													"children" : {
-														"__type" : "snippets",
-														"items" : [ ]
-													},
-													"createEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"createTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2024-04-10T16:29:51.415352+02:00"
-														}
-													},
-													"editEmail" : {
-														"__type" : "email",
-														"emailString" : "<unknown>"
-													},
-													"editTime" : {
-														"__type" : "time",
-														"time" : {
-															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2024-04-10T16:29:54.116259+02:00"
-														}
-													},
-													"uid" : {
-														"__type" : "uid",
-														"uidString" : "JCPFmyDSDQCi8CH7DAjUJg=="
-													},
-													"paragraphStyle" : {
-														"__type" : "textStyle"
-													},
-													"string" : "poolDictionaries: ''"
-												}
-											]
+											"items" : [ ]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -1560,7 +1485,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-10T16:29:51.12367+02:00"
+												"dateAndTimeString" : "2024-04-12T08:49:18.927302+02:00"
 											}
 										},
 										"uid" : {
@@ -1570,7 +1495,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "They should probably be:"
+										"string" : "They should probably be: `poolDictionaries: ''`"
 									},
 									{
 										"__type" : "textSnippet",

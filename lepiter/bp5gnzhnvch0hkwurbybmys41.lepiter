@@ -1522,7 +1522,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-10T16:30:23.416822+02:00"
+												"dateAndTimeString" : "2024-04-12T08:49:23.935095+02:00"
 											}
 										},
 										"uid" : {
@@ -1532,7 +1532,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "We update the brokenCode patch"
+										"string" : "We update the brokenCode patch."
 									}
 								]
 							},
@@ -1566,43 +1566,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "(7) We get several `nil does not exist`  errors. "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:24:52.908648+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:24:52.908648+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "r0z6iSDSDQCeiQRLDAjUJg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
 						}
 					]
 				},
