@@ -287,7 +287,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-11T09:09:09.589277+02:00"
+									"dateAndTimeString" : "2024-04-11T09:09:28.223785+02:00"
 								}
 							},
 							"uid" : {
@@ -297,7 +297,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We create the missing classes as dummies and add this"
+							"string" : "We create the missing classes as dummies and add this to {{gtMethod:name=DGCodeExamples>>#drGeoRepo}} to ensure they are created when the project is cloned."
 						},
 						{
 							"__type" : "textSnippet",
