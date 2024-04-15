@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-15T14:20:52.008338+02:00"
+						"dateAndTimeString" : "2024-04-15T14:21:13.206825+02:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "We should be able to load the DrGeo classes like this:"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -74,6 +74,43 @@
 					"uidString" : "m5zTY4PSDQCUhIgbAX88Rg=="
 				},
 				"code" : "Metacello new\r\trepository: 'github://feenkcom/gt4DrGeo:main/src';\r\tbaseline: 'DrGeo';\r\tload."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-15T14:23:21.058917+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-15T14:23:26.727384+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "DmSObIPSDQCtOekeADZQtA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Now we can explore t"
 			}
 		]
 	},
