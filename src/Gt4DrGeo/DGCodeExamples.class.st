@@ -157,7 +157,7 @@ DGCodeExamples >> drGMorphColorSlotPatched [
 { #category : #example }
 DGCodeExamples >> drGMorphSlots [
 	<gtExample>
-	^ 'drawable mathItem color style labelMorph'
+	^ 'mathItem color style labelMorph'
 ]
 
 { #category : #example }
@@ -345,7 +345,7 @@ DGCodeExamples >> patchColorIn: aString [
 	(aString includesSubstring: self drGMorphSlots) ifFalse: [ ^ aString ].
 	^ aString
 		copyReplaceAll: self drGMorphSlots
-		with: 'drawable mathItem style labelMorph'
+		with: 'mathItem style labelMorph'
 ]
 
 { #category : #example }

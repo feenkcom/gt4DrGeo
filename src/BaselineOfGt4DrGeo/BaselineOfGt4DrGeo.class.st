@@ -27,9 +27,8 @@ BaselineOfGt4DrGeo class >> loadLepiter [
 
 { #category : #baselines }
 BaselineOfGt4DrGeo >> baseline: spec [
+	"NB: Need to make sure that DrGeo doesn't do any nasty initialization."
+
 	<baseline>
-	spec
-		for: #common
-		do: [ spec package: 'Gt4DrGeo'.
-			spec package: 'DrGeo' ]
+	spec for: #common do: [ spec package: 'Gt4DrGeo'	"spec package: 'DrGeo'" ]
 ]
