@@ -385,6 +385,8 @@ DGCodeExamples >> removeDrGeoPackages [
 
 { #category : #accessing }
 DGCodeExamples >> removeFiledInCode [
+	"Probably don't need the first bit any more, as we have ensured that everything goes into the DrGeo package.."
+
 	(Smalltalk packages select: [ :p | p name beginsWith: 'DrGeo-' ])
 		do: [ :p | p removeFromSystem ].
 	#DrGeo asPackage removeFromSystem
