@@ -24,5 +24,6 @@ BaselineOfGt4DrGeo >> baseline: spec [
 	<baseline>
 	spec
 		for: #common
-		do: [ spec package: 'Gt4DrGeo' with: [ spec requires: #('DrGeo') ] ]
+		do: [ spec package: 'Gt4DrGeo'.
+			spec package: 'DrGeo' ]
 ]
