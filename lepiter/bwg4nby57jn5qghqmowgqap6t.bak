@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-11T09:25:02.004074+02:00"
+						"dateAndTimeString" : "2024-04-15T14:01:29.31311+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,23 +29,170 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-11T09:25:44.675647+02:00"
+						"dateAndTimeString" : "2024-04-15T14:02:08.301769+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "h/9Syi7SDQC6kkoTASAHyQ=="
+					"uidString" : "TOHtHYPSDQC1F69tAX88Rg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We'd like to experiment with putting all the DrGeo classes in a repo so we can just load them."
+				"string" : "We don't really need this any more. We can add the DrGeo package directly to the main repo."
 			},
 			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-12T11:06:01.311055+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-12T11:06:04.028164+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "fAZUUUTSDQC5PDTqDNTnZQ=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[](https://github.com/feenkcom/DrGeoSrc)"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T09:25:02.004074+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T09:25:44.675647+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "h/9Syi7SDQC6kkoTASAHyQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We'd like to experiment with putting all the DrGeo classes in a repo so we can just load them."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T09:25:44.955272+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-15T14:01:51.63096+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "x1/izC7SDQC8a6rOASAHyQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Later we will only want  to keep just the classes we need for the migration, but let's just see what happens."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T11:21:35.658941+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-11T11:22:02.772308+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "K7AtazDSDQCt3mr9B8qZlQ=="
+							},
+							"code" : "Metacello new\r\trepository: 'github://feenkcom/DrGeoSrc:master/src';\r\tbaseline: 'DrGeoSrc';\r\tload.\n#BaselineOfDrGeoSrc asClass loadPackages.\r#BaselineOfDrGeoSrc asClass loadLepiter."
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -55,7 +202,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-11T09:25:44.955272+02:00"
+						"dateAndTimeString" : "2024-04-15T14:01:36.113636+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,51 +213,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-11T09:26:05.217243+02:00"
+						"dateAndTimeString" : "2024-04-15T14:01:39.179659+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "x1/izC7SDQC8a6rOASAHyQ=="
+					"uidString" : "goLGHoPSDQC16ADrAX88Rg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Later we will only want  to keep just the classes we need for the migrations, but let's just see what happens."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-11T11:21:35.658941+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-11T11:22:02.772308+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "K7AtazDSDQCt3mr9B8qZlQ=="
-				},
-				"code" : "Metacello new\r\trepository: 'github://feenkcom/DrGeoSrc:master/src';\r\tbaseline: 'DrGeoSrc';\r\tload.\n#BaselineOfDrGeoSrc asClass loadPackages.\r#BaselineOfDrGeoSrc asClass loadLepiter."
+				"string" : "# Old notes"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1372,12 +1485,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-04-11T09:25:01.953267+02:00"
+			"dateAndTimeString" : "2024-04-12T11:06:00.012863+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Creating a repo for the DrGeo classes"
+		"title" : "Creating a DrGeoSrc repo for the DrGeo classes"
 	},
 	"uid" : {
 		"__type" : "uuid",

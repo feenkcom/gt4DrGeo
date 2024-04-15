@@ -202,7 +202,8 @@ DGCodeExamples >> dummyClasses [
 							subclass: eachClass
 							instanceVariableNames: ''
 							classVariableNames: ''
-							package: 'DrGeo-Missing' ] ].
+							package: 'DrGeo'.
+						eachClass asClass tagWith: 'Missing' ] ].
 	self assert: (dummies reject: #isClass) isEmpty.
 	^ dummies
 ]

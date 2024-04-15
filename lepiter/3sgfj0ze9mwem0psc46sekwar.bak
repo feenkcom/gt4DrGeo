@@ -244,12 +244,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-02-23T10:26:05.373149+01:00"
+			"dateAndTimeString" : "2024-04-15T14:02:41.543629+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Creating a DrGeo IDE image in Cuis"
+		"title" : "OLD Creating a DrGeo IDE image in Cuis on a Mac"
 	},
 	"uid" : {
 		"__type" : "uuid",
