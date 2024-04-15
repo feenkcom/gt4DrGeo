@@ -4,6 +4,12 @@ Class {
 	#category : #BaselineOfGt4DrGeo
 }
 
+{ #category : #accessing }
+BaselineOfGt4DrGeo class >> gtDependencyAnalysisPreloadedBaselines [
+	^ super gtDependencyAnalysisPreloadedBaselines
+		copyWith: BaselineOfGToolkit
+]
+
 { #category : #loading }
 BaselineOfGt4DrGeo class >> loadLepiter [
 	IceRepository registry  
