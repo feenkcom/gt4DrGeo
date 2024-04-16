@@ -216,7 +216,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T16:50:36.18716+02:00"
+									"dateAndTimeString" : "2024-04-16T17:01:40.906529+02:00"
 								}
 							},
 							"uid" : {
@@ -226,7 +226,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We introduce a subclass {{gtClass:name=DrGeo4GT}} of {{gtClass:name=DrGeo}} and make {{gtMethod:name=DrGeoSketch>>#initialize}} send the new {{gtMethod:name=DrGeo4GT class>>#gtService}}, which sends {{gtMethod:name=DrGeo4GT>>#initializeGtService}}. "
+							"string" : "We introduce a subclass {{gtClass:name=DGDrGeo}} of {{gtClass:name=DrGeo}} and make {{gtMethod:name=DrGeoSketch>>#initialize}} send the new {{gtMethod:name=DGDrGeo class>>#gtService}}, which sends {{gtMethod:name=DGDrGeo>>#initializeGtService}}. "
 						},
 						{
 							"__type" : "textSnippet",
@@ -364,14 +364,82 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T16:59:33.069933+02:00"
+									"dateAndTimeString" : "2024-04-16T17:16:09.383533+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "aj0DuZnSDQCq6SdaDPJLTQ=="
 							},
-							"code" : "sketch := DrGeoScriptTestResource current sketch."
+							"code" : "sketch := DGScriptExamples new sketch."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T17:18:27.424825+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T17:29:47.8204+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "fTCg/JnSDQCwD8/yC7eWlQ=="
+							},
+							"code" : "sketch drawable"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T17:16:43.772469+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T17:16:43.772469+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "8pBy9pnSDQCuwB5KC7eWlQ=="
+							},
+							"code" : "a := sketch point: 88 @ 985."
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -398,14 +466,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T16:59:33.070838+02:00"
+									"dateAndTimeString" : "2024-04-16T17:16:44.074496+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "A+TNq5nSDQCpAGIqCHndRg=="
 							},
-							"code" : "a := sketch point: 88 @ 985.\rb := sketch point: 98 @ 1085.\rl := sketch line: a to: b."
+							"code" : "b := sketch point: 98 @ 1085.\rl := sketch line: a to: b."
 						},
 						{
 							"__type" : "textSnippet",

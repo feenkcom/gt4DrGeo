@@ -926,7 +926,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2024-04-12T08:34:21.955859+02:00"
+															"dateAndTimeString" : "2024-04-16T17:20:42.613605+02:00"
 														}
 													},
 													"uid" : {
@@ -936,7 +936,7 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "It is also the API for SMalltalk code to control a sketch but without any GUI controls"
+													"string" : "It is also the API for Smalltalk code to control a sketch but without any GUI controls"
 												}
 											]
 										},
@@ -996,7 +996,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T08:34:21.955863+02:00"
+												"dateAndTimeString" : "2024-04-16T17:20:45.247604+02:00"
 											}
 										},
 										"uid" : {
@@ -1006,7 +1006,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "HF suggest to directly try to implement the API in Bloc rather than trying to get it to work in Pharo Morphic first."
+										"string" : "HF suggests to directly try to implement the API in Bloc rather than trying to get it to work in Pharo Morphic first."
 									}
 								]
 							},

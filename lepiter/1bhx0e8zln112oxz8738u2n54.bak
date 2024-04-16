@@ -2111,7 +2111,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T11:51:51.019462+02:00"
+									"dateAndTimeString" : "2024-04-12T11:52:26.347302+02:00"
 								}
 							},
 							"uid" : {
@@ -2121,7 +2121,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtClass:name=DrGeo}} is a “presenter” for the app"
+							"string" : "{{gtClass:name=DrGeo}} is a “presenter” for the app — is it a kind of façade?"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-12T11:52:27.021911+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-12T11:52:27.021911+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "H6Be90TSDQCUueOxDNTnZQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
 						},
 						{
 							"__type" : "textSnippet",

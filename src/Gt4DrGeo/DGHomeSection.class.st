@@ -1,3 +1,6 @@
+"
+I define the cards for the GT Home when this repo is loaded.
+"
 Class {
 	#name : #DGHomeSection,
 	#superclass : #GtHomeMultiCardSection,
