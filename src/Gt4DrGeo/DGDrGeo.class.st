@@ -1,11 +1,11 @@
 Class {
-	#name : #DrGeo4GT,
+	#name : #DGDrGeo,
 	#superclass : #DrGeo,
 	#category : #'Gt4DrGeo-Presenter'
 }
 
 { #category : #'instance  creation' }
-DrGeo4GT class >> gtService [
+DGDrGeo class >> gtService [
 "instanciate a DrGeo service, to embed in third party Morph. It is just the canvas without surrounding menu and icon"
 	^ self basicNew
 		initializeGtService;
@@ -13,8 +13,8 @@ DrGeo4GT class >> gtService [
 ]
 
 { #category : #'initialize-release' }
-DrGeo4GT >> initializeGtService [
+DGDrGeo >> initializeGtService [
 	self initializeBasic.
-	self controlsManager: DrGeo4GTMinimalControlsManager.
+	self controlsManager: DGMinimalControlsManager.
 	self move
 ]

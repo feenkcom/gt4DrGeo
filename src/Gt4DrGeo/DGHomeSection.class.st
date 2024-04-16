@@ -1,11 +1,11 @@
 Class {
-	#name : #DrGeoHomeSection,
+	#name : #DGHomeSection,
 	#superclass : #GtHomeMultiCardSection,
 	#category : #'Gt4DrGeo-Sections'
 }
 
 { #category : #accessing }
-DrGeoHomeSection >> drGeoCard [
+DGHomeSection >> drGeoCard [
 	<gtSectionCard>
 	<gtExample>
 	^ GtHomeCard page
@@ -19,6 +19,6 @@ DrGeoHomeSection >> drGeoCard [
 ]
 
 { #category : #accessing }
-DrGeoHomeSection >> sectionTitle [
+DGHomeSection >> sectionTitle [
 	^ 'Dr Geo project'
 ]

@@ -5,6 +5,6 @@ GtHome >> drGeoSection [
 	<gtHomeSection>
 	<gtExample>
 	<noTest>
-	^ DrGeoHomeSection new 
+	^ DGHomeSection new 
 		priority: 10
 ]

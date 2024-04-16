@@ -25,10 +25,3 @@ Number >> printParenthesisOn: aStream [
 			aStream nextPut: $)]
 		ifFalse: [self printOn: aStream]
 ]
-
-{ #category : #'*DrGeo' }
-Number >> printShowingDecimalPlaces: digits [
-	^ String 
-		streamContents:  [:str | self printOn: str fractionDigits: digits]
-		estimatedSize: 10 + digits
-]

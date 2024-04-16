@@ -1,11 +1,11 @@
 Class {
-	#name : #DrGeo4GTMinimalControlsManager,
+	#name : #DGMinimalControlsManager,
 	#superclass : #DrGUIMinimalControlsManager,
 	#category : #'Gt4DrGeo-View'
 }
 
 { #category : #initialization }
-DrGeo4GTMinimalControlsManager >> installTools [
+DGMinimalControlsManager >> installTools [
 	"Empty for now. We will slowly populate this ..."
 
 	
