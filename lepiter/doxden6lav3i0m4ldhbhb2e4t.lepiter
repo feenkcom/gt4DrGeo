@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-12T11:25:51.062609+02:00"
+						"dateAndTimeString" : "2024-04-16T16:17:18.692538+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,41 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The tests are in {{gtPackage:name=DrGeo-Test}}, and they work with sketch files. We don't have unit tests per se for the model classes."
+				"string" : "The tests are tagged `Test` and they work with sketch files. We don't have unit tests per se for the model classes."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-16T16:17:21.830449+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-16T16:19:36.19779+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "y6YjIpnSDQCyU2hiCkTShg=="
+				},
+				"code" : "#DrGeo asPackage classes select: [ :c | c isTaggedWith: 'Test' ]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -145,7 +179,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T11:34:04.098815+02:00"
+									"dateAndTimeString" : "2024-04-16T16:20:06.594432+02:00"
 								}
 							},
 							"uid" : {
@@ -155,7 +189,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtMethod:name=DrGeoScriptTestResource>>#setUp}} fails because it runs {{gtMethod:name=DrGUIMinimalControlsManager>>#installTools}}. We comment this out in {{gtMethod:name=DrGeo>>#controlsManager:}}. All the test now fail."
+							"string" : "{{gtMethod:name=DrGeoScriptTestResource>>#setUp}} fails because it runs {{gtMethod:name=DrGUIMinimalControlsManager>>#installTools}}. We comment this out in {{gtMethod:name=DrGeo>>#controlsManager:}}. All the tests now fail."
 						},
 						{
 							"__type" : "textSnippet",

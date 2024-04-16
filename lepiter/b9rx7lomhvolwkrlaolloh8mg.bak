@@ -97,40 +97,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T16:14:51.994272+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T16:15:12.413588+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "Jlc1GZnSDQCWdXjACkTShg=="
-							},
-							"code" : "(GtGitRepository forRepoNamed: 'gt4drGeo')"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2024-04-16T08:18:48.158388+02:00"
 								}
 							},
@@ -142,14 +108,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T08:34:07.543017+02:00"
+									"dateAndTimeString" : "2024-04-16T16:15:39.774654+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "X8WrcpLSDQCNBtptCyvImw=="
 							},
-							"code" : "drGeo := icebergWorkingCopy packageNamed: 'DrGeo'.\rdrGeo isLoaded ifFalse: [ drGeo load ]."
+							"code" : "drGeo := (GtGitRepository forRepoNamed: 'gt4DrGeo') icebergWorkingCopy\r\t\tpackageNamed: 'DrGeo'.\rdrGeo isLoaded ifFalse: [ drGeo load ]."
 						},
 						{
 							"__type" : "textSnippet",
