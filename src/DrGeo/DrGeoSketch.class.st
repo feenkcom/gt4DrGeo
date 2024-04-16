@@ -331,14 +331,6 @@ DrGeoSketch >> gridOn [
 	 presenter gridOnOff 
 ]
 
-{ #category : #'initialize-release' }
-DrGeoSketch >> initialize [
-	presenter := DrGeo service
-		stSketch: self;
-		yourself .
-	DrGeoSketch triggerEvent: #newSmalltalkSketch with: self
-]
-
 { #category : #helpers }
 DrGeoSketch >> integer: value at: aPoint from: startValue to: endValue [ 
 	^ self integer: value at: aPoint from: startValue to: endValue name: ''

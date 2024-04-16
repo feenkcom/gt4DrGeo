@@ -179,7 +179,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T16:20:06.594432+02:00"
+									"dateAndTimeString" : "2024-04-16T16:49:33.550165+02:00"
 								}
 							},
 							"uid" : {
@@ -189,7 +189,118 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtMethod:name=DrGeoScriptTestResource>>#setUp}} fails because it runs {{gtMethod:name=DrGUIMinimalControlsManager>>#installTools}}. We comment this out in {{gtMethod:name=DrGeo>>#controlsManager:}}. All the tests now fail."
+							"string" : "{{gtMethod:name=DrGeoScriptTestResource>>#setUp}} fails because it runs {{gtMethod:name=DrGUIMinimalControlsManager>>#installTools}}. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T16:49:30.302642+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T16:50:36.18716+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "HsoVlZnSDQCcaRwOCHndRg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We introduce a subclass {{gtClass:name=DrGeo4GT}} of {{gtClass:name=DrGeo}} and make {{gtMethod:name=DrGeoSketch>>#initialize}} send the new {{gtMethod:name=DrGeo4GT class>>#gtService}}, which sends {{gtMethod:name=DrGeo4GT>>#initializeGtService}}. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T16:40:15.57071+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T16:42:24.134659+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Z0QFdJnSDQCbY/B4CHndRg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We need to subclass {{gtClass:name=DrGUIMinimalControlsManager}}. We create {{gtClass:name=DrGeo4GTMinimalControlsManager}} and for now just override {{gtMethod:name=DrGeo4GTMinimalControlsManager>>#installTools}}. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T16:37:57.222769+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T16:37:57.222769+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "mTzGa5nSDQCaU8O/CHndRg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
 						},
 						{
 							"__type" : "textSnippet",
