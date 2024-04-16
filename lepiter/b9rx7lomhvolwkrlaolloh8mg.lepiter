@@ -108,14 +108,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T08:34:07.543017+02:00"
+									"dateAndTimeString" : "2024-04-16T16:15:39.774654+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "X8WrcpLSDQCNBtptCyvImw=="
 							},
-							"code" : "drGeo := icebergWorkingCopy packageNamed: 'DrGeo'.\rdrGeo isLoaded ifFalse: [ drGeo load ]."
+							"code" : "drGeo := (GtGitRepository forRepoNamed: 'gt4DrGeo') icebergWorkingCopy\r\t\tpackageNamed: 'DrGeo'.\rdrGeo isLoaded ifFalse: [ drGeo load ]."
 						},
 						{
 							"__type" : "textSnippet",

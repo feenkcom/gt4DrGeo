@@ -97,6 +97,40 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T16:14:51.994272+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-16T16:15:12.413588+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Jlc1GZnSDQCWdXjACkTShg=="
+							},
+							"code" : "(GtGitRepository forRepoNamed: 'gt4drGeo')"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2024-04-16T08:18:48.158388+02:00"
 								}
 							},
@@ -142,7 +176,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T08:34:40.230686+02:00"
+									"dateAndTimeString" : "2024-04-16T08:35:02.11132+02:00"
 								}
 							},
 							"uid" : {
@@ -152,7 +186,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Or this way of "
+							"string" : "Or this way if this repo isn't already loaded."
 						},
 						{
 							"__type" : "pharoSnippet",
