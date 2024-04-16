@@ -327,7 +327,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-02-15T09:19:22.714154+01:00"
+						"dateAndTimeString" : "2024-04-16T08:16:20.360474+02:00"
 					}
 				},
 				"uid" : {
@@ -338,6 +338,77 @@
 					"__type" : "textStyle"
 				},
 				"string" : "There is now a new [GitHub repo](https://github.com/hilaire/drgeo) for DrGeo."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-16T08:16:21.955792+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-16T08:17:20.070945+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XOr0aZLSDQCF2EZICyvImw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The {{gtPackage:name=DrGeo}} package is not loaded by default. Load i"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-16T08:16:13.863956+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-16T08:16:15.895878+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "RXB5aZLSDQCDxR+vCyvImw=="
+				},
+				"code" : "Metacello new\r\trepository: 'github://feenkcom/gt4DrGeo:main/src';\r\tbaseline: 'DrGeo';\r\tload."
 			},
 			{
 				"__type" : "textSnippet",
@@ -481,7 +552,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-10T16:35:22.815378+02:00"
+									"dateAndTimeString" : "2024-04-16T08:00:09.729987+02:00"
 								}
 							},
 							"uid" : {
@@ -491,7 +562,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Loading Dr Geo from the GH repo]]"
+							"string" : "[[Loading Dr Geo source code]]"
 						},
 						{
 							"__type" : "textSnippet",
