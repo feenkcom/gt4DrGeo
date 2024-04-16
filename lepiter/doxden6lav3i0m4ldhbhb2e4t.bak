@@ -364,7 +364,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T17:16:09.383533+02:00"
+									"dateAndTimeString" : "2024-04-16T17:42:59.648089+02:00"
 								}
 							},
 							"uid" : {
@@ -374,7 +374,7 @@
 							"code" : "sketch := DGScriptExamples new sketch."
 						},
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -387,7 +387,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T17:18:27.424825+02:00"
+									"dateAndTimeString" : "2024-04-16T17:43:02.506008+02:00"
 								}
 							},
 							"editEmail" : {
@@ -398,14 +398,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T17:29:47.8204+02:00"
+									"dateAndTimeString" : "2024-04-16T17:43:27.573142+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "fTCg/JnSDQCwD8/yC7eWlQ=="
+								"uidString" : "EyCMVJrSDQCp2RbSC7eWlQ=="
 							},
-							"code" : "sketch drawable"
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Here wer "
 						},
 						{
 							"__type" : "pharoSnippet",

@@ -13,4 +13,6 @@ Class {
 
 { #category : #initalization }
 DGDrawable >> initialize [
+	itemViews := OrderedCollection new.
+	undoneViews := OrderedCollection new.
 ]

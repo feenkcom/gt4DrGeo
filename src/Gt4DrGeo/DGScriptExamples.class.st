@@ -15,5 +15,7 @@ DGScriptExamples >> sketch [
 	| sketch |
 	sketch := DrGeoSketch new.
 	self assert: sketch presenter class equals: DGDrGeo.
+	self assert: sketch drawable class equals: DGDrawable.
+	self assert: sketch view class equals: DGMiniView.
 	^ sketch
 ]
