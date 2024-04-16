@@ -65,7 +65,7 @@ DrGCurveMorph >> isCurve [
 
 { #category : #label }
 DrGCurveMorph >> labelPosition [
-	^(self drawable worldToMorph: (mathItem pointAt: anchorAbscissa)) + labelPositionDelta
+	^(self drawable worldToMorph: (mathItem pointAt: anchorAbscissa)) + self labelPositionDelta
 ]
 
 { #category : #updating }
@@ -76,7 +76,7 @@ DrGCurveMorph >> restoreNormalColor [
 
 { #category : #'stepping and presenter' }
 DrGCurveMorph >> step [
-	blink ifFalse: [^self].
+	self isBlinking ifFalse: [^self].
 	super step.
 	borderColor = DrGTypeColor blinkingColor 
 		ifTrue: [borderColor := Theme current adjustColor: style borderColor]

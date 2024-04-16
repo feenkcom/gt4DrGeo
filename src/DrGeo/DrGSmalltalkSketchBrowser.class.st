@@ -55,7 +55,7 @@ DrGSmalltalkSketchBrowser >> defaultColor [
 { #category : #'submorphs-add/remove' }
 DrGSmalltalkSketchBrowser >> delete [
 	super delete.
-	self releaseMiniView 
+	self releaseMiniView
 ]
 
 { #category : #accessing }

@@ -1,3 +1,6 @@
+"
+An abstract class for value calculated or extracted from the properties of mathematical objects.
+"
 Class {
 	#name : #DrGComputedValueItem,
 	#superclass : #DrGValueItem,

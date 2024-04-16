@@ -3,7 +3,7 @@ Point item defined by a block closure
 "
 Class {
 	#name : #DrGPointBlockItem,
-	#superclass : #DrGPointCoordinateItem,
+	#superclass : #DrGPointItem,
 	#instVars : [
 		'pointBlock'
 	],
@@ -17,8 +17,13 @@ DrGPointBlockItem >> = aMathItem [
 
 { #category : #testing }
 DrGPointBlockItem >> doParentsExist [ 
-	^ super doParentsExist and: [pointBlock isNil not]
+	^ exist := super doParentsExist and: [pointBlock isNil not]
 
+]
+
+{ #category : #'testing-model' }
+DrGPointBlockItem >> isConstrainedPointItem [
+	^ true
 ]
 
 { #category : #'xml writing' }
@@ -73,6 +78,6 @@ DrGPointBlockItem >> update [
 DrGPointBlockItem >> writeAsXmlTo: aNode [
 	|node|
 	node := super writeAsXmlTo: aNode.
-	node addElement: ((XMLElement named: #code) addContent: (XMLStringNode string: pointBlock asString)).
+	node addElement: ((XMLElement named: #code) addContent: (XMLStringNode string: pointBlock decompile asString)).
 	^node
 ]

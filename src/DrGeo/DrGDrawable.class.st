@@ -611,8 +611,14 @@ DrGDrawable >> recoverViewOf: aMathItem [
 		detect: [:morph | morph mathItem == aMathItem]
 		ifFound: [:morph | morph ]
 		ifNone: [^ self itemView: aMathItem].
-	itemMorph mathItem: aMathItem.
-	itemMorph reInitialize.
+	itemMorph mathItem: aMathItem in: self.
+	itemMorph isBitmap 
+		ifTrue: [self addMorphBack: itemMorph ]
+		ifFalse: [self addMorph: itemMorph].
+	itemMorph 
+		labelMorph: itemMorph mathItem name	;
+		forcedVisibility: false;
+		restoreNormalColor.
 	undoneViews := undoneViews copyWithout: itemMorph.
 	itemViews add: itemMorph
 ]
@@ -648,7 +654,7 @@ DrGDrawable >> registerEvents [
 { #category : #'initialize-release' }
 DrGDrawable >> release [
 	self domain removeActionsWithReceiver: self.
-	itemViews do: [:each | each release]
+	self removeAllMorphs 
 ]
 
 { #category : #drawing }

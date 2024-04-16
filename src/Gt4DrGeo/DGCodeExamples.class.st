@@ -214,7 +214,7 @@ DGCodeExamples >> latestPatch [
 
 	<gtExample>
 	self dummyClasses.
-	^ self archive / 'DrGeo-patched-2024-04-12.st'
+	^ self archive / 'DrGeo-patched-2024-04-13.st'
 ]
 
 { #category : #example }

@@ -171,11 +171,11 @@ DrGTool >> morph [
 { #category : #accessing }
 DrGTool >> morph: aMorph [
 	morph ifNotNil: [
-		morph stopBlinking.
+		morph stopStepping. "Blinking"
 		presenter controlsManager tree ifNotNil: [:aTree | aTree mathItem: nil]].
 	morph := aMorph.
 	morph ifNotNil: [
-		morph startBlinking.
+		morph startStepping. " blinking"
 		presenter controlsManager tree ifNotNil: [:aTree | aTree mathItem: morph mathItem]
 	]
 	

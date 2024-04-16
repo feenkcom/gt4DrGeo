@@ -51,7 +51,7 @@ DrGPointMorph >> isPoint [
 
 { #category : #label }
 DrGPointMorph >> labelPosition [
-	^(self drawable worldToMorph: mathItem point) + labelPositionDelta
+	^(self drawable worldToMorph: mathItem point) + self labelPositionDelta
 ]
 
 { #category : #accessing }

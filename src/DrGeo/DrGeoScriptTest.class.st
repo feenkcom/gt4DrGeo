@@ -240,7 +240,7 @@ DrGeoScriptTest >> testCircle [
 { #category : #'testing-circle' }
 DrGeoScriptTest >> testCircleRadius [
 	| c |
-	c := sketch circleCenter: (sketch point: 3@2) radius: (sketch freeValue: 5).
+	c := sketch circleCenter: (sketch point: 3@2) radius: (sketch value: 5).
 	self assert: c mathItem isCircleItem.
 	self assert: c mathItem isGeometricItem.
 	self assert: c mathItem isCurveItem.
@@ -254,12 +254,12 @@ DrGeoScriptTest >> testCircleRadius [
 DrGeoScriptTest >> testCircleRadiusUnicity [
 	| a r c1 c2|
 	a := sketch point: 788@985.
-	r := sketch freeValue: 5.
+	r := sketch value: 5.
 	c1 := sketch circleCenter: a radius: r.   
 	c2 := sketch circleCenter: a radius: r.  
 	self assert: c1 mathItem == c2 mathItem.
 	""
-	r := sketch freeValue: 5.
+	r := sketch value: 5.
 	c2 := sketch circleCenter: a radius: r.  
 	self shouldnt: c1 mathItem == c2 mathItem.
 ]
@@ -514,7 +514,7 @@ DrGeoScriptTest >> testLineReflexion [
 DrGeoScriptTest >> testLineRotation [
 	| l1 l2 c k |
 	c := sketch point: 1 @ 1.
-	k := sketch freeValue: Float pi / 3.
+	k := sketch value: Float pi / 3.
 	""
 	l1 := sketch line: (sketch point: 3@2) to: (sketch point: 2@4).
 	l2 := sketch rotate: l1 center: c angle: k.
@@ -527,14 +527,14 @@ DrGeoScriptTest >> testLineRotation [
 DrGeoScriptTest >> testLineScale [
 	| l1 l2 c k |
 	c := sketch point: 1 @ 1.
-	k := sketch freeValue: 3.
+	k := sketch value: 3.
 	""
 	l1 := sketch line: (sketch point: 3@2) to: (sketch point: 2@4).
 	l2 := sketch scale: l1 center: c factor: k.
 	self assert: (l2 mathItem origin closeTo: 7@4).
 	self assert: (l2 mathItem direction = (l1 mathItem direction * 3)).
 	""
-	k := sketch freeValue: -3.
+	k := sketch value: -3.
 	l2 := sketch scale: l1 center: c factor: k.
 	self assert: (l2 mathItem origin closeTo: -5@ -2).
 	self assert: (l2 mathItem direction = (l1 mathItem direction * -3))  
@@ -698,8 +698,8 @@ DrGeoScriptTest >> testPerpendicularSegment [
 { #category : #'testing-point' }
 DrGeoScriptTest >> testPointByCoordinates [
 	|x y p|
-	x := sketch freeValue: 12.
-	y := sketch freeValue: -18.
+	x := sketch value: 12.
+	y := sketch value: -18.
 	p := sketch pointX: x Y: y.
 	self assert: p coordinates = (12 @ -18)   
 ]
@@ -707,12 +707,12 @@ DrGeoScriptTest >> testPointByCoordinates [
 { #category : #'testing-point' }
 DrGeoScriptTest >> testPointByCoordinatesUnicity [
 	|x y p q|
-	x := sketch freeValue: 12.
-	y := sketch freeValue: -18.
+	x := sketch value: 12.
+	y := sketch value: -18.
 	p := sketch pointX: x Y: y.
 	q := sketch pointX: x Y: y.
 	self should: p mathItem == q mathItem.
-	q := sketch pointX: x Y:  (sketch freeValue: -18.1).
+	q := sketch pointX: x Y:  (sketch value: -18.1).
 	self shouldnt: p mathItem == q mathItem    
 ]
 
@@ -964,13 +964,13 @@ DrGeoScriptTest >> testPointReflexion [
 DrGeoScriptTest >> testPointRotation [
 	| c v a b|
 	c := sketch point: 1@1.
-	v := sketch freeValue: Float pi / 3.  
+	v := sketch value: Float pi / 3.  
 	""
 	a := sketch point: 2@1.
 	b := sketch rotate: a center: c angle: v.
 	self assert: (b coordinates closeTo: 1.5@1.8660).
 	""
-	v := sketch freeValue:  (Float pi / 3) negated.  
+	v := sketch value:  (Float pi / 3) negated.  
 	b := sketch rotate: a center: c angle: v.
 	self assert: (b coordinates closeTo: 1.5@0.13397).
 
@@ -980,7 +980,7 @@ DrGeoScriptTest >> testPointRotation [
 DrGeoScriptTest >> testPointScale [
 	| c k a b|
 	c := sketch point: 1@1.
-	k := sketch freeValue: 3.  
+	k := sketch value: 3.  
 	""
 	a := sketch point: 2@1.
 	b := sketch scale: a center: c factor: k.
@@ -991,7 +991,7 @@ DrGeoScriptTest >> testPointScale [
 	self assert: b coordinates = (7@4).
 	""
 	a := sketch point: 2@1.
-	k := sketch freeValue: -3.  
+	k := sketch value: -3.  
 	b := sketch scale: a center: c factor: k.
 	self assert: b coordinates = (-2@1).
 	""
@@ -1181,7 +1181,7 @@ DrGeoScriptTest >> testRayReflexion [
 DrGeoScriptTest >> testRayRotation [
 	| r1 r2 c k |
 	c := sketch point: 1 @ 1.
-	k := sketch freeValue: Float pi / 3.
+	k := sketch value: Float pi / 3.
 	""
 	r1 := sketch ray: 3@2 to: 2@4.
 	r2 := sketch rotate: r1 center: c angle: k.
@@ -1194,14 +1194,14 @@ DrGeoScriptTest >> testRayRotation [
 DrGeoScriptTest >> testRayScale [
 	| r1 r2 c k |
 	c := sketch point: 1 @ 1.
-	k := sketch freeValue: 3.
+	k := sketch value: 3.
 	""
 	r1 := sketch ray: (sketch point: 3@2) to: (sketch point: 2@4).
 	r2 := sketch scale: r1 center: c factor: k.
 	self assert: (r2 mathItem origin closeTo: 7@4).
 	self assert: (r2 mathItem direction = (r1 mathItem direction * 3)).
 	""
-	k := sketch freeValue: -3.
+	k := sketch value: -3.
 	r2 := sketch scale: r1 center: c factor: k.
 	self assert: (r2 mathItem origin closeTo: -5@ -2).
 	self assert: (r2 mathItem direction = (r1 mathItem direction * -3))  
@@ -1290,7 +1290,7 @@ DrGeoScriptTest >> testSegmentReflexion [
 DrGeoScriptTest >> testSegmentRotation [
 	| u v c k |
 	c := sketch point: 1 @ 1.
-	k := sketch freeValue: Float pi / 3.
+	k := sketch value: Float pi / 3.
 	""
 	u := sketch segment: (sketch point: 3@2) to: (sketch point: 2@4).
 	v := sketch rotate: u center: c angle: k.
@@ -1303,14 +1303,14 @@ DrGeoScriptTest >> testSegmentRotation [
 DrGeoScriptTest >> testSegmentScale [
 	| u v c k |
 	c := sketch point: 1 @ 1.
-	k := sketch freeValue: 3.
+	k := sketch value: 3.
 	""
 	u := sketch segment: (sketch point: 3@2) to: (sketch point: 2@4).
 	v := sketch scale: u center: c factor: k.
 	self assert: (v mathItem origin closeTo: 7@4).
 	self assert: (v mathItem direction = (u mathItem direction * 3)). 
 	""
-	k := sketch freeValue: -3.
+	k := sketch value: -3.
 	v := sketch scale: u center: c factor: k.
 	self assert: (v mathItem origin closeTo: -5@ -2).
 	self assert: (v mathItem direction = (u mathItem direction * -3))  
@@ -1375,10 +1375,10 @@ DrGeoScriptTest >> testSlope [
 { #category : #'testing-value' }
 DrGeoScriptTest >> testValueFree [
 	| v |
-	v := sketch freeValue: Float pi / 3.  
+	v := sketch value: Float pi / 3.  
 	self assert: (v mathItem valueItem closeTo: Float pi / 3).
 	""
-	v := sketch freeValue: 0.00001.  
+	v := sketch value: 0.00001.  
 	self assert: (v mathItem valueItem closeTo: 0.00001).
 
 ]

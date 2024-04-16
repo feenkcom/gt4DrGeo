@@ -108,14 +108,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T08:01:34.819528+02:00"
+									"dateAndTimeString" : "2024-04-16T08:02:39.098908+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "00gUNZLSDQCambZeDVYRAA=="
 							},
-							"code" : ""
+							"code" : "Metacello new\r\trepository: 'github://feenkcom/gt4DrGeo:main/src';\r\tbaseline: 'DrGeo';\r\tload."
 						}
 					]
 				},

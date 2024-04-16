@@ -216,8 +216,9 @@ DrGeoDomain >> redo [
 
 { #category : #'initialize-release' }
 DrGeoDomain >> release [
-	factory release.
-	cmdManager release.
+	factory := cmdManager := nil
+	"factory release.
+	cmdManager release."
 ]
 
 { #category : #accessing }

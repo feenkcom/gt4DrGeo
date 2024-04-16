@@ -8,7 +8,7 @@ Class {
 DrGSelectToolStateDragged >> handleChoice: aMorphCollection [ 
 "In this state, handle a choice to merge two points"
 	aMorphCollection ifNotEmpty: [
-		aMorphCollection do: [:aCostume | aCostume stopBlinking].
+		aMorphCollection do: [:aMorph | aMorph stopStepping " blinking"].
 		self context mathItem point: (self drawable morphToWorld: self context start).
 		self context domain 
 			merge: self context mathItem with: aMorphCollection first mathItem.

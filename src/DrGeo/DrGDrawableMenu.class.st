@@ -23,7 +23,7 @@ DrGDrawableMenu >> mouseButton1Down: aMouseButtonEvent localPosition: localEvent
 	"click outside => step blinking the selected item "
 	(stayUp or: [(self coversLocalPoint:localEventPosition) or: [selectedItem isNil]]) 
 		ifFalse: [
-			selectedItem arguments first first stopBlinking.
+			selectedItem arguments first first stopStepping. " blinking"
 			tool reset].
 	super mouseButton1Down: aMouseButtonEvent localPosition: localEventPosition 
 ]
@@ -31,9 +31,9 @@ DrGDrawableMenu >> mouseButton1Down: aMouseButtonEvent localPosition: localEvent
 { #category : #control }
 DrGDrawableMenu >> selectItem: aMenuItem [ 
 	selectedItem ifNotNil:[
-		selectedItem arguments first first stopBlinking].
+		selectedItem arguments first first stopStepping " blinking"].
 	aMenuItem ifNotNil:[
-		aMenuItem arguments first first startBlinking].
+		aMenuItem arguments first first startStepping " blinking"].
 	^ super selectItem: aMenuItem 
 ]
 

@@ -84,10 +84,10 @@ DrGBuildTool >> reset [
 
 { #category : #updating }
 DrGBuildTool >> startBlinking [
-	selectedMorphs do: [ :aMorph | aMorph startBlinking ]
+	selectedMorphs do: [ :aMorph | aMorph startStepping " blinking"]
 ]
 
 { #category : #updating }
 DrGBuildTool >> stopBlinking [
-	selectedMorphs do: [ :aMorph | aMorph stopBlinking ]
+	selectedMorphs do: [ :aMorph | aMorph stopStepping ]
 ]

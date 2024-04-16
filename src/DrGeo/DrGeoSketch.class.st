@@ -255,7 +255,7 @@ DrGeoSketch >> finalizeValue: item [
 
 { #category : #value }
 DrGeoSketch >> finalizeValue: item hide: hide [
-"By default we hide the value"
+" Optionally hide the value "
 	| wrappedItem |
 	wrappedItem := DrGWrappedValue wrap: (self morphOf: item).
 	 hide ifTrue: [ wrappedItem hide ].
@@ -294,17 +294,15 @@ DrGeoSketch >> float: aValue at: aPoint from: startValue to: endValue name: name
 ]
 
 { #category : #value }
-DrGeoSketch >> freeValue: aNumber [ 
-	^ self freeValue: aNumber at: self aPosition
+DrGeoSketch >> freeValue: aNumberOrBlock [
+" Obsolete use #value: message"
+	^ self value: aNumberOrBlock 
 ]
 
 { #category : #value }
-DrGeoSketch >> freeValue: aNumber at: aPosition [
-	| answer |
-	presenter notInteractive: true.
-	answer := self finalizeValue: ((DrGValueValueItem newWith: {aPosition}) valueItem: aNumber).
-	presenter notInteractive: false.
-	^ answer
+DrGeoSketch >> freeValue: aNumberOrBlock at: aPosition [
+" obsolete "
+	^ self value: aNumberOrBlock parents: {} at: aPosition
 ]
 
 { #category : #'user interface' }
@@ -494,23 +492,19 @@ DrGeoSketch >> plot: f from: x0 to: x1 [
 DrGeoSketch >> point: aPointOrBlock [
 	^ aPointOrBlock isPoint 
 		ifTrue:  [self finalizePoint: (DrGPointFreeItem newWith: {aPointOrBlock})]
-		ifFalse: [self finalizePoint: (DrGPointBlockItem newWith: (OrderedCollection with: aPointOrBlock)	)]
+		ifFalse: [self finalizePoint: (DrGPointBlockItem newWith: (Array with: aPointOrBlock)	)]
 ]
 
 { #category : #point }
 DrGeoSketch >> point: block parent: wrpValue [
-	|collection|
-	collection := OrderedCollection with: block.
-	collection add: wrpValue mathItem.
-	^ self finalizePoint: (DrGPointBlockItem newWith: collection)
+	^  self point: block parents: (Array with: wrpValue)
 ]
 
 { #category : #point }
 DrGeoSketch >> point: block parents: wrpValueArray [
-	|collection|
-	collection := OrderedCollection with: block.
-	collection addAll: (wrpValueArray collect: [:wrp | wrp mathItem]).
-	^ self finalizePoint: (DrGPointBlockItem newWith: collection)
+	| array |
+	array := Array with: block withAll:  (wrpValueArray collect: [:wrp | wrp mathItem]).
+	^ self finalizePoint: (DrGPointBlockItem newWith: array)
 ]
 
 { #category : #point }
@@ -660,6 +654,35 @@ DrGeoSketch >> update [
 	self domain updateAllMathItems
 ]
 
+{ #category : #value }
+DrGeoSketch >> value: aNumberOrBlock [
+	^ self value: aNumberOrBlock parents: {} at: self aPosition 
+]
+
+{ #category : #value }
+DrGeoSketch >> value: aNumberOrBlock parent: wrpValue [
+	^ self value: aNumberOrBlock parents: (Array with: wrpValue ) at: self aPosition 
+]
+
+{ #category : #value }
+DrGeoSketch >> value: aNumberOrBlock parents: wrpValueArray at: aPosition [
+	| answer |
+	presenter notInteractive: true.
+	aNumberOrBlock isBlock 
+	ifTrue: [ " Value defined by a block of code "
+		| collection |
+		collection := OrderedCollection new.
+		collection 
+			addAll: (wrpValueArray collect: [:wrp | wrp mathItem]);
+			add: aNumberOrBlock ;
+			add: aPosition.
+		answer := self finalizeValue: (DrGValueBlockItem newWith: collection asArray) 		] 
+	ifFalse: [" Value defined by a number, there is no parents "
+		answer := self finalizeValue: ((DrGValueValueItem newWith: {aPosition}) valueItem: aNumberOrBlock)	 ].	
+	presenter notInteractive: false.
+	^ answer
+]
+
 { #category : #'curve finit' }
 DrGeoSketch >> vector: wrpPt [
 	^ self
@@ -693,7 +716,7 @@ DrGeoSketch >> wrappedPoint: aPointOrWrappedPointItem [
 DrGeoSketch >> wrappedValue: aNumberOrWrappedValueItem [
 "ensure a wrapped value"
 	^ aNumberOrWrappedValueItem  isNumber 
-		ifTrue: [(self freeValue: aNumberOrWrappedValueItem ) hide] 
+		ifTrue: [(self value: aNumberOrWrappedValueItem ) hide] 
 		ifFalse:   [aNumberOrWrappedValueItem]
 ]
 

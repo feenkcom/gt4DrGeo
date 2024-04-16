@@ -7,9 +7,14 @@ Instance Variables
 "
 Class {
 	#name : #DrGPointScriptItem,
-	#superclass : #DrGPointCoordinateItem,
+	#superclass : #DrGPointItem,
 	#category : #'DrGeo-Model-Item'
 }
+
+{ #category : #'testing-model' }
+DrGPointScriptItem >> isConstrainedPointItem [
+	^ true
+]
 
 { #category : #'xml writing' }
 DrGPointScriptItem >> nodeType [

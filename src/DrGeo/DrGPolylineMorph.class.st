@@ -79,10 +79,8 @@ DrGPolylineMorph class >> example4 [
 
 { #category : #'instance creation' }
 DrGPolylineMorph class >> from: start to: end color: lineColor width: width in: aDrawable [
-	| instance |
-	instance := self new vertices: {start. end} color: nil borderWidth: width borderColor: lineColor.
-	instance	 drawable: aDrawable .
-	^ instance 
+	^ self new vertices: {start. end} color: nil borderWidth: width borderColor: lineColor.
+	
 ]
 
 { #category : #'instance creation' }

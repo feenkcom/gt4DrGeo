@@ -1,14 +1,16 @@
 "
-I am label sticked arround a math object.
+I am a label sticked arround a math object.
 I can be dragged arround the objet and renammed from the Style tool.
 - itemMorph is the view of a math Item I am attached too
+- delta : my x@y delta to the reference point of the itemMorph I am attached to
 "
 Class {
 	#name : #DrGLabel,
 	#superclass : #LabelMorph,
 	#instVars : [
 		'blink',
-		'itemMorph'
+		'itemMorph',
+		'delta'
 	],
 	#category : #'DrGeo-View'
 }
@@ -23,6 +25,16 @@ DrGLabel >> acceptContents [
 	itemMorph mathItem name: contents asString.
 ]
 
+{ #category : #accessing }
+DrGLabel >> delta [
+	^ delta
+]
+
+{ #category : #accessing }
+DrGLabel >> delta: aPoint [
+	delta := aPoint
+]
+
 { #category : #'event handling' }
 DrGLabel >> handlesMouseDown: evt [
 	^true
@@ -32,6 +44,7 @@ DrGLabel >> handlesMouseDown: evt [
 DrGLabel >> initialize [
 	super initialize.
 	blink := false.
+	delta := 7@7.
 	self font: DrGeoSystem canvasFont
 
 ]

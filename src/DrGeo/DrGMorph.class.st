@@ -11,12 +11,9 @@ Class {
 	#name : #DrGMorph,
 	#superclass : #Morph,
 	#instVars : [
-		'drawable',
 		'mathItem',
 		'style',
-		'labelMorph',
-		'labelPositionDelta',
-		'blink'
+		'labelMorph'
 	],
 	#category : #'DrGeo-View-Item'
 }
@@ -24,10 +21,9 @@ Class {
 { #category : #'instance creation' }
 DrGMorph class >> for: aMathItem in: aDrawable [
 	^ (aMathItem morphClass basicNew)
-		drawable: aDrawable ;
-		mathItem: aMathItem;
+		mathItem: aMathItem in: aDrawable;
 		initialize;
-		addMyMorph;
+		addMyMorphTo: aDrawable;
 		redrawNeeded;
 		yourself
 ]
@@ -42,6 +38,13 @@ DrGMorph >> addMyMorph [
 	self isBitmap 
 		ifTrue: [self drawable addMorphBack: self]
 		ifFalse: [self drawable addMorph: self]
+]
+
+{ #category : #'initialize-release' }
+DrGMorph >> addMyMorphTo: aDrawable [
+	self isBitmap 
+		ifTrue: [aDrawable addMorphBack: self]
+		ifFalse: [aDrawable addMorph: self]
 ]
 
 { #category : #printing }
@@ -67,7 +70,7 @@ DrGMorph >> computeLabelPositionDelta: aVector [
 	labelMorph ifNil: [ ^ (0 @ 0) ].
 	"Authorized distance to the item"
 	distance := aVector r min: 40.
-	labelPositionDelta := aVector normalized * distance - labelMorph morphCenter
+	labelMorph delta: aVector normalized * distance - labelMorph morphCenter
 ]
 
 { #category : #label }
@@ -96,12 +99,12 @@ Other straight line morph use VectorGraphics detection, see contrainsPoint:"
 
 { #category : #accessing }
 DrGMorph >> domain [
-	^ drawable domain
+	^ self drawable domain
 ]
 
 { #category : #accessing }
 DrGMorph >> drawable [
-	^ drawable 
+	^ owner 
 ]
 
 { #category : #accessing }
@@ -150,8 +153,6 @@ DrGMorph >> hide [
 { #category : #'initialize-release' }
 DrGMorph >> initialize [
 	super initialize.
-	blink := false.
-	labelPositionDelta := 7@7.
 	self style: (self styleClass newWith: self).
 	self labelMorph: mathItem name.
 ]
@@ -169,6 +170,13 @@ DrGMorph >> isArc [
 { #category : #'testing type' }
 DrGMorph >> isBitmap [
 	^ false
+]
+
+{ #category : #testing }
+DrGMorph >> isBlinking [
+	^ self world 
+		ifNotNil: [:w | w isStepping: self			] 
+		ifNil: [false]
 ]
 
 { #category : #'testing type' }
@@ -286,10 +294,15 @@ DrGMorph >> labelPosition [
 	self subclassResponsibility
 ]
 
+{ #category : #accessing }
+DrGMorph >> labelPositionDelta [
+	^ labelMorph delta
+]
+
 { #category : #label }
 DrGMorph >> labelPositionDelta: aPoint [
 "The position of the label from its math object"
-	labelPositionDelta := aPoint
+	labelMorph ifNotNil: [labelMorph delta: aPoint]
 ]
 
 { #category : #accessing }
@@ -317,6 +330,13 @@ DrGMorph >> mathItem: aMathItem [
 ]
 
 { #category : #accessing }
+DrGMorph >> mathItem: aMathItem in: aDrawable [
+	self removeEvents.
+	mathItem := aMathItem.
+	self registerEventsIn: aDrawable .
+]
+
+{ #category : #accessing }
 DrGMorph >> morphCenter [
 "Our center in our drawable"
 	^ self displayBounds center - self drawable basicDisplayBounds topLeft
@@ -337,7 +357,7 @@ DrGMorph >> name: aString [
 
 { #category : #accessing }
 DrGMorph >> presenter [
-	^ drawable presenter 
+	^ self drawable presenter 
 ]
 
 { #category : #printing }
@@ -364,7 +384,7 @@ DrGMorph >> registerEvents [
 			mathItem
 				when: #deletedMathItem
 				send: #deleteItemView:
-				to: drawable 
+				to: self drawable 
 				with: self.
 			mathItem 
 				when: #updateMyView
@@ -374,11 +394,26 @@ DrGMorph >> registerEvents [
 ]
 
 { #category : #'initialize-release' }
+DrGMorph >> registerEventsIn: aDrawable [
+	mathItem
+		ifNotNil: [
+			mathItem
+				when: #deletedMathItem
+				send: #deleteItemView:
+				to: aDrawable
+				with: self.
+			mathItem 
+				when: #updateMyView
+				send: #updateAllMathItems
+				to: aDrawable domain].
+	self flag: #drgeoEvent
+]
+
+{ #category : #'initialize-release' }
 DrGMorph >> release [
 	" Flying morph use it. Read DrGMathItemBuilder>>reset "
-	self drawable removeMorph: self.
 	self removeLabelMorph.
-	
+	self drawable ifNotNil: [:aDrawable | aDrawable removeMorph: self].
 	self flag: #drgeoEvent.
 	self removeEvents.
 ]
@@ -393,7 +428,7 @@ DrGMorph >> removeEvents [
 { #category : #'initialize-release' }
 DrGMorph >> removeLabelMorph [
 	labelMorph ifNotNil:
-		[self drawable removeMorph: labelMorph.
+		[self drawable ifNotNil: [:aDrawable | aDrawable removeMorph: labelMorph].
 		labelMorph := nil]
 ]
 
@@ -423,7 +458,7 @@ DrGMorph >> startBlinking [
 
 { #category : #'stepping and presenter' }
 DrGMorph >> step [
-	blink ifFalse: [^self].
+	self isBlinking ifFalse: [^self].
 	super step.
 	color = DrGTypeColor blinkingColor 
 		ifTrue: [color := Theme current adjustColor: style color]
@@ -506,7 +541,7 @@ DrGMorph >> updateToVisible [
 
 { #category : #accessing }
 DrGMorph >> view [
-	^ drawable view
+	^ self drawable view
 ]
 
 { #category : #testing }
@@ -522,7 +557,7 @@ DrGMorph >> writeAsXmlTo: aNode [
 
 { #category : #'xml writting' }
 DrGMorph >> writeAttributesTo: aNode [ 
-	aNode	attributeAt: #delta put: labelPositionDelta asString.
+	labelMorph ifNotNil: [aNode	attributeAt: #delta put: self labelPositionDelta asString].
 	self isLockable ifTrue: [
 		aNode attributeAt: #locked put: mathItem isLocked asString capitalized].
 	style writeAttributesTo: aNode.

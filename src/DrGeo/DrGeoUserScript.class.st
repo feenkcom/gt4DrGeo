@@ -16,7 +16,7 @@ A set of helpers are present to use in the #compute method:
 
 Instance Variables
 - arguments : Array of DrGCostum, arguments this script uses in its computation
-- cosutme : the costume representing this script on the canvas, access only from its #costume message.
+- cosutme : the morph representing this script on the canvas, access only from its #costume message.
 		
 "
 Class {
@@ -81,8 +81,8 @@ DrGeoUserScript >> arg4 [
 ]
 
 { #category : #private }
-DrGeoUserScript >> arguments: aCollectionOfCostume [
-	arguments := aCollectionOfCostume 
+DrGeoUserScript >> arguments: aCollectionOfMorph [
+	arguments := aCollectionOfMorph 
 ]
 
 { #category : #public }

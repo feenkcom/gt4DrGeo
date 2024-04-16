@@ -58,7 +58,7 @@ DrGBitmapMorph >> isBitmap [
 
 { #category : #label }
 DrGBitmapMorph >> labelPosition [
-	^(self drawable worldToMorph: mathItem topCenter) + labelPositionDelta 
+	^(self drawable worldToMorph: mathItem topCenter) + self labelPositionDelta 
 ]
 
 { #category : #accessing }
