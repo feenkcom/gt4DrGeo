@@ -398,7 +398,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T17:43:27.573142+02:00"
+									"dateAndTimeString" : "2024-04-16T17:43:46.166238+02:00"
 								}
 							},
 							"uid" : {
@@ -408,7 +408,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Here wer "
+							"string" : "Here we slowly add code to get to a working example."
 						},
 						{
 							"__type" : "pharoSnippet",
