@@ -10,13 +10,6 @@ Class {
 
 { #category : #accessing }
 GraphEditorExamples >> editorScript [
-	"This example will also run as a Playground snippet. (Just delete everything up to and including the variable declarations.)
-The purpose is to demonstrate all the GUI events and interactions without the scaffolding of the underlying model or the dedicated classed.
-This makes it easier to debug the definitions of the event handlers."
-
-	<gtExample>
-	| padding margin editor graph buttonBar makeNode graphHolder graphContainer |
-	"--- TO RUN IN PLAYGROUND, DELETE FROM HERE TO TOP ---"
 	"graph editor example. This demo only builds a view without an underlying model, just to show in a script how to compose the key UI elements. See the IMAD Hypernode package for the implementation in terms of model and view classes instead of as a script. Each element has a border or shading to make its bounds visible.
 - double click to create a node
 - click and drag to move it
@@ -24,6 +17,10 @@ This makes it easier to debug the definitions of the event handlers."
 - drag the background to pan
 - control-click node or background to open a context menu
 - zoom buttons only work partially"
+
+	<gtExample>
+	| padding margin editor graph buttonBar makeNode graphHolder graphContainer |
+
 	padding := 2.
 	margin := padding.
 
@@ -123,7 +120,7 @@ This makes it easier to debug the definitions of the event handlers."
 	node := BlElement new.
 	node
 		layout: BlFrameLayout new;
-		geometry: (BlRectangle cornerRadius: 4);
+		geometry: (BlRoundedRectangleGeometry cornerRadius: 4);
 		background: Color white;
 		constraintsDo: [ :c | 
 			c horizontal fitContent.
