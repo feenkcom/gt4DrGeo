@@ -316,6 +316,43 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-23T10:23:52.243021+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-23T10:24:53.161236+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "xqjWAiHTDQCAbJJlBb1qQQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We clone {{gtClass:name=DrGDrawable}} as {{gtClass:name=DGDrawable}}  so we are free for it to subclass {{gtClass:name=BlElement}}."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2024-04-12T11:36:11.764716+02:00"
 								}
 							},
@@ -364,7 +401,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-16T17:42:59.648089+02:00"
+									"dateAndTimeString" : "2024-04-23T10:49:00.724225+02:00"
 								}
 							},
 							"uid" : {
@@ -514,43 +551,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : ""
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T11:36:05.755476+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-12T11:36:05.755476+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "C63hvETSDQCMSeNKDNTnZQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
 						}
 					]
 				},
@@ -584,6 +584,152 @@
 					"__type" : "textStyle"
 				},
 				"string" : "# Exploring DrGeoScriptTest"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-23T10:54:04.699633+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-23T10:55:34.122873+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "M47ebiHTDQCDKppaBb1qQQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We discover that platform preferences are installed by running {{gtMethod:name=DrGeoSystem class>>#install}} and we can also set the platform in {{gtMethod:name=DrGeoSystem class>>#beDevelopment}} or {{gtMethod:name=DrGeoSystem class>>#beWorkstation}}. We'll need GT versions of these."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-23T11:01:03.419407+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-23T11:16:16.764502+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "j7TThyHTDQCHaupkBb1qQQ=="
+							},
+							"code" : "DrGeoSystem installGT.\rDrGeoSystem class slotNamed: #platform."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-23T10:55:34.457895+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-23T10:55:34.457895+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ayg4dCHTDQCGyePTBb1qQQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-12T11:36:05.755476+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-23T10:54:04.307755+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "C63hvETSDQCMSeNKDNTnZQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# DrGeoSystem"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1040,12 +1186,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-04-16T16:57:37.051093+02:00"
+			"dateAndTimeString" : "2024-04-23T08:26:49.457533+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "*** Exploring tests"
+		"title" : "* Exploring tests"
 	},
 	"uid" : {
 		"__type" : "uuid",
