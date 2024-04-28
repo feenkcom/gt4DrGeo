@@ -574,7 +574,45 @@
 										"__type" : "textSnippet",
 										"children" : {
 											"__type" : "snippets",
-											"items" : [ ]
+											"items" : [
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-04-23T08:32:18.347504+02:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-04-23T08:32:21.363112+02:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "OefZcx/TDQCh3i9rBvsgkg=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "[[Summary of key classes]]"
+												}
+											]
 										},
 										"createEmail" : {
 											"__type" : "email",
@@ -669,7 +707,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-23T08:26:49.464508+02:00"
+												"dateAndTimeString" : "2024-04-28T17:32:49.470277+02:00"
 											}
 										},
 										"uid" : {
@@ -679,7 +717,44 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[* Exploring tests]] "
+										"string" : "[[Exploring Sketches — take 1]] "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-28T17:32:21.934613+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-28T17:32:30.462742+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "hkd2lIvTDQCyAuwcDZ6gHg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Exploring Sketches]]"
 									},
 									{
 										"__type" : "textSnippet",
@@ -706,7 +781,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-23T08:26:35.96878+02:00"
+												"dateAndTimeString" : "2024-04-28T17:31:14.763285+02:00"
 											}
 										},
 										"uid" : {
@@ -716,7 +791,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[*** Prototyping a DrGeo Canvas]]"
+										"string" : "[[Prototyping a DrGeo Canvas]]"
 									}
 								]
 							},
