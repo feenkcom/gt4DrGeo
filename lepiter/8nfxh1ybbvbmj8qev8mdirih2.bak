@@ -723,12 +723,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-04-23T08:26:37.932761+02:00"
+			"dateAndTimeString" : "2024-04-28T17:31:14.756902+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "*** Prototyping a DrGeo Canvas"
+		"title" : "Prototyping a DrGeo Canvas"
 	},
 	"uid" : {
 		"__type" : "uuid",
