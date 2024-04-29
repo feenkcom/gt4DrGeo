@@ -7,14 +7,7 @@ DrGeoSketch >> initialize [
 
 { #category : #'*Gt4DrGeo' }
 DrGeoSketch >> morphOf: item [
-	| finalItem |
-	
-	true ifTrue: [
-		^ item
-	].
-	
-	finalItem := self domain createFromMathItemNoCommand: item.
-	^ finalItem == item 
-		ifTrue: [	self drawable lastItemView ] "We create a new one, get its morph just created"
-		ifFalse: [	self drawable viewOf: finalItem] "For twin items, search for the former item"
+	"Instead of the actual morph, we just wrap the item and intercept all the messages so we have a post mortem log."
+
+	^ DGLogger for: item
 ]

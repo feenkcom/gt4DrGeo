@@ -696,7 +696,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-11-24T10:32:50.0981+01:00"
+												"dateAndTimeString" : "2024-04-29T16:55:45.209998+02:00"
 											}
 										},
 										"editEmail" : {
@@ -707,7 +707,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-28T17:32:49.470277+02:00"
+												"dateAndTimeString" : "2024-04-29T16:55:45.209998+02:00"
 											}
 										},
 										"uid" : {
@@ -717,7 +717,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Exploring Sketches — take 1]] "
+										"string" : ""
 									},
 									{
 										"__type" : "textSnippet",
@@ -744,7 +744,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-28T17:32:30.462742+02:00"
+												"dateAndTimeString" : "2024-04-28T17:51:10.017367+02:00"
 											}
 										},
 										"uid" : {
@@ -754,7 +754,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Exploring Sketches]]"
+										"string" : "[[*** Exploring Sketches — take 2]]"
 									},
 									{
 										"__type" : "textSnippet",
