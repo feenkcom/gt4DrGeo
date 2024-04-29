@@ -417,15 +417,6 @@ DrGeoSketch >> middleOf: wrappedPoint1 and: wrappedPoint2 [
 		{(self wrappedPoint: wrappedPoint1) mathItem . (self wrappedPoint: wrappedPoint2) mathItem})
 ]
 
-{ #category : #accessing }
-DrGeoSketch >> morphOf: item [
-	| finalItem |
-	finalItem := self domain createFromMathItemNoCommand: item.
-	^ finalItem == item 
-		ifTrue: [	self drawable lastItemView ] "We create a new one, get its morph just created"
-		ifFalse: [	self drawable viewOf: finalItem] "For twin items, search for the former item"
-]
-
 { #category : #value }
 DrGeoSketch >> ordinateOf: wrpPointOrWrpVectorOrPoint [ 
 	| class wrapped |
