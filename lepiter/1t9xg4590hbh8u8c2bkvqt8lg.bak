@@ -270,80 +270,6 @@
 					"__type" : "snippets",
 					"items" : [
 						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:51:32.261682+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:51:32.261682+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "7uEG2YvTDQCKuFZeDZ6gHg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:51:33.812155+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:51:33.812155+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "HI4e2YvTDQCKwcq4DZ6gHg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
-						},
-						{
 							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -503,7 +429,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:51:49.428485+02:00"
+									"dateAndTimeString" : "2024-04-29T08:11:06.302858+02:00"
 								}
 							},
 							"editEmail" : {
@@ -514,7 +440,82 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:52:19.627155+02:00"
+									"dateAndTimeString" : "2024-04-29T08:11:29.71177+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "OE8U25fTDQCymRalCJX3BA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We update {{gtMethod:name=DrGeoSketch>>#initialize}} (we will need other initialization code there!)"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-29T08:01:43.949118+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-29T08:09:21.740709+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "oXmPuZfTDQCwHzcOCJX3BA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtClass:name=DGDrGeo}} and probably {{gtClass:name=DGDrawable}} {{gtClass:name=DGMiniView}} {{gtClass:name=DGMinimalControlsManager}}"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-29T08:11:02.196652+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-29T08:11:05.300827+02:00"
 								}
 							},
 							"uid" : {
@@ -524,7 +525,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We need to get rid of the prior extensions and subclasses that we no longer need."
+							"string" : "We get rid of:"
 						},
 						{
 							"__type" : "textSnippet",
@@ -551,7 +552,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:52:22.434435+02:00"
+									"dateAndTimeString" : "2024-04-29T08:08:10.911986+02:00"
 								}
 							},
 							"uid" : {
@@ -561,7 +562,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "Do we need {{gtMethod:name=DrGeoSystem class>>#installGT}}  and {{gtClass:name=DGPlatform}}?"
 						},
 						{
 							"__type" : "textSnippet",
@@ -621,7 +622,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-28T17:51:49.1368+02:00"
+						"dateAndTimeString" : "2024-04-29T08:10:59.125272+02:00"
 					}
 				},
 				"uid" : {
@@ -631,7 +632,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Cleanup to do ..."
+				"string" : "# Cleanup"
 			},
 			{
 				"__type" : "textSnippet",
@@ -735,7 +736,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:57:57.776211+02:00"
+									"dateAndTimeString" : "2024-04-28T17:58:09.856459+02:00"
 								}
 							},
 							"uid" : {
@@ -745,7 +746,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Q How do we unsubscribe a view  from an Announcer when it is no longer needed? Is there a hook in {{gtClass:name=GtPhlowProtoView}} or perhaps "
+							"string" : "Q How do we unsubscribe a view  from an Announcer when it is no longer needed? Is there a hook in {{gtClass:name=GtPhlowProtoView}} or perhaps {{gtClass:name=GtPhlowView}}? "
 						},
 						{
 							"__type" : "textSnippet",
