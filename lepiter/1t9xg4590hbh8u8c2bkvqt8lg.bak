@@ -331,14 +331,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-30T08:46:07.022899+02:00"
+									"dateAndTimeString" : "2024-04-30T09:26:24.554173+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "duBQ2YvTDQCK0HmvDZ6gHg=="
 							},
-							"code" : "sketch := DGScriptExamples new sketch. "
+							"code" : "sketch := DGScriptExamples new emptySketch. "
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -379,43 +379,6 @@
 							"children" : {
 								"__type" : "snippets",
 								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-30T08:47:20.647871+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-30T08:47:22.105018+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "LUDUeazTDQCe5hP2CSPWXg=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "gggggg"
-									},
 									{
 										"__type" : "textSnippet",
 										"children" : {
@@ -485,6 +448,77 @@
 								"__type" : "textStyle"
 							},
 							"string" : "We find out that the sketch itself does not store any math items itself, but they are all wrapped in the morphs of the View. We need a new architecture that keeps the math items in the sketch."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-30T10:08:05.250245+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-30T10:08:55.852533+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "BFJIm63TDQCFxpyJCSPWXg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We have another problem now that it is too hard to hook into all the finalize methods. Maybe we need a subclass of {{gtClass:name=DrGeoSketch}} after all. But what about all the refe"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-30T09:58:24.735813+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-30T09:58:36.472523+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "22CueK3TDQCFZpn/CSPWXg=="
+							},
+							"code" : "DGScriptExamples new lineSketch. "
 						},
 						{
 							"__type" : "textSnippet",
@@ -842,7 +876,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-29T16:58:09.719538+02:00"
+									"dateAndTimeString" : "2024-04-30T09:56:40.534224+02:00"
 								}
 							},
 							"uid" : {
@@ -852,7 +886,44 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "{{gtMethod:name=DrGeoSketch>>#morphOf:}} — instead of a morph, we wrap and log messages"
+							"string" : "{{gtMethod:name=DrGeoSketch>>#morphOf:}} — instead of a morph, we wrap and log messages. We also use this as the hook to save math items in the state"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-30T09:56:42.567742+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-30T09:57:13.515706+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "smqXcq3TDQCDcZ9qCSPWXg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We define {{gtClass:name=DGSketchState}} as a replacement for the “presenter”, as this is the only slot we can reuse."
 						},
 						{
 							"__type" : "textSnippet",
