@@ -1,11 +1,14 @@
+"
+I am a prototype for a Sktech Element.
+"
 Class {
-	#name : #DGSketchHolder,
+	#name : #DGSketchElementDemo,
 	#superclass : #Object,
-	#category : #'Gt4DrGeo-View'
+	#category : #'Gt4DrGeo-Examples'
 }
 
 { #category : #accessing }
-DGSketchHolder >> demo [
+DGSketchElementDemo >> demo [
 	<gtExample>
 	| sketchContainer sketchGraph sketchHolder |
 	
@@ -37,7 +40,7 @@ DGSketchHolder >> demo [
 ]
 
 { #category : #accessing }
-DGSketchHolder >> makeNode [
+DGSketchElementDemo >> makeNode [
 	| makeNode |
 	makeNode := [ | node |
 		node := BlElement new.
@@ -72,21 +75,21 @@ DGSketchHolder >> makeNode [
 ]
 
 { #category : #accessing }
-DGSketchHolder >> margin [
+DGSketchElementDemo >> margin [
 	| margin |
 	margin := self padding.
 	^ margin
 ]
 
 { #category : #accessing }
-DGSketchHolder >> padding [
+DGSketchElementDemo >> padding [
 	| padding |
 	padding := 2.
 	^ padding
 ]
 
 { #category : #accessing }
-DGSketchHolder >> sketchGraph [
+DGSketchElementDemo >> sketchGraph [
 	^ BlElement new
 		layout: (BlWrapAroundChildrenLayout new addLayout: BlBasicNodeBasedLayout new);
 		constraintsDo: [ :c | 
