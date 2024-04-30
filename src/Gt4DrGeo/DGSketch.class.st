@@ -16,10 +16,36 @@ DGSketch >> addItem: aMathItem [
 	self mathItems addLast: aMathItem
 ]
 
+{ #category : #curve }
+DGSketch >> finalizeCurve: item [
+	^ DrGWrappedCurve wrap: (self morphOf: item) 
+]
+
+{ #category : #point }
+DGSketch >> finalizeItem: aMathItem [
+	self addItem: aMathItem.
+	^ aMathItem
+]
+
 { #category : #point }
 DGSketch >> finalizePoint: aPointItem [
-	self addItem: aPointItem.
-	^ aPointItem
+	^ self finalizeItem: aPointItem
+]
+
+{ #category : #accessing }
+DGSketch >> gtMathItemsFor: aView [
+	<gtView>
+	^ aView columnedList
+		title: 'Math Items';
+		priority: 10;
+		items: [ self mathItems ];
+		actionUpdateButtonTooltip: 'Update item list';
+		column: 'Index' 
+			text: [ :eachItem :eachIndex | 
+				eachIndex asRopedText foreground: Color gray ]
+			width: 45;
+		column: 'Item' 
+			text: [ :eachItem | eachItem gtDisplayText ].
 ]
 
 { #category : #initalization }
@@ -30,6 +56,14 @@ DGSketch >> initialize [
 { #category : #accessing }
 DGSketch >> isEmpty [
 	^ self mathItems isEmpty
+]
+
+{ #category : #curve }
+DGSketch >> line: aPoint1 to: aPoint2 [
+	^ self
+		finalizeItem: (DrGLine2ptsItem
+				newWith: {aPoint1.
+						aPoint2})
 ]
 
 { #category : #accessing }

@@ -21,5 +21,6 @@ DrGMathItem >> gtSummaryFor: aView [
 			text: #first
 			width: 100;
 		column: 'Value' text: #second;
-		send: #last
+		send: #last;
+		actionUpdateButton
 ]

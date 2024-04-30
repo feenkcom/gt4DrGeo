@@ -188,3 +188,76 @@ pannable := graphHolder asPannableElement
 
 ^ pannable
 ]
+
+{ #category : #accessing }
+GraphEditorExamples >> sketchHolderDemo [
+	"The graphContainer (orange borders) contains the (pinchable) graphHolder (light gray border), which holds the graph (white with shading).
+	Simplified from the editorSketch -- we don't need the outside buttons as they can be provided by the view."
+
+	<gtExample>
+	| padding margin makeNode graphHolder graphContainer graph |
+	padding := 2.
+	margin := padding.	"The graph element (white with shading) holds the actual graph nodes. It adapts its size to its children with a BlWrapAroundChildrenLayout layout."
+	graph := BlElement new.
+	graph
+		layout: (BlWrapAroundChildrenLayout new addLayout: BlBasicNodeBasedLayout new);
+		constraintsDo: [ :c | 
+			c horizontal fitContent.
+			c vertical fitContent ];
+		padding: (BlInsets all: padding);
+		margin: (BlInsets all: margin).
+	graph
+		background: Color white;
+		effect: BrGlamorousShadowEffect new.	"The graphHolder (gray border) is a pinchable container for the graph. See BlPinchableElement. Note that the graph it contains may overlap its own border, so we don't care about the gray border when zooming or resizing."
+	graphHolder := BlPinchableElement new
+			zoomLevel: 2;
+			clipChildren: false;
+			contentElement: graph;
+			border: (BlBorder paint: Color lightGray).	"The graphContainer (orange border) supports panning and handles the background events for the graph (context menu and node creation)."
+	graphContainer := graphHolder asPannableElement
+			border: (BlBorder paint: Color orange);
+			padding: (BlInsets all: padding);
+			margin: (BlInsets all: margin).
+	graphContainer
+		when: BlDoubleClickEvent
+		do: [ :evt | 
+			| newNode |
+			newNode := makeNode asElement.
+			graph addChild: newNode.
+			newNode relocate: (graphHolder globalPointToLocal: evt position) ].
+	graphContainer
+		aptitude: (BrGlamorousWithContextMenuAptitude
+				content: [ BrGlamorousSimpleContextMenuContent new
+						items: {'Inspect graph' -> [ graph inspect ]};
+						yourself ]).	"A constructor stencil in lieu of a method. Note that we use a stencil instead of just a block so we can have a live view of it."
+	makeNode := [ | node |
+		node := BlElement new.
+		node
+			layout: BlFrameLayout new;
+			geometry: (BlRoundedRectangleGeometry cornerRadius: 4);
+			background: Color white;
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent ];
+			padding: (BlInsets all: 10).
+		node graph beNode.
+		node
+			aptitude: (BrStyleCommonAptitude new
+					default: [ :aStyle | aStyle border: (BlBorder paint: Color black width: 1) ];
+					hovered: [ :aStyle | aStyle border: (BlBorder paint: Color red width: 1) ])
+					+ ((BrGlamorousWithContextMenuAptitude
+							content: [ BrGlamorousSimpleContextMenuContent new
+									items: {'Inspect node' -> [ node inspect ]};
+									yourself ])
+							useSecondaryMouseButton;
+							yourself).
+		node addEventHandler: BlPullHandler new.
+		node
+			addEventHandler: (BlEventHandler
+					on: BlDoubleClickEvent
+					do: [ :evt | 
+						evt consumed: true.
+						node phlow spawnObject: node ]).
+		node ] asStencil.
+	^ graphContainer
+]

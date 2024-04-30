@@ -18,7 +18,7 @@ DGScriptExamples >> emptySketch [
 
 { #category : #examples }
 DGScriptExamples >> lineSketch [
-	"From aMathItem"
+	"From DrGeoScriptTest>>#testLine"
 
 	<gtExample>
 	| sketch a b l |
@@ -26,18 +26,15 @@ DGScriptExamples >> lineSketch [
 	a := sketch mathItems first.
 	b := sketch point: 98 @ 1085.
 	l := sketch line: a to: b.
-	self assert: l mathItem isCurveItem.
-	self assert: l mathItem isGeometricItem.
-	self assert: l mathItem isDirectionItem.
-	self assert: l mathItem isLineItem.	""
-	self assert: (l mathItem contains: 89 @ 995).
-	self assert: (l mathItem contains: 87 @ 975).
-	self assert: (l mathItem contains: 188 @ 1985).
-	self assert: (l mathItem contains: 5 @ 4) not.
-
-	self assert: sketch state mathItems size equals: 3.
-
-
+	self assert: l isCurveItem.
+	self assert: l isGeometricItem.
+	self assert: l isDirectionItem.
+	self assert: l isLineItem.
+	self assert: (l contains: 89 @ 995).
+	self assert: (l contains: 87 @ 975).
+	self assert: (l contains: 188 @ 1985).
+	self assert: (l contains: 5 @ 4) not.
+	self assert: sketch mathItems size equals: 3.
 	^ sketch
 ]
 

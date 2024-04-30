@@ -670,7 +670,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-12T11:20:15.095571+02:00"
+												"dateAndTimeString" : "2024-04-30T08:58:03.809385+02:00"
 											}
 										},
 										"uid" : {
@@ -680,7 +680,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Exploring Views]] "
+										"string" : "[[Exploring Views and events]] "
 									},
 									{
 										"__type" : "textSnippet",
