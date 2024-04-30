@@ -474,7 +474,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-30T10:08:55.852533+02:00"
+									"dateAndTimeString" : "2024-04-30T10:08:59.025868+02:00"
 								}
 							},
 							"uid" : {
@@ -484,7 +484,41 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We have another problem now that it is too hard to hook into all the finalize methods. Maybe we need a subclass of {{gtClass:name=DrGeoSketch}} after all. But what about all the refe"
+							"string" : "We have another problem now that it is too hard to hook into all the finalize methods. Maybe we need a subclass of {{gtClass:name=DrGeoSketch}} after all. But what about all the references?"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-29T17:38:57.480163+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2024-04-30T10:42:46.557865+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "LDjhyZ/TDQCM8RmtDoOiBw=="
+							},
+							"code" : "sketch := DGScriptExamples new emptySketch.\ra := sketch point: 88 @ 985.\rb := sketch point: 98 @ 1085.\rl := sketch line: a to: b.\rself assert: l mathItem isCurveItem.\rself assert: l mathItem isGeometricItem.\rself assert: l mathItem isDirectionItem.\rself assert: l mathItem isLineItem.\t\"\"\rself should: (l mathItem contains: 89 @ 995).\rself should: (l mathItem contains: 87 @ 975).\rself should: (l mathItem contains: 188 @ 1985).\rself shouldnt: (l mathItem contains: 5 @ 4)"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -593,40 +627,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : ""
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-29T17:38:57.480163+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-29T17:38:58.078299+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "LDjhyZ/TDQCM8RmtDoOiBw=="
-							},
-							"code" : "\ta := sketch point: 88@985.\r\tb := sketch point: 98@1085.\r\tl := sketch line: a to: b.\r\tself assert: l mathItem isCurveItem.\r\tself assert: l mathItem isGeometricItem.\r\tself assert: l mathItem isDirectionItem.\r\tself assert: l mathItem isLineItem.\r\t\"\"\r\tself should: (l mathItem contains: 89@995).\r\tself should: (l mathItem contains: 87@975).\r\tself should: (l mathItem contains: 188@1985).\r\tself shouldnt: (l mathItem contains: 5 @4)    "
 						},
 						{
 							"__type" : "textSnippet",

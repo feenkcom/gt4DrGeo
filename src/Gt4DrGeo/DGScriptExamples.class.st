@@ -11,9 +11,8 @@ Class {
 DGScriptExamples >> emptySketch [
 	<gtExample>
 	| sketch |
-	sketch := DrGeoSketch new.
-	self assert: sketch presenter class equals: DGSketchState.
-	self assert: sketch state isEmpty.
+	sketch := DGSketch new.
+	self assert: sketch isEmpty.
 	^ sketch
 ]
 
@@ -23,9 +22,8 @@ DGScriptExamples >> lineSketch [
 
 	<gtExample>
 	| sketch a b l |
-	sketch := self emptySketch.
-
-	a := sketch point: 88 @ 985.
+	sketch := self sketchWithPoint.
+	a := sketch mathItems first.
 	b := sketch point: 98 @ 1085.
 	l := sketch line: a to: b.
 	self assert: l mathItem isCurveItem.
@@ -39,6 +37,21 @@ DGScriptExamples >> lineSketch [
 
 	self assert: sketch state mathItems size equals: 3.
 
+
+	^ sketch
+]
+
+{ #category : #examples }
+DGScriptExamples >> sketchWithPoint [
+	"From aMathItem"
+
+	<gtExample>
+	| sketch a |
+	sketch := self emptySketch.
+	a := sketch point: 88 @ 985.
+
+	self assert: sketch isEmpty not.
+	self assert: sketch mathItems first equals: a.
 
 	^ sketch
 ]
