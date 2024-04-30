@@ -393,7 +393,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-29T17:50:44.404929+02:00"
+												"dateAndTimeString" : "2024-04-29T17:51:33.094376+02:00"
 											}
 										},
 										"editEmail" : {
@@ -404,7 +404,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-04-29T17:50:45.069083+02:00"
+												"dateAndTimeString" : "2024-04-29T17:51:33.096991+02:00"
 											}
 										},
 										"uid" : {
@@ -414,7 +414,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "sketch := DrGeoSketch new.\na := sketch point: 1@1.\nsketch line: a to: 0@0.\nsketch presenter controlsManager view drawable submorphs first mathItem"
+										"string" : "sketch := DrGeoSketch new.\na := sketch point: 1@1.\nsketch line: a to: 0@0.\nsketch presenter controlsManager view drawable submorphs collect: #mathItem"
 									}
 								]
 							},
