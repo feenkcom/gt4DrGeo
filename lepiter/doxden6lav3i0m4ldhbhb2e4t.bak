@@ -377,43 +377,6 @@
 							"string" : "Let's get an example that we can work with."
 						},
 						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-29T11:40:31.42364+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-29T11:40:34.079272+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "49UEyJrTDQC0vGIOBlvbrQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "nkjjknkjnkj"
-						},
-						{
 							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",

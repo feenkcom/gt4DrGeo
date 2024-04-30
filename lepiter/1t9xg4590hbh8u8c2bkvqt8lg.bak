@@ -294,7 +294,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-29T08:20:34.865276+02:00"
+									"dateAndTimeString" : "2024-04-30T08:46:17.145438+02:00"
 								}
 							},
 							"uid" : {
@@ -304,7 +304,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "As before, we take inspiration from {{gtMethod:name=DrGeoScriptTest>>#testLine}}."
+							"string" : "As before, we take inspiration from {{gtMethod:name=DrGeoScriptTest>>#testLine}}. "
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -331,14 +331,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-04-28T17:51:37.527221+02:00"
+									"dateAndTimeString" : "2024-04-30T08:46:07.022899+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "duBQ2YvTDQCK0HmvDZ6gHg=="
 							},
-							"code" : "sketch := DGScriptExamples new sketch."
+							"code" : "sketch := DGScriptExamples new sketch. "
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -379,6 +379,43 @@
 							"children" : {
 								"__type" : "snippets",
 								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-30T08:47:20.647871+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-04-30T08:47:22.105018+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "LUDUeazTDQCe5hP2CSPWXg=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "gggggg"
+									},
 									{
 										"__type" : "textSnippet",
 										"children" : {
