@@ -34024,12 +34024,6 @@ printParenthesisOn: aStream
 			aStream nextPut: $)]
 		ifFalse: [self printOn: aStream]! !
 
-!Number methodsFor: '*DrGeo' stamp: 'hlsf 5/2/2020 12:52:46'!
-printShowingDecimalPlaces: digits
-	^ String 
-		streamContents:  [:str | self printOn: str fractionDigits: digits]
-		estimatedSize: 10 + digits! !
-
 !Float methodsFor: '*DrGeo' stamp: 'hlsf 1/28/2024 17:17:21'!
 asApproximateFraction
 	"Answer a Fraction approximating the receiver. This conversion uses the 
