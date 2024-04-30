@@ -331,6 +331,14 @@ DrGeoSketch >> gridOn [
 	 presenter gridOnOff 
 ]
 
+{ #category : #'initialize-release' }
+DrGeoSketch >> initialize [
+	presenter := DrGeo service
+		stSketch: self;
+		yourself .
+	DrGeoSketch triggerEvent: #newSmalltalkSketch with: self
+]
+
 { #category : #helpers }
 DrGeoSketch >> integer: value at: aPoint from: startValue to: endValue [ 
 	^ self integer: value at: aPoint from: startValue to: endValue name: ''
@@ -415,6 +423,15 @@ DrGeoSketch >> middleOf: wrpSegment [
 DrGeoSketch >> middleOf: wrappedPoint1 and: wrappedPoint2 [ 
 	^ self finalizePoint: (DrGPointMiddle2ptsItem newWith: 
 		{(self wrappedPoint: wrappedPoint1) mathItem . (self wrappedPoint: wrappedPoint2) mathItem})
+]
+
+{ #category : #accessing }
+DrGeoSketch >> morphOf: item [
+	| finalItem |
+	finalItem := self domain createFromMathItemNoCommand: item.
+	^ finalItem == item 
+		ifTrue: [	self drawable lastItemView ] "We create a new one, get its morph just created"
+		ifFalse: [	self drawable viewOf: finalItem] "For twin items, search for the former item"
 ]
 
 { #category : #value }

@@ -224,6 +224,43 @@
 				"string" : "We change {{gtMethod:name=DGCodeExamples>>#dummyClasses}} to create the dummy classes in the `DrGeo` package with the tag `Missing`."
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-30T10:25:55.744839+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-04-30T10:26:03.815623+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "esUW263TDQCe/31qAHnmIg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "NB: We still "
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -248,7 +285,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-15T10:54:15.531563+02:00"
+						"dateAndTimeString" : "2024-04-30T10:26:10.16735+02:00"
 					}
 				},
 				"uid" : {
