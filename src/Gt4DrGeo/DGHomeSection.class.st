@@ -8,6 +8,11 @@ Class {
 }
 
 { #category : #accessing }
+DGHomeSection >> defaultPriority [
+	^ 5
+]
+
+{ #category : #accessing }
 DGHomeSection >> drGeoCard [
 	<gtSectionCard>
 	<gtExample>
