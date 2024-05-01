@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'mathItem'
 	],
-	#category : #'Gt4DrGeo-UI'
+	#category : #'Gt4DrGeo-View'
 }
 
 { #category : #accessing }

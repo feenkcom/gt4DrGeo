@@ -1,7 +1,7 @@
 Class {
 	#name : #DGPointItemElement,
 	#superclass : #DGMathItemElement,
-	#category : #'Gt4DrGeo-UI'
+	#category : #'Gt4DrGeo-View'
 }
 
 { #category : #accessing }

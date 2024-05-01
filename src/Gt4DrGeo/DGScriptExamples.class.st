@@ -22,7 +22,7 @@ DGScriptExamples >> lineSketch [
 
 	<gtExample>
 	| sketch a b l |
-	sketch := self sketchWithPoint.
+	sketch := self pointSketch.
 	a := sketch mathItems first.
 	b := sketch point: 20@50.
 	l := sketch line: a to: b.
@@ -56,7 +56,7 @@ DGScriptExamples >> mathPoint [
 
 	<gtExample>
 	| sketch mathPoint |
-	sketch := self sketchWithPoint.
+	sketch := self pointSketch.
 	mathPoint := sketch mathItems first.
 	self assert: mathPoint isPointItem.
 	self assert: mathPoint point equals: 10@20.
@@ -64,8 +64,8 @@ DGScriptExamples >> mathPoint [
 ]
 
 { #category : #examples }
-DGScriptExamples >> sketchWithPoint [
-	"From aMathItem"
+DGScriptExamples >> pointSketch [
+	"A sketch with just one point."
 
 	<gtExample>
 	| sketch a |
