@@ -24,3 +24,8 @@ DrGMathItem >> gtSummaryFor: aView [
 		send: #last;
 		actionUpdateButton
 ]
+
+{ #category : #'*Gt4DrGeo' }
+DrGMathItem >> playIn: aSketchElement [
+	self subclassResponsibility
+]

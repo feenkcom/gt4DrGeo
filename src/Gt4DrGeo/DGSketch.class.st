@@ -16,6 +16,11 @@ DGSketch >> addItem: aMathItem [
 	self mathItems addLast: aMathItem
 ]
 
+{ #category : #accessing }
+DGSketch >> asElement [
+	^ DGSketchElement for: self
+]
+
 { #category : #curve }
 DGSketch >> finalizeCurve: item [
 	^ DrGWrappedCurve wrap: (self morphOf: item) 
@@ -32,12 +37,22 @@ DGSketch >> finalizePoint: aPointItem [
 	^ self finalizeItem: aPointItem
 ]
 
+{ #category : #view }
+DGSketch >> gtLiveFor: aView [
+	<gtView>
+	^ aView forward
+		title: 'Live (prototype)';
+		priority: 10;
+		object: [ self asElement  asPinchablePannable ];
+		view: #gtLiveFor:
+]
+
 { #category : #accessing }
 DGSketch >> gtMathItemsFor: aView [
 	<gtView>
 	^ aView columnedList
 		title: 'Math Items';
-		priority: 10;
+		priority: 20;
 		items: [ self mathItems ];
 		actionUpdateButtonTooltip: 'Update item list';
 		column: 'Index' 

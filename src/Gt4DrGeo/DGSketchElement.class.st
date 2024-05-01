@@ -79,8 +79,10 @@ DGSketchElement >> initializeLayout [
 		effect: BrGlamorousShadowEffect new
 ]
 
-{ #category : #accessing }
+{ #category : #demo }
 DGSketchElement >> makeNode [
+	"For now, just here for demo purposes. To be replaced."
+
 	| makeNode |
 	makeNode := [ | node |
 		node := BlElement new.
@@ -114,18 +116,25 @@ DGSketchElement >> makeNode [
 	^ makeNode
 ]
 
-{ #category : #accessing }
+{ #category : #constant }
 DGSketchElement >> margin [
 	| margin |
 	margin := self padding.
 	^ margin
 ]
 
-{ #category : #accessing }
+{ #category : #constant }
 DGSketchElement >> padding [
 	| padding |
 	padding := 2.
 	^ padding
+]
+
+{ #category : #playing }
+DGSketchElement >> playSketch [
+	"Here we need to populate the Sketch element with elements representing the mathItems of the sketch."
+
+	sketch mathItems do: [ :item | item playIn: self ]
 ]
 
 { #category : #accessing }
@@ -134,6 +143,7 @@ DGSketchElement >> sketch [
 ]
 
 { #category : #accessing }
-DGSketchElement >> sketch: anObject [
-	sketch := anObject
+DGSketchElement >> sketch: aSketch [
+	sketch := aSketch.
+	self playSketch
 ]

@@ -24,18 +24,43 @@ DGScriptExamples >> lineSketch [
 	| sketch a b l |
 	sketch := self sketchWithPoint.
 	a := sketch mathItems first.
-	b := sketch point: 98 @ 1085.
+	b := sketch point: 20@50.
 	l := sketch line: a to: b.
 	self assert: l isCurveItem.
 	self assert: l isGeometricItem.
 	self assert: l isDirectionItem.
 	self assert: l isLineItem.
-	self assert: (l contains: 89 @ 995).
-	self assert: (l contains: 87 @ 975).
-	self assert: (l contains: 188 @ 1985).
+	self assert: (l contains: 10@20).
+	self assert: (l contains: 20@50).
+	self assert: (l contains: 15@35).
 	self assert: (l contains: 5 @ 4) not.
 	self assert: sketch mathItems size equals: 3.
 	^ sketch
+]
+
+{ #category : #examples }
+DGScriptExamples >> mathLine [
+	"From DrGeoScriptTest>>#testLine"
+
+	<gtExample>
+	| sketch line |
+	sketch := self lineSketch.
+	line := sketch mathItems third.
+	self assert: line isLineItem.
+	^ line
+]
+
+{ #category : #examples }
+DGScriptExamples >> mathPoint [
+	"From aMathItem"
+
+	<gtExample>
+	| sketch mathPoint |
+	sketch := self sketchWithPoint.
+	mathPoint := sketch mathItems first.
+	self assert: mathPoint isPointItem.
+	self assert: mathPoint point equals: 10@20.
+	^ mathPoint
 ]
 
 { #category : #examples }
@@ -45,7 +70,7 @@ DGScriptExamples >> sketchWithPoint [
 	<gtExample>
 	| sketch a |
 	sketch := self emptySketch.
-	a := sketch point: 88 @ 985.
+	a := sketch point: 10@ 20.
 
 	self assert: sketch isEmpty not.
 	self assert: sketch mathItems first equals: a.
