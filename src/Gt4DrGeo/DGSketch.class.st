@@ -43,7 +43,7 @@ DGSketch >> gtLiveFor: aView [
 	^ aView forward
 		title: 'Live (prototype)';
 		priority: 10;
-		object: [ self asElement  asPinchablePannable ];
+		object: [ self asElement asPinchablePannable zoomToActualSize ];
 		view: #gtLiveFor:
 ]
 

@@ -353,7 +353,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-01T14:49:26.929149+02:00"
+						"dateAndTimeString" : "2024-05-01T16:57:10.885976+02:00"
 					}
 				},
 				"uid" : {
@@ -363,7 +363,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We introduce {{gtClass:name=DGMathItemElement}} with subclasses for the elements. "
+				"string" : "We introduce {{gtClass:name=TDGMathItemElement}} with subclasses for the elements.  "
 			},
 			{
 				"__type" : "textSnippet",
@@ -498,7 +498,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-01T14:52:10.570351+02:00"
+						"dateAndTimeString" : "2024-05-01T16:59:06.508729+02:00"
 					}
 				},
 				"uid" : {
@@ -508,7 +508,44 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Next, we need to create a line element that connects to the point elements in the sketch element ..."
+				"string" : "Next, we need to create a line element {{gtClass:name=DGLineElement}} that connects to the point elements in the sketch element. We must implement {{gtMethod:name=DrGDirectionItem>>#playIn:}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-01T16:30:52.189757+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-01T16:31:00.752091+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "e2EPEsfTDQCWIObuChrjTQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We can follow the example of {{gtMethod:name=BlLineExamples>>#lineWithAnchors}}"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -558,7 +595,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-01T14:47:06.164721+02:00"
+						"dateAndTimeString" : "2024-05-01T17:15:29.932144+02:00"
 					}
 				},
 				"editEmail" : {
@@ -569,115 +606,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-01T14:47:06.164721+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Y8b1nsXTDQC4ZA9AAxlfnw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-01T14:47:06.507584+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-01T14:47:06.507584+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ovf6nsXTDQC4aTLlAxlfnw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-30T17:45:18.101923+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-30T17:46:14.367174+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "yWlo/rPTDQCJzeBoCiVw+g=="
-				},
-				"code" : "DGSketchElement for: DGScriptExamples new lineSketch."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-30T17:50:14.126457+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-30T17:50:33.514089+02:00"
+						"dateAndTimeString" : "2024-05-01T17:15:59.135992+02:00"
 					}
 				},
 				"uid" : {
@@ -687,7 +616,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "We need to initialize the element with the items of the sketch."
+				"string" : "Now we can display the line, and drag the points, but we are not yet updating the model."
 			},
 			{
 				"__type" : "textSnippet",
@@ -714,7 +643,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-04-30T11:43:48.599579+02:00"
+						"dateAndTimeString" : "2024-05-01T17:17:11.727297+02:00"
 					}
 				},
 				"uid" : {
@@ -724,7 +653,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Next: [[*** Updating the  model]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -895,12 +824,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-04-30T11:30:48.789519+02:00"
+			"dateAndTimeString" : "2024-05-01T17:17:30.76891+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "*** Prototyping a DrGeo Canvas"
+		"title" : "Prototyping a DrGeo Canvas"
 	},
 	"uid" : {
 		"__type" : "uuid",

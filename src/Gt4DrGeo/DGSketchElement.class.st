@@ -2,7 +2,9 @@ Class {
 	#name : #DGSketchElement,
 	#superclass : #BlElement,
 	#instVars : [
-		'sketch'
+		'sketch',
+		'mathItemDict',
+		'showBorder'
 	],
 	#category : #'Gt4DrGeo-View'
 }
@@ -14,21 +16,29 @@ DGSketchElement class >> for: aSketch [
 		yourself
 ]
 
+{ #category : #'children - add/remove' }
+DGSketchElement >> addChild: aMathItemElement [
+	super addChild: aMathItemElement.
+	self assert: aMathItemElement isMathItemElement.
+	mathItemDict at: aMathItemElement mathItem ifAbsentPut: aMathItemElement
+]
+
 { #category : #conversion }
 DGSketchElement >> asPinchable [
-	^ BlPinchableElement new
-		zoomLevel: 2;
-		clipChildren: false;
-		contentElement: self;
-		border: (BlBorder paint: Color lightGray)
+	| element |
+	element := BlPinchableElement new
+			zoomLevel: 2;
+			clipChildren: false;
+			contentElement: self.
+	self showBorder ifTrue: [ element border: (BlBorder paint: Color lightGray) ].
+	^ element
 ]
 
 { #category : #conversion }
 DGSketchElement >> asPinchablePannable [
-	| sketchPannable  sketchPinchable |
+	| sketchPannable sketchPinchable |
 	sketchPinchable := self asPinchable.
 	sketchPannable := sketchPinchable asPannableElement
-			border: (BlBorder paint: Color orange);
 			padding: (BlInsets all: self padding);
 			margin: (BlInsets all: self margin);
 			when: BlDoubleClickEvent
@@ -41,13 +51,29 @@ DGSketchElement >> asPinchablePannable [
 					content: [ BrGlamorousSimpleContextMenuContent new
 							items: {'Inspect graph' -> [ self inspect ]};
 							yourself ]).
+	self showBorder
+		ifTrue: [ sketchPannable border: (BlBorder paint: Color orange) ].
 	^ sketchPannable
+]
+
+{ #category : #initialization }
+DGSketchElement >> defaultShowBorder [
+	^ false
 ]
 
 { #category : #example }
 DGSketchElement >> demo [
 	<gtExample>
 	^ self class new asPinchablePannable
+]
+
+{ #category : #accessing }
+DGSketchElement >> elementForItem: aMathItem [
+	"Should not fail. If it does, we can add a moldable exception ..."
+
+	^ mathItemDict
+		at: aMathItem
+		ifAbsent: [ self error: 'Cannot find this element' ]
 ]
 
 { #category : #view }
@@ -63,7 +89,9 @@ DGSketchElement >> gtLiveFor: aView [
 { #category : #initialization }
 DGSketchElement >> initialize [
 	super initialize.
-	self initializeLayout
+	showBorder := self defaultShowBorder.
+	mathItemDict := Dictionary new.
+	self initializeLayout.
 ]
 
 { #category : #initialization }
@@ -74,9 +102,11 @@ DGSketchElement >> initializeLayout [
 			c horizontal fitContent.
 			c vertical fitContent ];
 		padding: (BlInsets all: self padding);
-		margin: (BlInsets all: self margin);
-		background: Color white;
-		effect: BrGlamorousShadowEffect new
+		margin: (BlInsets all: self margin).
+	self showBorder
+		ifTrue: [ self
+				background: Color white;
+				effect: BrGlamorousShadowEffect new ]
 ]
 
 { #category : #demo }
@@ -135,6 +165,16 @@ DGSketchElement >> playSketch [
 	"Here we need to populate the Sketch element with elements representing the mathItems of the sketch."
 
 	sketch mathItems do: [ :item | item playIn: self ]
+]
+
+{ #category : #accessing }
+DGSketchElement >> showBorder [
+	^ showBorder
+]
+
+{ #category : #accessing }
+DGSketchElement >> showBorder: anObject [
+	showBorder := anObject
 ]
 
 { #category : #accessing }

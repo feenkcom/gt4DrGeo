@@ -16,3 +16,16 @@ DrGDirectionItem >> gtSummary [
 				{'to'.
 					self direction}}
 ]
+
+{ #category : #'*Gt4DrGeo' }
+DrGDirectionItem >> playIn: aSketchElement [
+	| lineElement |
+	lineElement := DGLineElement for: self.
+	lineElement
+		fromAnchor: (BlElementCenterAnchor
+				element: (aSketchElement elementForItem: self parents first)).
+	lineElement
+		toAnchor: (BlElementCenterAnchor
+				element: (aSketchElement elementForItem: self parents second)).
+	aSketchElement addChild: lineElement
+]

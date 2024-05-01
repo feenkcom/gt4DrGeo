@@ -1,6 +1,8 @@
 Class {
 	#name : #DGPointItemElement,
-	#superclass : #DGMathItemElement,
+	#superclass : #BlElement,
+	#traits : 'TDGMathItemElement',
+	#classTraits : 'TDGMathItemElement classTrait',
 	#category : #'Gt4DrGeo-View'
 }
 
