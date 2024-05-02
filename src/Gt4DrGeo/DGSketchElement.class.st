@@ -19,6 +19,7 @@ DGSketchElement class >> for: aSketch [
 { #category : #'children - add/remove' }
 DGSketchElement >> addChild: aMathItemElement [
 	super addChild: aMathItemElement.
+	aMathItemElement idWithIndex: children size.
 	self assert: aMathItemElement isMathItemElement.
 	mathItemDict at: aMathItemElement mathItem ifAbsentPut: aMathItemElement
 ]
@@ -90,7 +91,7 @@ DGSketchElement >> initialize [
 	showBorder := self defaultShowBorder.
 	mathItemDict := Dictionary new.
 	self initializeLayout.
-	self id: self sketchId
+	self id: DGSketchElementId
 ]
 
 { #category : #initialization }
@@ -173,6 +174,11 @@ DGSketchElement >> playNewItems [
 ]
 
 { #category : #accessing }
+DGSketchElement >> pointElements [
+	^ self children select: #isDGPointElement
+]
+
+{ #category : #accessing }
 DGSketchElement >> showBorder [
 	^ showBorder
 ]
@@ -195,11 +201,6 @@ DGSketchElement >> sketch: aSketch [
 		send: #playNewItems
 		to: self.
 	self playNewItems
-]
-
-{ #category : #constant }
-DGSketchElement >> sketchId [
-	^ '#dg-sketch-element'
 ]
 
 { #category : #constant }

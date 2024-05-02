@@ -13,6 +13,11 @@ DGLineElement class >> for: aMathItem [
 		yourself
 ]
 
+{ #category : #constant }
+DGLineElement >> idClass [
+	^ DGLineElementId
+]
+
 { #category : #initalization }
 DGLineElement >> initialize [
 	super initialize.

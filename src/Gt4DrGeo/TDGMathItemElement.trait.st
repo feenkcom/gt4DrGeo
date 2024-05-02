@@ -13,6 +13,26 @@ TDGMathItemElement classSide >> for: aMathItem [
 		yourself
 ]
 
+{ #category : #requirement }
+TDGMathItemElement >> id: anId [
+	^ self explicitRequirement
+]
+
+{ #category : #requirement }
+TDGMathItemElement >> idClass [
+	^ self explicitRequirement
+]
+
+{ #category : #accessing }
+TDGMathItemElement >> idWithIndex: anIndex [
+	^ self id: (self idClass indexed: anIndex)
+]
+
+{ #category : #testing }
+TDGMathItemElement >> isDGPointElement [
+	^ false
+]
+
 { #category : #testing }
 TDGMathItemElement >> isMathItemElement [
 	^ true
@@ -36,6 +56,11 @@ TDGMathItemElement >> mySketchElement [
 		assert: (self parent isKindOf: DGSketchElement)
 		description: 'My parent is not a sketch.'.
 	^ self parent
+]
+
+{ #category : #requirement }
+TDGMathItemElement >> parent [
+	^ self explicitRequirement
 ]
 
 { #category : #'event handling' }

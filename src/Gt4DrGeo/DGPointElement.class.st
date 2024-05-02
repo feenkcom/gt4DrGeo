@@ -1,5 +1,5 @@
 Class {
-	#name : #DGPointItemElement,
+	#name : #DGPointElement,
 	#superclass : #BlElement,
 	#traits : 'TDGMathItemElement',
 	#classTraits : 'TDGMathItemElement classTrait',
@@ -7,7 +7,7 @@ Class {
 }
 
 { #category : #accessing }
-DGPointItemElement >> beFixed [
+DGPointElement >> beFixed [
 	self
 		geometry: self crossGeometry;
 		background: Color red;
@@ -16,7 +16,7 @@ DGPointItemElement >> beFixed [
 ]
 
 { #category : #accessing }
-DGPointItemElement >> bePullable [
+DGPointElement >> bePullable [
 	self
 		geometry: BlSquare new;
 		size: self defaultSize;
@@ -26,7 +26,7 @@ DGPointItemElement >> bePullable [
 ]
 
 { #category : #accessing }
-DGPointItemElement >> crossGeometry [
+DGPointElement >> crossGeometry [
 	^ BrGlamorousVectorIcons
 		crossGeometry: 0.1
 		extent: 1 @ 1
@@ -34,23 +34,33 @@ DGPointItemElement >> crossGeometry [
 ]
 
 { #category : #accessing }
-DGPointItemElement >> defaultSize [
+DGPointElement >> defaultSize [
 	^ 10 @ 10
 ]
 
 { #category : #accessing }
-DGPointItemElement >> initialize [
+DGPointElement >> idClass [
+	^ DGPointElementId
+]
+
+{ #category : #accessing }
+DGPointElement >> initialize [
 	super initialize.
 	self bePullable
 ]
 
 { #category : #accessing }
-DGPointItemElement >> offset [
+DGPointElement >> isDGPointElement [
+	^ true
+]
+
+{ #category : #accessing }
+DGPointElement >> offset [
 	^ self extent / 2
 ]
 
 { #category : #'event handling' }
-DGPointItemElement >> registerEvents [
+DGPointElement >> registerEvents [
 	"NB: The SketchElements listens for #changed events."
 
 	self
@@ -63,13 +73,13 @@ DGPointItemElement >> registerEvents [
 ]
 
 { #category : #accessing }
-DGPointItemElement >> relocate: aPoint [
+DGPointElement >> relocate: aPoint [
 	"MI should relocate my center, not my bottom left corner."
 
 	super relocate: aPoint - self offset
 ]
 
 { #category : #accessing }
-DGPointItemElement >> updateAllMathItems [
+DGPointElement >> updateAllMathItems [
 	self mySketchElement updateAllMathItems
 ]
