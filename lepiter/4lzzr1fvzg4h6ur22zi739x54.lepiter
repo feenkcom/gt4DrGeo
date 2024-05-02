@@ -110,6 +110,40 @@
 				"code" : "sketch := DGSketch new.\ra := sketch point: 30@20.\rb := sketch point: 100@50.\rl := sketch line: a to: b.\rsketch"
 			},
 			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-02T11:47:05.419557+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-02T11:47:16.594438+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "dt0GOdfTDQCNpRQ4CNtvig=="
+				},
+				"code" : "c := sketch point: 200@200.\rd := sketch point: 250@220.\rl2 := sketch line: c to:  d.\rl2 changed"
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -643,7 +677,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T10:59:09.557231+02:00"
+						"dateAndTimeString" : "2024-05-02T11:37:38.009977+02:00"
 					}
 				},
 				"uid" : {
@@ -653,7 +687,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Can propogate changes from the vie wto the model but not vv."
+				"string" : "Can propogate changes from the view to the model but not vv."
 			},
 			{
 				"__type" : "textSnippet",

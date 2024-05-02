@@ -6,14 +6,29 @@ Class {
 	#name : #DGSketch,
 	#superclass : #DrGeoSketch,
 	#instVars : [
-		'mathItems'
+		'mathItems',
+		'announcer'
 	],
 	#category : #'Gt4DrGeo-Model'
 }
 
-{ #category : #point }
+{ #category : #updating }
 DGSketch >> addItem: aMathItem [
-	self mathItems addLast: aMathItem
+	self mathItems addLast: aMathItem.
+	aMathItem
+		when: #updateMyView
+		send: #updateAllMathItems
+		to: self
+]
+
+{ #category : #accessing }
+DGSketch >> announcer [
+	^ announcer
+]
+
+{ #category : #accessing }
+DGSketch >> announcer: anObject [
+	announcer := anObject
 ]
 
 { #category : #accessing }
@@ -45,7 +60,8 @@ DGSketch >> gtLiveFor: aView [
 		priority: 10;
 		object: [ self asElement asPinchablePannable zoomToActualSize ];
 		view: #gtLiveFor:;
-		actionUpdateButton
+		actionUpdateButton;
+		updateWhen: DGSketchUpdated in: self announcer
 ]
 
 { #category : #accessing }
@@ -56,16 +72,16 @@ DGSketch >> gtMathItemsFor: aView [
 		priority: 20;
 		items: [ self mathItems ];
 		actionUpdateButtonTooltip: 'Update item list';
-		column: 'Index' 
-			text: [ :eachItem :eachIndex | 
-				eachIndex asRopedText foreground: Color gray ]
+		column: 'Index'
+			text: [ :eachItem :eachIndex | eachIndex asRopedText foreground: Color gray ]
 			width: 45;
-		column: 'Item' 
-			text: [ :eachItem | eachItem gtDisplayText ].
+		column: 'Item' text: [ :eachItem | eachItem gtDisplayText ];
+		updateWhen: DGSketchUpdated in: self announcer
 ]
 
 { #category : #initalization }
 DGSketch >> initialize [
+	announcer := Announcer new.
 	mathItems := OrderedCollection new
 ]
 
@@ -90,4 +106,11 @@ DGSketch >> mathItems [
 { #category : #accessing }
 DGSketch >> mathItems: anObject [
 	mathItems := anObject
+]
+
+{ #category : #announcements }
+DGSketch >> updateAllMathItems [
+	"Bridge from EventManager to Annkuncements!"
+
+	self announcer announce: DGSketchUpdated new
 ]

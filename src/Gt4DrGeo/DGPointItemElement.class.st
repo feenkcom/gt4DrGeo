@@ -52,7 +52,6 @@ DGPointItemElement >> offset [
 { #category : #'event handling' }
 DGPointItemElement >> registerEvents [
 	"should also listen for deletedMathItem"
-
 	self mathItem
 		ifNotNil: [ self mathItem
 				when: #updateMyView
