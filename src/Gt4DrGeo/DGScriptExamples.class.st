@@ -66,7 +66,7 @@ DGScriptExamples >> mathPoint [
 { #category : #accessing }
 DGScriptExamples >> pointA [
 	<gtExample>
-	^ 30@120
+	^ 30@20
 ]
 
 { #category : #accessing }
@@ -78,7 +78,7 @@ DGScriptExamples >> pointB [
 { #category : #accessing }
 DGScriptExamples >> pointBetweenAB [
 	<gtExample>
-	^ 65@85
+	^ 65@35
 ]
 
 { #category : #examples }

@@ -25,5 +25,25 @@ TDGMathItemElement >> mathItem [
 
 { #category : #accessing }
 TDGMathItemElement >> mathItem: anObject [
-	mathItem := anObject
+	mathItem := anObject.
+	self registerEvents
+]
+
+{ #category : #querying }
+TDGMathItemElement >> mySketchElement [
+	self assert: self parent notNil description: 'I am not in a sketch'.
+	self
+		assert: (self parent isKindOf: DGSketchElement)
+		description: 'My parent is not a sketch.'.
+	^ self parent
+]
+
+{ #category : #accessing }
+TDGMathItemElement >> parent [
+	self explicitRequirement
+]
+
+{ #category : #'event handling' }
+TDGMathItemElement >> registerEvents [
+	"self subclassResponsibility"
 ]

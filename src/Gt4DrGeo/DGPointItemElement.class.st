@@ -7,11 +7,20 @@ Class {
 }
 
 { #category : #accessing }
+DGPointItemElement >> beFixed [
+	self
+		geometry: self crossGeometry;
+		background: Color red;
+		border: Color red;
+		size: self defaultSize
+]
+
+{ #category : #accessing }
 DGPointItemElement >> bePullable [
 	self
-		geometry: BlEllipseGeometry new;
+		geometry: BlSquare new;
 		size: self defaultSize;
-		background: (Color red alpha: 0.3);
+		background: Color red;
 		border: BlBorder empty;
 		addEventHandler: BlPullHandler new
 ]
@@ -32,11 +41,7 @@ DGPointItemElement >> defaultSize [
 { #category : #accessing }
 DGPointItemElement >> initialize [
 	super initialize.
-	self
-		geometry: self crossGeometry;
-		background: Color red;
-		border: Color red;
-		size: self defaultSize
+	self bePullable
 ]
 
 { #category : #accessing }
@@ -44,9 +49,31 @@ DGPointItemElement >> offset [
 	^ self extent / 2
 ]
 
+{ #category : #'event handling' }
+DGPointItemElement >> registerEvents [
+	"should also listen for deletedMathItem"
+
+	self mathItem
+		ifNotNil: [ self mathItem
+				when: #updateMyView
+				send: #updateAllMathItems
+				to: self ].
+	self
+		when: BlDragEndEvent
+		do: [ :anEvent | 
+			anEvent consumed: true.
+			self mathItem moveTo: self position ].
+	self flag: #drgeoEvent
+]
+
 { #category : #accessing }
 DGPointItemElement >> relocate: aPoint [
 	"MI should relocate my center, not my bottom left corner."
 
 	super relocate: aPoint - self offset
+]
+
+{ #category : #accessing }
+DGPointItemElement >> updateAllMathItems [
+	self mySketchElement updateAllMathItems
 ]

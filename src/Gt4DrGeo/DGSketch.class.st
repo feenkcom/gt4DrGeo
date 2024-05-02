@@ -41,10 +41,11 @@ DGSketch >> finalizePoint: aPointItem [
 DGSketch >> gtLiveFor: aView [
 	<gtView>
 	^ aView forward
-		title: 'Live (prototype)';
+		title: 'Live';
 		priority: 10;
 		object: [ self asElement asPinchablePannable zoomToActualSize ];
-		view: #gtLiveFor:
+		view: #gtLiveFor:;
+		actionUpdateButton
 ]
 
 { #category : #accessing }

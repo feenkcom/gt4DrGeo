@@ -29,7 +29,9 @@ DGSketchElement >> asPinchable [
 	element := BlPinchableElement new
 			zoomLevel: 2;
 			clipChildren: false;
-			contentElement: self.
+			contentElement: self;
+			id: self sketchPinchableId;
+			yourself.
 	self showBorder ifTrue: [ element border: (BlBorder paint: Color lightGray) ].
 	^ element
 ]
@@ -41,16 +43,12 @@ DGSketchElement >> asPinchablePannable [
 	sketchPannable := sketchPinchable asPannableElement
 			padding: (BlInsets all: self padding);
 			margin: (BlInsets all: self margin);
-			when: BlDoubleClickEvent
-				do: [ :evt | 
-					| newNode |
-					newNode := self makeNode asElement.
-					self addChild: newNode.
-					newNode relocate: (sketchPinchable globalPointToLocal: evt position) ];
+			id: self sketchPannableId;
 			aptitude: (BrGlamorousWithContextMenuAptitude
 					content: [ BrGlamorousSimpleContextMenuContent new
 							items: {'Inspect graph' -> [ self inspect ]};
-							yourself ]).
+							yourself ]);
+			yourself.
 	self showBorder
 		ifTrue: [ sketchPannable border: (BlBorder paint: Color orange) ].
 	^ sketchPannable
@@ -92,6 +90,7 @@ DGSketchElement >> initialize [
 	showBorder := self defaultShowBorder.
 	mathItemDict := Dictionary new.
 	self initializeLayout.
+	self id: self sketchId
 ]
 
 { #category : #initialization }
@@ -186,4 +185,24 @@ DGSketchElement >> sketch [
 DGSketchElement >> sketch: aSketch [
 	sketch := aSketch.
 	self playSketch
+]
+
+{ #category : #constant }
+DGSketchElement >> sketchId [
+	^ '#dg-sketch-element'
+]
+
+{ #category : #constant }
+DGSketchElement >> sketchPannableId [
+	^ '#dg-sketch-pannable'
+]
+
+{ #category : #constant }
+DGSketchElement >> sketchPinchableId [
+	^ '#dg-sketch-pinchable'
+]
+
+{ #category : #accessing }
+DGSketchElement >> updateAllMathItems [
+	self notYetImplemented
 ]
