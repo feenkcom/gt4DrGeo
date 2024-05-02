@@ -134,14 +134,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T11:47:08.698089+02:00"
+						"dateAndTimeString" : "2024-05-02T11:47:16.594438+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "dt0GOdfTDQCNpRQ4CNtvig=="
 				},
-				"code" : "c := self point: 200@200.\rd := self point: 250@220.\rl2 := self line: c to:  d.\rl2 changed"
+				"code" : "c := sketch point: 200@200.\rd := sketch point: 250@220.\rl2 := sketch line: c to:  d.\rl2 changed"
 			},
 			{
 				"__type" : "textSnippet",
@@ -629,7 +629,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T10:35:11.970354+02:00"
+						"dateAndTimeString" : "2024-05-02T15:27:37.897551+02:00"
 					}
 				},
 				"editEmail" : {
@@ -640,54 +640,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T10:35:11.970354+02:00"
+						"dateAndTimeString" : "2024-05-02T15:28:27.241155+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "99rsN9bTDQC9GjL4DSkCCQ=="
+					"uidString" : "P52DB9rTDQCvAQ+xDOSRvw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T10:58:53.175454+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T11:37:38.009977+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "PLiijNbTDQC+mqdaDSkCCQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Can propogate changes from the view to the model but not vv."
+				"string" : "***TO FIX** "
 			},
 			{
 				"__type" : "textSnippet",

@@ -152,6 +152,13 @@ DGSketchElement >> margin [
 	^ margin
 ]
 
+{ #category : #querying }
+DGSketchElement >> newItems [
+	"These are the new items added to the sketch since the last update."
+
+	^ sketch mathItems reject: [ :item | mathItemDict includesKey: item ]
+]
+
 { #category : #constant }
 DGSketchElement >> padding [
 	| padding |
@@ -160,10 +167,9 @@ DGSketchElement >> padding [
 ]
 
 { #category : #playing }
-DGSketchElement >> playSketch [
+DGSketchElement >> playNewItems [
 	"Here we need to populate the Sketch element with elements representing the mathItems of the sketch."
-
-	sketch mathItems do: [ :item | item playIn: self ]
+	^ self newItems do: [ :item | item playIn: self ]
 ]
 
 { #category : #accessing }
@@ -184,7 +190,11 @@ DGSketchElement >> sketch [
 { #category : #accessing }
 DGSketchElement >> sketch: aSketch [
 	sketch := aSketch.
-	self playSketch
+	sketch announcer
+		when: DGSketchUpdated
+		send: #playNewItems
+		to: self.
+	self playNewItems
 ]
 
 { #category : #constant }

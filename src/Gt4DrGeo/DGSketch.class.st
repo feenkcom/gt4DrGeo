@@ -60,8 +60,8 @@ DGSketch >> gtLiveFor: aView [
 		priority: 10;
 		object: [ self asElement asPinchablePannable zoomToActualSize ];
 		view: #gtLiveFor:;
-		actionUpdateButton;
-		updateWhen: DGSketchUpdated in: self announcer
+		actionUpdateButton
+		"updateWhen: DGSketchUpdated in: self announcer"
 ]
 
 { #category : #accessing }

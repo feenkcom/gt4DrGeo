@@ -51,17 +51,14 @@ DGPointItemElement >> offset [
 
 { #category : #'event handling' }
 DGPointItemElement >> registerEvents [
-	"should also listen for deletedMathItem"
-	self mathItem
-		ifNotNil: [ self mathItem
-				when: #updateMyView
-				send: #updateAllMathItems
-				to: self ].
+	"NB: The SketchElements listens for #changed events."
+
 	self
 		when: BlDragEndEvent
 		do: [ :anEvent | 
 			anEvent consumed: true.
-			self mathItem moveTo: self position ].
+			self mathItem moveTo: self position.
+			self mathItem changed ].
 	self flag: #drgeoEvent
 ]
 

@@ -38,11 +38,6 @@ TDGMathItemElement >> mySketchElement [
 	^ self parent
 ]
 
-{ #category : #accessing }
-TDGMathItemElement >> parent [
-	self explicitRequirement
-]
-
 { #category : #'event handling' }
 TDGMathItemElement >> registerEvents [
 	"self subclassResponsibility"
