@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-02T08:05:04.489274+02:00"
+									"dateAndTimeString" : "2024-05-03T18:13:49.970781+02:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[*** Updating the  model]]"
+							"string" : "[[Updating the  model]]"
 						},
 						{
 							"__type" : "textSnippet",

@@ -500,7 +500,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-03T18:12:15.709468+02:00"
+									"dateAndTimeString" : "2024-05-03T18:12:25.828703+02:00"
 								}
 							},
 							"uid" : {
@@ -510,7 +510,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "In {{gtMethod:name=DGSketchElement>>#updating}} we update the graphical view. {{gtTodo:label=finish this!}}"
+							"string" : "In {{gtMethod:name=DGSketchElement>>#updateItem:}} we update the graphical view. {{gtTodo:label=finish this!}}"
 						},
 						{
 							"__type" : "textSnippet",
@@ -686,7 +686,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-03T18:02:00.909462+02:00"
+									"dateAndTimeString" : "2024-05-03T18:12:43.592203+02:00"
 								}
 							},
 							"uid" : {
@@ -696,7 +696,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We implement {{gtMethod:name=DGSketchElement>>#update}} to relocate all points to their new location."
+							"string" : "We implement {{gtMethod:name=DGSketchElement>>#updateItem:}} to relocate a moved point to its new location."
 						}
 					]
 				},
@@ -730,117 +730,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "# Handling GUI events"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-03T18:01:13.896035+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-03T18:01:13.896035+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "cSaS1dXTDQC6OsyWDSkCCQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-03T17:40:11.486439+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-03T17:40:11.486439+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "DxArZtXTDQClHC8EDSkCCQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-03T16:18:15.717335+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-03T16:18:15.717335+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "qrEdaNXTDQCnPVifDSkCCQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -1438,12 +1327,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-05-01T17:17:11.720202+02:00"
+			"dateAndTimeString" : "2024-05-03T18:13:49.959146+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "*** Updating the  model"
+		"title" : "Updating the  model"
 	},
 	"uid" : {
 		"__type" : "uuid",
