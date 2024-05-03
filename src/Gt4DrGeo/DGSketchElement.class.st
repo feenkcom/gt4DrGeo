@@ -68,7 +68,8 @@ DGSketchElement >> demo [
 
 { #category : #accessing }
 DGSketchElement >> elementForItem: aMathItem [
-	"Should not fail. If it does, we can add a moldable exception ..."
+	"Should not fail. If it does, we can add a moldable exception ...
+	NB: We need an IdentityDictionary so we can find  items even if their value changes!"
 
 	^ mathItemDict
 		at: aMathItem
@@ -89,7 +90,7 @@ DGSketchElement >> gtLiveFor: aView [
 DGSketchElement >> initialize [
 	super initialize.
 	showBorder := self defaultShowBorder.
-	mathItemDict := Dictionary new.
+	mathItemDict := IdentityDictionary new.
 	self initializeLayout.
 	self id: DGSketchElementId
 ]
@@ -196,11 +197,8 @@ DGSketchElement >> sketch [
 { #category : #accessing }
 DGSketchElement >> sketch: aSketch [
 	sketch := aSketch.
-	sketch announcer
-		when: DGSketchUpdated
-		send: #playNewItems
-		to: self.
-	self playNewItems
+	self playNewItems.
+	self subscribeTo: aSketch
 ]
 
 { #category : #constant }
@@ -213,7 +211,17 @@ DGSketchElement >> sketchPinchableId [
 	^ '#dg-sketch-pinchable'
 ]
 
-{ #category : #accessing }
-DGSketchElement >> updateAllMathItems [
-	self notYetImplemented
+{ #category : #updating }
+DGSketchElement >> subscribeTo: aSketch [
+	aSketch announcer
+		when: DGMathItemUpdated
+		do: [ :a | self updateItem: a mathItem ]
+]
+
+{ #category : #updating }
+DGSketchElement >> updateItem: aMathItem [
+	"Can be used if a point is moved, or if there are new items."
+
+	aMathItem isPointItem ifTrue: [ (self elementForItem: aMathItem) relocate ].	"self pointElements do: #relocate."
+	self playNewItems
 ]

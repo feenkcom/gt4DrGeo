@@ -64,19 +64,22 @@ DGPointElement >> offset [
 	^ self extent / 2
 ]
 
-{ #category : #'event handling' }
-DGPointElement >> registerEvents [
-	"Do we need this? Instead we use a DGPointPullHandler that will handle the repositioning."
+{ #category : #accessing }
+DGPointElement >> positionSummary [
+	^ {'position' -> (self position + self offset).
+		'math point' -> self mathItem point.
+		'parent position'
+			-> ((self parent globalPointToLocal: self position) + self offset).
+		'parent parent position'
+			-> ((self parent parent globalPointToLocal: self position) + self offset)}
+		asDictionary
+]
 
-	"NB: The SketchElements listens for #changed events."
+{ #category : #updating }
+DGPointElement >> relocate [
+	"Update my location to match my model item."
 
-	"self
-		when: BlDragEndEvent
-		do: [ :anEvent | 
-			anEvent consumed: true.
-			self mathItem moveTo: self position.
-			self mathItem changed ].
-	self flag: #drgeoEvent"
+	^ self relocate: self mathItem point
 ]
 
 { #category : #accessing }
@@ -84,9 +87,4 @@ DGPointElement >> relocate: aPoint [
 	"MI should relocate my center, not my bottom left corner."
 
 	super relocate: aPoint - self offset
-]
-
-{ #category : #accessing }
-DGPointElement >> updateAllMathItems [
-	self mySketchElement updateAllMathItems
 ]

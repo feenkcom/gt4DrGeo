@@ -15,10 +15,7 @@ Class {
 { #category : #updating }
 DGSketch >> addItem: aMathItem [
 	self mathItems addLast: aMathItem.
-	aMathItem
-		when: #updateMyView
-		send: #updateAllMathItems
-		to: self
+	self subscribeTo: aMathItem
 ]
 
 { #category : #accessing }
@@ -76,7 +73,7 @@ DGSketch >> gtMathItemsFor: aView [
 			text: [ :eachItem :eachIndex | eachIndex asRopedText foreground: Color gray ]
 			width: 45;
 		column: 'Item' text: [ :eachItem | eachItem gtDisplayText ];
-		updateWhen: DGSketchUpdated in: self announcer
+		updateWhen: DGMathItemUpdated in: self announcer
 ]
 
 { #category : #initalization }
@@ -108,9 +105,24 @@ DGSketch >> mathItems: anObject [
 	mathItems := anObject
 ]
 
-{ #category : #announcements }
-DGSketch >> updateAllMathItems [
-	"Bridge from EventManager to Annkuncements!"
+{ #category : #updating }
+DGSketch >> subscribeTo: aMathItem [
+	aMathItem
+		when: #updateMyView
+		send: #updateMathItem:
+		to: self
+		with: aMathItem
+]
 
-	self announcer announce: DGSketchUpdated new
+{ #category : #updating }
+DGSketch >> updateDirtyItemsFor: aMathItem [
+	(self mathItems select: [ :item | item parentsIncludes: aMathItem ])
+		do: #update
+]
+
+{ #category : #announcements }
+DGSketch >> updateMathItem: aMathItem [
+	"Bridge from EventManager to Announcements!"
+	self updateDirtyItemsFor: aMathItem.
+	self announcer announce: (DGMathItemUpdated for: aMathItem)
 ]

@@ -44,9 +44,8 @@ TDGMathItemElement >> mathItem [
 ]
 
 { #category : #accessing }
-TDGMathItemElement >> mathItem: anObject [
-	mathItem := anObject.
-	self registerEvents
+TDGMathItemElement >> mathItem: aMathItem [
+	mathItem := aMathItem
 ]
 
 { #category : #querying }
@@ -65,5 +64,6 @@ TDGMathItemElement >> parent [
 
 { #category : #'event handling' }
 TDGMathItemElement >> registerEvents [
-	"self subclassResponsibility"
+	"Empty hook, if needed.
+	See DrGMorph>>#registerEvents"
 ]
