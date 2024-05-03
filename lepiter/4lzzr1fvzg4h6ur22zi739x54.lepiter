@@ -623,43 +623,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T10:15:18.38425+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T10:15:29.183499+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "GSjI8NXTDQC6+cGaDSkCCQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "We can implement {{gtMethod:name=DGPointItemElement>>#registerEvents}} ..."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-05-02T10:35:01.926398+02:00"
 					}
 				},
@@ -687,6 +650,43 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-03T10:41:36.036425+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-03T10:42:15.422681+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "fJuobOrTDQC9v99jCAjxww=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Looking at the IMAD project, we see that we can better handle the drag events by implementing a dedicated {{gtClass:name=DGPointPullHandler}}. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
 					"items" : [
 						{
 							"__type" : "textSnippet",
@@ -702,7 +702,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-02T09:44:33.416358+02:00"
+									"dateAndTimeString" : "2024-05-03T10:43:41.874958+02:00"
 								}
 							},
 							"editEmail" : {
@@ -713,17 +713,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2024-05-02T17:13:10.197109+02:00"
+									"dateAndTimeString" : "2024-05-03T10:44:00.201247+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "7TLQgtXTDQCrfT0oDSkCCQ=="
+								"uidString" : "fsAodOrTDQCAwtVGCAjxww=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "The problem is that the `position` of an element does not correspond to the points location in a sketch. How to fix this?"
+							"string" : "The points are updated but not the lines."
 						}
 					]
 				},
@@ -746,7 +746,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-02T15:28:50.213169+02:00"
+						"dateAndTimeString" : "2024-05-03T10:42:34.076486+02:00"
 					}
 				},
 				"uid" : {
@@ -756,7 +756,44 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "***TO FIX*** Updates are working partly, but the display is messed up. "
+				"string" : "***TO FIX*** Updates are working partly, but the display is messed up when we have multiple views."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-03T10:42:34.477664+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-03T10:42:34.477664+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "/lokcOrTDQCAvasbCAjxww=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",

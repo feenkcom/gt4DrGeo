@@ -22,7 +22,7 @@ DGPointElement >> bePullable [
 		size: self defaultSize;
 		background: Color red;
 		border: BlBorder empty;
-		addEventHandler: BlPullHandler new
+		addEventHandler: (DGPointPullHandler for: self)
 ]
 
 { #category : #accessing }
@@ -46,6 +46,11 @@ DGPointElement >> idClass [
 { #category : #accessing }
 DGPointElement >> initialize [
 	super initialize.
+	"self
+		layout: BlFrameLayout new;
+		constraintsDo: [ :c | 
+			c horizontal fitContent.
+			c vertical fitContent ]."
 	self bePullable
 ]
 
@@ -61,15 +66,17 @@ DGPointElement >> offset [
 
 { #category : #'event handling' }
 DGPointElement >> registerEvents [
+	"Do we need this? Instead we use a DGPointPullHandler that will handle the repositioning."
+
 	"NB: The SketchElements listens for #changed events."
 
-	self
+	"self
 		when: BlDragEndEvent
 		do: [ :anEvent | 
 			anEvent consumed: true.
 			self mathItem moveTo: self position.
 			self mathItem changed ].
-	self flag: #drgeoEvent
+	self flag: #drgeoEvent"
 ]
 
 { #category : #accessing }
