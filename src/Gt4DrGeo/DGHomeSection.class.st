@@ -19,7 +19,7 @@ DGHomeSection >> drGeoCard [
 	^ GtHomeCard page
 		title: 'Dr Geo';
 		description: 'Porting Dr Geo to GT';
-		databaseName: 'feenkcom/gt4DrGeo/lepiter';
+		databaseName: 'DrGeoLepiter';
 		pageName: 'Dr Geo';
 		priority: 10;
 		assertInvariant;
