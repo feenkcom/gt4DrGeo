@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-03T18:14:21.937263+02:00"
+						"dateAndTimeString" : "2024-05-08T15:38:28.02+02:00"
 					}
 				},
 				"uid" : {
@@ -134,7 +134,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-03T18:14:36.269873+02:00"
+						"dateAndTimeString" : "2024-05-08T15:40:13.835+02:00"
 					}
 				},
 				"uid" : {
@@ -179,6 +179,145 @@
 					"__type" : "textStyle"
 				},
 				"string" : "Open a second inspector view on the same sketch and drag the free points."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-08T15:54:58.229+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-08T15:55:05.731+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CC+QYlPUDQC20FFTCbzeZA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Added by Mathias:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-08T16:02:18.691+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-08T16:12:24.052+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uBnRfFPUDQC743uiCbzeZA=="
+				},
+				"code" : "\"Points seem to deal with multiple children just fine.\rSo triangles are easy to draw:\"\rl3 := sketch line: a to: c.\rl4 := sketch line: c to: b.\rl4 changed."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-08T15:35:35.983+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-08T16:14:42.123+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mLdJHVPUDQCq+pAwCbzeZA=="
+				},
+				"code" : "e := sketch point: 100@100.\r\r\"\r'e changed' gives errors.\r'sketch changed' does not change the view live.\rBut it seems like sending 'changed' to any other arbitrary element updates the sketch. \rMaybe 'changed' should only be understood by the sketch itself instead?\r\"\rl changed."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-08T15:54:35.602+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-08T16:01:58.014+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UOw2YVPUDQC2tmkdCbzeZA=="
+				},
+				"code" : "\"This works as intended. Here, we can send 'changed' to a Point, which we could not do with 'e'.\"\rfirstItem := sketch mathItems first.\rfirstItem moveTo: 20 @ 20.\rfirstItem changed."
 			}
 		]
 	},
