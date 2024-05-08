@@ -643,7 +643,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-01T17:17:11.727297+02:00"
+						"dateAndTimeString" : "2024-05-03T18:13:49.97739+02:00"
 					}
 				},
 				"uid" : {
@@ -653,7 +653,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Next: [[*** Updating the  model]]"
+				"string" : "Next: [[Updating the  model]]"
 			},
 			{
 				"__type" : "textSnippet",
