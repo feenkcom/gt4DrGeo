@@ -310,14 +310,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-06-22T19:31:50.701+02:00"
+						"dateAndTimeString" : "2024-06-22T19:32:08.776+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "GDfHpt/XDQCsS76bBKiYqA=="
 				},
-				"code" : "\"We can make e a fixed point like this.\"\re locked: true.\r\"Now, when trying to \""
+				"code" : "\"We can make e a fixed point like this.\"\re locked: true.\r\"Now, when trying to move the point in the live view, it will pop back to its original position when you let go.\""
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -523,14 +523,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-06-22T18:50:14.564+02:00"
+						"dateAndTimeString" : "2024-06-22T19:50:22.146+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "GM+XEd/XDQC6r8HQBKiYqA=="
 				},
-				"code" : "a moveTo: 400@400.\ra changed."
+				"code" : "a moveTo: 400@400.\ra changed.\r\"This fails to update ma, mb, mc, and the medians not connected to a.\rHowever, if you try to move them in the live view, they will pop into the right position... An indication that they know there position, but their update is never called.\""
 			}
 		]
 	},
