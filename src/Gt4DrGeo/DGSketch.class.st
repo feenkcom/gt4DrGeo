@@ -83,6 +83,15 @@ DGSketch >> initialize [
 ]
 
 { #category : #accessing }
+DGSketch >> intersectionOf: aPoint1 and: aPoint2 [
+|item|
+	item := DrGPointIntersectionItem newWith: {aPoint1. aPoint2. 0@0}.
+	item k: -1.
+	^ self
+		finalizePoint: (item)
+]
+
+{ #category : #accessing }
 DGSketch >> isEmpty [
 	^ self mathItems isEmpty
 ]
@@ -103,6 +112,12 @@ DGSketch >> mathItems [
 { #category : #accessing }
 DGSketch >> mathItems: anObject [
 	mathItems := anObject
+]
+
+{ #category : #accessing }
+DGSketch >> middleOf: aLine [
+	^ self
+		finalizePoint: (DrGPointMiddlesegmentItem newWith: {aLine})
 ]
 
 { #category : #updating }
