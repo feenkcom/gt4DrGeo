@@ -523,14 +523,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-06-22T19:51:28.366+02:00"
+						"dateAndTimeString" : "2024-06-22T19:53:18.908+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "GM+XEd/XDQC6r8HQBKiYqA=="
 				},
-				"code" : "a moveTo: 400@400.\ra changed.\r\"This fails to update mb, mc, and their respective medians.\rHowever, if you try to move them in the live view, they will pop into the right position... An indication that they know there position, but their update is never called.\""
+				"code" : "a moveTo: 400@400.\ra changed.\r\"This fails to update mb, mc, and their respective medians.\rHowever, if you try to move them in the live view, they will pop into the right position... An indication that they know their position, but their update is never called.\""
 			}
 		]
 	},

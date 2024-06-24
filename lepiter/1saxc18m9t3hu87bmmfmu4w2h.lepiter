@@ -276,14 +276,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-06-22T17:35:39.839+02:00"
+						"dateAndTimeString" : "2024-05-08T16:14:37.042+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "mLdJHVPUDQCq+pAwCbzeZA=="
 				},
-				"code" : "e := sketch point: 100@100.\r\r\"\r'e changed' gives errors.\r'sketch changed' does not change the view live.\rBut it seems like sending 'changed' to any other arbitrary element updates the sketch. \rMaybe 'changed' should only be understood by the sketch itself instead?\r\"\rl changed."
+				"code" : "e := sketch point: 100@100.\r\r\"\r'e changed' gives errors.\r'sketch changed' does not change the view live.\rBut it seems like sending 'changed' to any other arbitrary element updates the sketch. Maybe 'changed' should only be understood by the sketch itself instead?\r\"\rl changed."
 			},
 			{
 				"__type" : "pharoSnippet",

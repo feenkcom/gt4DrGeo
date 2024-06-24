@@ -19,18 +19,44 @@ DGScriptExamples >> emptySketch [
 { #category : #accessing }
 DGScriptExamples >> intersectionPoint [
 	<gtExample>
-	^ 12.5@12.5
+	|  ax ay bx by cx cy dx dy slopeAB slopeCD y0AB y0CD x y |
+	ax := self pointA x.
+	ay := self pointA y.
+	bx := self pointB x.
+	by := self pointB y.
+	cx := self pointC x.
+	cy := self pointC y.
+	dx := self pointD x.
+	dy := self pointD y.
+	
+	slopeAB := (by - ay)/(bx - ax).
+	slopeCD := (dy - cy)/(dx - cx).
+	
+	y0AB := ay - (ax * slopeAB).
+	y0CD := cy - (cx * slopeCD).
+	
+	x := (y0CD - y0AB) / (slopeAB - slopeCD).
+	y := y0AB + (x * slopeAB).
+	"Double check that we have found the intersection point."
+	self assert: y0AB + (x * slopeAB) equals: y0CD + (x * slopeCD).
+	
+	^ x@y
 ]
 
 { #category : #accessing }
 DGScriptExamples >> intersectionSketch [
+	"Testing intersection between two lines."
 	<gtExample>
-	|sketch line intersectLine correctIntersectionPoint actualIntersectionPoint|
-	sketch := self lineSketch.
-	line := sketch mathItems third.
-	intersectLine := self lineToIntersect.
+	|sketch a b c d line1 line2 correctIntersectionPoint actualIntersectionPoint|
+	sketch := self emptySketch.
+	a := sketch point: self pointA.
+	b := sketch point: self pointB.
+	c := sketch point: self pointC.
+	d := sketch point: self pointD.
+	line1 := sketch line: a to: b.
+	line2 := sketch line: c to: d.
 	correctIntersectionPoint := self intersectionPoint.
-	actualIntersectionPoint := (sketch intersectionOf: line and: intersectLine) point.
+	actualIntersectionPoint := (sketch intersectionOf: line1 and: line2) point.
 	
 	self assert: actualIntersectionPoint equals: correctIntersectionPoint.
 	
@@ -58,17 +84,6 @@ DGScriptExamples >> lineSketch [
 	self assert: (l contains: 5 @ 4) not.
 	self assert: sketch mathItems size equals: 3.
 	^ sketch
-]
-
-{ #category : #accessing }
-DGScriptExamples >> lineToIntersect [
-	<gtExample>
-	|sketch a b line|
-	sketch := self emptySketch.
-	a := sketch point: self pointIntersectA.
-	b := sketch point: self pointIntersectB.
-	line := sketch line: a to: b.
-	^ line 
 ]
 
 { #category : #examples }
@@ -108,7 +123,7 @@ DGScriptExamples >> midPointSketch [
 	self assert: midPoint isPointItem.
 	self assert: midPoint point equals: self pointBetweenAB.
 	self assert: midPoint parents first equals: line.
-	^ self
+	^ sketch
 ]
 
 { #category : #accessing }
@@ -130,13 +145,13 @@ DGScriptExamples >> pointBetweenAB [
 ]
 
 { #category : #accessing }
-DGScriptExamples >> pointIntersectA [
+DGScriptExamples >> pointC [
 	<gtExample>
 	^ 20@30
 ]
 
 { #category : #accessing }
-DGScriptExamples >> pointIntersectB [
+DGScriptExamples >> pointD [
 	<gtExample>
 	^ 50@100
 ]
