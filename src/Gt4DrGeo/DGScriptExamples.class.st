@@ -16,6 +16,28 @@ DGScriptExamples >> emptySketch [
 	^ sketch
 ]
 
+{ #category : #accessing }
+DGScriptExamples >> intersectionPoint [
+	<gtExample>
+	^ 12.5@12.5
+]
+
+{ #category : #accessing }
+DGScriptExamples >> intersectionSketch [
+	<gtExample>
+	|sketch line intersectLine correctIntersectionPoint actualIntersectionPoint|
+	sketch := self lineSketch.
+	line := sketch mathItems third.
+	intersectLine := self lineToIntersect.
+	correctIntersectionPoint := self intersectionPoint.
+	actualIntersectionPoint := (sketch intersectionOf: line and: intersectLine) point.
+	
+	self assert: actualIntersectionPoint equals: correctIntersectionPoint.
+	
+	^ sketch
+	
+]
+
 { #category : #examples }
 DGScriptExamples >> lineSketch [
 	"From DrGeoScriptTest>>#testLine"
@@ -36,6 +58,17 @@ DGScriptExamples >> lineSketch [
 	self assert: (l contains: 5 @ 4) not.
 	self assert: sketch mathItems size equals: 3.
 	^ sketch
+]
+
+{ #category : #accessing }
+DGScriptExamples >> lineToIntersect [
+	<gtExample>
+	|sketch a b line|
+	sketch := self emptySketch.
+	a := sketch point: self pointIntersectA.
+	b := sketch point: self pointIntersectB.
+	line := sketch line: a to: b.
+	^ line 
 ]
 
 { #category : #examples }
@@ -64,6 +97,21 @@ DGScriptExamples >> mathPoint [
 ]
 
 { #category : #accessing }
+DGScriptExamples >> midPointSketch [
+	"A sketch with a middle point on a line"
+	
+	<gtExample>
+	|sketch line midPoint|
+	sketch := self lineSketch.
+	line := sketch mathItems third.
+	midPoint := sketch middleOf: line.
+	self assert: midPoint isPointItem.
+	self assert: midPoint point equals: self pointBetweenAB.
+	self assert: midPoint parents first equals: line.
+	^ self
+]
+
+{ #category : #accessing }
 DGScriptExamples >> pointA [
 	<gtExample>
 	^ 30@20
@@ -79,6 +127,18 @@ DGScriptExamples >> pointB [
 DGScriptExamples >> pointBetweenAB [
 	<gtExample>
 	^ 65@35
+]
+
+{ #category : #accessing }
+DGScriptExamples >> pointIntersectA [
+	<gtExample>
+	^ 20@30
+]
+
+{ #category : #accessing }
+DGScriptExamples >> pointIntersectB [
+	<gtExample>
+	^ 50@100
 ]
 
 { #category : #examples }

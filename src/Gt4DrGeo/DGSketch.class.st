@@ -116,7 +116,7 @@ DGSketch >> mathItems: anObject [
 
 { #category : #accessing }
 DGSketch >> middleOf: aLine [
-	^ self
+	^ self 
 		finalizePoint: (DrGPointMiddlesegmentItem newWith: {aLine})
 ]
 
