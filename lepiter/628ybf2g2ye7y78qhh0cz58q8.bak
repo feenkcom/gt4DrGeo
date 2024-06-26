@@ -520,7 +520,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-06-23T15:32:24.278585+02:00"
+												"dateAndTimeString" : "2024-06-23T15:32:44.570244+02:00"
 											}
 										},
 										"uid" : {
@@ -530,7 +530,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Debugging "
+										"string" : "[[Debugging change notifications for points]]"
 									},
 									{
 										"__type" : "textSnippet",
